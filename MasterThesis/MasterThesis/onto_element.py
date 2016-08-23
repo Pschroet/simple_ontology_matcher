@@ -47,8 +47,9 @@ class onto_elem(object):
         for child in children:
             self.add_child(child)
 
-    #searches a child with the given name
+    #searches the children of this ontology element and returns the first one with the given name
     #returns None, if there is no child with this name
+    #if all children should be returned, use get_children_named instead
     def get_child(self, name):
         for item in self.children:
             if item.name == name:
