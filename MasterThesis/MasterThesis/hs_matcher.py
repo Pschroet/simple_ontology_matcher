@@ -24,20 +24,20 @@ def match_two_ontologies(onto, onto1):
         #print onto1_elements
         for i in onto_elements:
             try:
-                util.write2File("regex.txt", i.name.replace("http://www.semanticweb.org/christianstein/ontologies/2014/4/untitled-ontology-59#", "") + ":" + "\n", "a")
-                if i.get_child("{http://www.w3.org/2000/01/rdf-schema#}label") != None:
-                    util.write2File("regex.txt", "-> " + i.get_child("{http://www.w3.org/2000/01/rdf-schema#}label").get_text() + "\n", "a")
+                #util.write2File("regex.txt", i.name.replace("http://www.semanticweb.org/christianstein/ontologies/2014/4/untitled-ontology-59#", "") + ":" + "\n", "a")
+                #if i.get_child("{http://www.w3.org/2000/01/rdf-schema#}label") != None:
+                #    util.write2File("regex.txt", "-> " + i.get_child("{http://www.w3.org/2000/01/rdf-schema#}label").get_text() + "\n", "a")
                 #if i.get_child("{http://www.w3.org/2000/01/rdf-schema#}comment") != None:
                 #    util.write2File("regex.txt", "-> " + i.get_child("{http://www.w3.org/2000/01/rdf-schema#}comment").get_text() + "\n", "a")
                 for j in onto1_elements:
                     match_result = re.match(".*" + i.name.replace("http://www.semanticweb.org/christianstein/ontologies/2014/4/untitled-ontology-59#", "") + ".*", j.name, re.IGNORECASE)
                     if match_result:
                         util.write2File("matching.txt", "Nodes " + i.name + " and " + j.name + " are similar, because of the name\n", "a")
-                    label = i.get_child("{http://www.w3.org/2000/01/rdf-schema#}comment")
-                    if label != None:
-                        match_result = re.match(".*" + label.get_text() + ".*", j.name, re.IGNORECASE)
+                    labels = i.get_children_named("{http://www.w3.org/2000/01/rdf-schema#}label")
+                    for label in labels:
+                        match_result = re.match(".*" + label.get_text() + ".*", j.get_children_named("{http://www.w3.org/2000/01/rdf-schema#}label")[0].get_text(), re.IGNORECASE)
                         if match_result:
-                            util.write2File("matching.txt", "Nodes " + i.name + " and " + j.name + " are similar, because of the label: " + label.get_text() + "\n", "a")
+                            util.write2File("matching.txt", "Nodes " + i.name + " (" + label.get_text() + ") and " + j.name + " (" + j.get_children_named("{http://www.w3.org/2000/01/rdf-schema#}label")[0].get_text() + ")" + " are similar, because of the label" + "\n", "a")
                     #comment = i.get_child("{http://www.w3.org/1999/02/22-rdf-syntax-ns#}comment")
                     #if comment != None:
                     #    match_result = re.match(".*" + j.name.replace("http://purl.obolibrary.org/obo/", "") + ".*", comment.get_text(), re.IGNORECASE)
