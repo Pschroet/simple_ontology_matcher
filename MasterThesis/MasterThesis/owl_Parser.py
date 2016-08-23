@@ -32,6 +32,16 @@ def parse_ontology_file(ontology_tree):
             #get the children
             add_children(elem, item.getchildren())
             tempElems.append(elem)
+        #if the ontology is populated with individuals, get them, too
+        elif item.tag == "{http://www.w3.org/2002/07/owl#}NamedIndividual":
+            #create a new ontology element
+            elem = onto_element.onto_elem(item.attrib["{http://www.w3.org/1999/02/22-rdf-syntax-ns#}about"], item.tag.replace("{http://www.w3.org/2002/07/owl#}", ""), item.text)
+            #util.write2File("test1.txt", "Created " + item.attrib["{http://www.w3.org/1999/02/22-rdf-syntax-ns#}about"] + ": " + str(elem) + "\n", "a")
+            for attr in item.attrib:
+                elem.add_attribute(attr, item.attrib[attr])
+            #get the children
+            add_children(elem, item.getchildren())
+            tempElems.append(elem)
     if onto != "" and len(tempProps) > 0:
         onto.add_properties(tempProps)
     if onto != "" and len(tempElems) > 0:
