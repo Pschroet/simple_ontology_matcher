@@ -34,7 +34,7 @@ def match_two_ontologies(onto, onto1):
                     match_result = re.match(".*" + i.name + ".*", j.name, re.IGNORECASE)
                     if match_result:
                         util.write2File("matching.txt", "Nodes " + i.name + " and " + j.name + " are similar, because of the name\n", "a")
-                    label = i.get_child("{http://www.w3.org/2000/01/rdf-schema#}comment")
+                    label = i.get_child("{http://www.w3.org/2000/01/rdf-schema#}label")
                     if label != None:
                         match_result = re.match(".*" + label.get_text() + ".*", j.name, re.IGNORECASE)
                         if match_result:
