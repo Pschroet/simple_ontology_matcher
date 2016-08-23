@@ -33,12 +33,14 @@ def match_two_ontologies(onto, onto1):
                     match_result = re.match(".*" + i.name + ".*", j.name)
                     if match_result:
                         util.write2File("matching.txt", "Nodes " + i.name + " and " + j.name + " are similar, because of the name\n", "a")
-                    if i.get_child("{http://www.w3.org/2000/01/rdf-schema#}comment") != None:
-                        match_result = re.match(".*" + i.get_child("{http://www.w3.org/2000/01/rdf-schema#}label").get_text() + ".*", j.name)
+                    label = i.get_child("{http://www.w3.org/2000/01/rdf-schema#}comment")
+                    if label != None:
+                        match_result = re.match(".*" + label.get_text() + ".*", j.name)
                         if match_result:
                             util.write2File("matching.txt", "Nodes " + i.name + " and " + j.name + " are similar, because of the label\n", "a")
-                    if i.get_child("{http://www.w3.org/1999/02/22-rdf-syntax-ns#}comment") != None:
-                        match_result = re.match(".*" + i.get_child("{http://www.w3.org/2000/01/rdf-schema#}comment").get_text() + ".*", j.name)
+                    comment = i.get_child("{http://www.w3.org/1999/02/22-rdf-syntax-ns#}comment")
+                    if comment != None:
+                        match_result = re.match(".*" + comment.get_text() + ".*", j.name)
                         if match_result:
                             util.write2File("matching.txt", "Nodes " + i.name + " and " + j.name + " are similar, because of the comment\n", "a")
             except re.error:
@@ -54,12 +56,14 @@ def match_two_ontologies(onto, onto1):
                     match_result1 = re.match(".*" + k.name + ".*", l.name)
                     if match_result1:
                         util.write2File("matching.txt", "Nodes " + k.name + " and " + l.name + " are similar, because of the name\n", "a")
-                    if k.get_child("{http://www.w3.org/2000/01/rdf-schema#}label") != None:
-                        match_result1 = re.match(".*" + k.get_child("{http://www.w3.org/2000/01/rdf-schema#}label").get_text() + ".*", l.name)
+                    label1 = k.get_child("{http://www.w3.org/2000/01/rdf-schema#}label")
+                    if label1 != None:
+                        match_result1 = re.match(".*" + label1.get_text() + ".*", l.name)
                         if match_result1:
                             util.write2File("matching.txt", "Nodes " + k.name + " and " + l.name + " are similar, because of the label\n", "a")
-                    if k.get_child("{http://www.w3.org/1999/02/22-rdf-syntax-ns#}comment") != None:
-                        match_result1 = re.match(".*" + k.get_child("{http://www.w3.org/2000/01/rdf-schema#}comment").get_text() + ".*", l.name)
+                    comment1 = k.get_child("{http://www.w3.org/1999/02/22-rdf-syntax-ns#}comment")
+                    if comment1 != None:
+                        match_result1 = re.match(".*" + comment1.get_text() + ".*", l.name)
                         if match_result1:
                             util.write2File("matching.txt", "Nodes " + k.name + " and " + l.name + " are similar, because of the comment\n", "a")
             except re.error:
