@@ -48,12 +48,12 @@ class onto_elem(object):
             self.add_child(child)
 
     #searches a child with the given name
-    #returns an empty string, if there is no child with this name
+    #returns None, if there is no child with this name
     def get_child(self, name):
         for item in self.children:
             if item.name == name:
                 return item
-        return ""
+        return None
 
     def get_children(self):
         return self.children
