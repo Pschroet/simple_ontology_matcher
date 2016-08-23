@@ -12,6 +12,8 @@ import util
 #tries to match two ontologies just by comapring the labels of nodes
 #returns a bridge ontology, which holds information about nodes that are assumed to be linked on some way
 def match_two_ontologies(onto, onto1):
+    #remove content of debug file 'matching.txt'
+    util.write2File("matching.txt", "", "w")
     if onto is not None and onto1 is not None:
         #the current ontology, which is compared to the other ones
         bridge_ontology = ontology.ontology("bridge-" + str(time.localtime()))
