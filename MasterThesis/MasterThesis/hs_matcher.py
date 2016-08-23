@@ -32,7 +32,7 @@ def match_two_ontologies(onto, onto1):
                 #if i.get_child("{http://www.w3.org/2000/01/rdf-schema#}comment") != None:
                 #    util.write2File("regex.txt", "-> " + i.get_child("{http://www.w3.org/2000/01/rdf-schema#}comment").get_text() + "\n", "a")
                 for j in onto1_elements:
-                    match_result = re.match(".*" + i.name.replace("http://www.semanticweb.org/christianstein/ontologies/2014/4/untitled-ontology-59#", "") + ".*", j.name, re.IGNORECASE)
+                    match_result = re.match(i.name.replace("http://www.semanticweb.org/christianstein/ontologies/2014/4/untitled-ontology-59#", ""), j.name, re.IGNORECASE)
                     if match_result:
                         util.write2File("matching.txt", "Nodes " + i.name + " and " + j.name + " are similar, because of the name\n", "a")
                     labels = i.get_children_named("{http://www.w3.org/2000/01/rdf-schema#}label")
