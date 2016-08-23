@@ -38,7 +38,7 @@ def match_two_ontologies(onto, onto1):
                     if label != None:
                         match_result = re.match(".*" + label.get_text() + ".*", j.name)
                         if match_result:
-                            util.write2File("matching.txt", "Nodes " + i.name + " and " + j.name + " are similar, because of the label\n", "a")
+                            util.write2File("matching.txt", "Nodes " + i.name + " and " + j.name + " are similar, because of the label: " + label.get_text() + "\n", "a")
                     comment = i.get_child("{http://www.w3.org/1999/02/22-rdf-syntax-ns#}comment")
                     if comment != None:
                         match_result = re.match(".*" + comment.get_text() + ".*", j.name)
@@ -62,7 +62,7 @@ def match_two_ontologies(onto, onto1):
                     if label1 != None:
                         match_result1 = re.match(".*" + label1.get_text() + ".*", l.name)
                         if match_result1:
-                            util.write2File("matching.txt", "Nodes " + k.name + " and " + l.name + " are similar, because of the label\n", "a")
+                            util.write2File("matching.txt", "Nodes " + k.name + " and " + l.name + " are similar, because of the label: " + label1.get_text() + "\n", "a")
                     comment1 = k.get_child("{http://www.w3.org/1999/02/22-rdf-syntax-ns#}comment")
                     if comment1 != None:
                         match_result1 = re.match(".*" + comment1.get_text() + ".*", l.name)
