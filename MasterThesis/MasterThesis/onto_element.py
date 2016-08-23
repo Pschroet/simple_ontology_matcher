@@ -57,6 +57,15 @@ class onto_elem(object):
 
     def get_children(self):
         return self.children
+
+    #returns a list of elements, with the given name
+    #returns an empty list, if no element with the given name can be found
+    def get_children_named(self, name):
+        output = []
+        for item in self.children:
+            if item.name == name:
+                output.append(item)
+        return output
     
     def add_attribute(self, key, value):
         #util.write2File("test1.txt", "\tadding attribute " + str(key) + ":" + value + " (" + str(self) + ")\n", "a")
