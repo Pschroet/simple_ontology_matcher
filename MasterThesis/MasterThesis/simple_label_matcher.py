@@ -26,7 +26,8 @@ def match_two_ontologies(onto, onto1):
         for i in onto_elements:
             try:
                 util.write2File("regex.txt", i.name + ":" + "\n", "a")
-                util.write2File("regex.txt", "-> " + i.get_child("{http://www.w3.org/2000/01/rdf-schema#}label").get_text() + "\n", "a")
+                if i.get_child("{http://www.w3.org/2000/01/rdf-schema#}label") != None:
+                    util.write2File("regex.txt", "-> " + i.get_child("{http://www.w3.org/2000/01/rdf-schema#}label").get_text() + "\n", "a")
                 if i.get_child("{http://www.w3.org/2000/01/rdf-schema#}comment") != None:
                     util.write2File("regex.txt", "-> " + i.get_child("{http://www.w3.org/2000/01/rdf-schema#}comment").get_text() + "\n", "a")
                 for j in onto1_elements:
@@ -49,7 +50,8 @@ def match_two_ontologies(onto, onto1):
         for k in onto1_elements:
             try:
                 util.write2File("regex.txt", k.name + ":" + "\n", "a")
-                util.write2File("regex.txt", "-> " + k.get_child("{http://www.w3.org/2000/01/rdf-schema#}label").get_text() + "\n", "a")
+                if k.get_child("{http://www.w3.org/2000/01/rdf-schema#}label") != None:
+                    util.write2File("regex.txt", "-> " + k.get_child("{http://www.w3.org/2000/01/rdf-schema#}label").get_text() + "\n", "a")
                 if k.get_child("{http://www.w3.org/2000/01/rdf-schema#}comment") != None:
                     util.write2File("regex.txt", "-> " + k.get_child("{http://www.w3.org/2000/01/rdf-schema#}comment").get_text() + "\n", "a")
                 for l in onto_elements:
