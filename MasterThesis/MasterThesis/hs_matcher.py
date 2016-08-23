@@ -37,7 +37,7 @@ def match_two_ontologies(onto, onto1):
                     for label in labels:
                         match_result = re.match(".*" + label.get_text() + ".*", j.get_children_named("{http://www.w3.org/2000/01/rdf-schema#}label")[0].get_text(), re.IGNORECASE)
                         if match_result:
-                            util.write2File("matching.txt", "Nodes " + i.name + " (" + label.get_text() + ") and " + j.name + " (" + j.get_children_named("{http://www.w3.org/2000/01/rdf-schema#}label")[0].get_text() + ")" + " are similar, because of the label" + "\n", "a")
+                            util.write2File("matching.txt", "Nodes " + i.name + " (Label: " + label.get_text() + ") and " + j.name + " (Label: " + j.get_children_named("{http://www.w3.org/2000/01/rdf-schema#}label")[0].get_text() + ")" + " are similar, because of the label" + "\n", "a")
                     #comment = i.get_child("{http://www.w3.org/1999/02/22-rdf-syntax-ns#}comment")
                     #if comment != None:
                     #    match_result = re.match(".*" + j.name.replace("http://purl.obolibrary.org/obo/", "") + ".*", comment.get_text(), re.IGNORECASE)
