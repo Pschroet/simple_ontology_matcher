@@ -31,25 +31,30 @@ def match_two_ontologies(onto, onto1):
             #this is the text that the matchings will be added to and written, if it does change from this point
             matching_text = start_text
             try:
+                #look for case insensitive, but exact matches between labels
                 for j in onto1_elements:
                     labels = i.get_children_named("{http://www.w3.org/2000/01/rdf-schema#}label")
                     for label in labels:
+                        src_label = label.get_text()
                         labelChildren = j.get_children_named("{http://www.w3.org/2000/01/rdf-schema#}label")
-                        if(len(labelChildren) > 0) and label.get_attribute("{http://www.w3.org/XML/1998/namespace}lang") == "en" and string.upper(label.get_text()) == string.upper(labelChildren[0].get_text()):
-                            matching_text = matching_text + "  -> "+ j.name + " has the exact same label: '" + label.get_text() + "'\n"
-                if not start_text == matching_text:
-                    util.write2File("matching.txt", matching_text, "a")
-                #for j in onto1_elements:
-                #    labels = i.get_children_named("{http://www.w3.org/2000/01/rdf-schema#}label")
-                #    for label in labels:
-                #        match_result = re.match(label.get_text(), j.get_children_named("{http://www.w3.org/2000/01/rdf-schema#}label")[0].get_text(), re.IGNORECASE)
-                #        if match_result:
-                #            util.write2File("matching.txt", "Nodes " + i.name + " (Label: " + label.get_text() + ") and " + j.name + " (Label: " + j.get_children_named("{http://www.w3.org/2000/01/rdf-schema#}label")[0].get_text() + ")" + " are similar, because of the label" + "\n", "a")
+                        if(len(labelChildren) > 0) and label.get_attribute("{http://www.w3.org/XML/1998/namespace}lang") == "en" and string.upper(src_label) == string.upper(labelChildren[0].get_text()):
+                            matching_text = matching_text + "  -> " + j.name + " has the same label: '" + src_label + "'\n"
+                #check the label using regular expressions
+                for j in onto1_elements:
+                    labels = i.get_children_named("{http://www.w3.org/2000/01/rdf-schema#}label")
+                    for label in labels:
+                        src_label = label.get_text()
+                        dest_label = j.get_children_named("{http://www.w3.org/2000/01/rdf-schema#}label")[0].get_text()
+                        match_result = re.match(src_label, dest_label, re.IGNORECASE)
+                        if match_result:
+                            matching_text = matching_text + "  -> " + j.name + " has part of the label '" + src_label + "' in it's own one: '" + dest_label + "'\n"
                     #comment = i.get_child("{http://www.w3.org/1999/02/22-rdf-syntax-ns#}comment")
                     #if comment != None:
                     #    match_result = re.match(".*" + j.name.replace("http://purl.obolibrary.org/obo/", "") + ".*", comment.get_text(), re.IGNORECASE)
                     #    if match_result:
                     #        util.write2File("matching.txt", "Nodes " + i.name + " and " + j.name + " are similar, because of the comment\n", "a")
+                if not start_text == matching_text:
+                    util.write2File("matching.txt", matching_text, "a")
             except re.error:
                 #just ignore errors during regular expression operations and try to go on
                 pass
