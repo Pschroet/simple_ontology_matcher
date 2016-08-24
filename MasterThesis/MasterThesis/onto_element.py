@@ -79,9 +79,10 @@ class onto_elem(object):
     def get_attributes(self):
         return self.attributes
 
-    def tostring(self):
-        output = "Element: " + self.name + os.linesep
-        output = output + "-> Attributes: " + self.attributes + os.linesep
-        output = output + "-> Children: " + self.children
-        #util.write2File("test.txt", output, "a")
+    def tostring(self, level=0):
+        output = ("\t" * level)+ "Element: " + self.name + os.linesep
+        output = output + ("\t" * level) + "-> Attributes: " + str(self.attributes) + os.linesep
+        output = output + ("\t" * level) + "-> Children:\n"
+        for child in self.children:
+            output = output + child.tostring(level+1) + "\n"
         return output
