@@ -26,13 +26,19 @@ def match_two_ontologies(onto, onto1):
         #print onto1_elements
         print "Going through ontology " + onto.name
         for i in onto_elements:
+            #define a text that will be the header of a matching, if a match is found this text will change, if it hasn't changed, do not write it into the file
+            start_text = "Node " + i.name + "\n"
+            #this is the text that the matchings will be added to and written, if it does change from this point
+            matching_text = start_text
             try:
                 for j in onto1_elements:
                     labels = i.get_children_named("{http://www.w3.org/2000/01/rdf-schema#}label")
                     for label in labels:
                         labelChildren = j.get_children_named("{http://www.w3.org/2000/01/rdf-schema#}label")
                         if(len(labelChildren) > 0) and label.get_attribute("{http://www.w3.org/XML/1998/namespace}lang") == "en" and string.upper(label.get_text()) == string.upper(labelChildren[0].get_text()):
-                            util.write2File("matching.txt", "Nodes " + i.name + " (Label: " + label.get_text() + ") and " + j.name + " (Label: " + j.get_children_named("{http://www.w3.org/2000/01/rdf-schema#}label")[0].get_text() + ")" + " have the exact same label" + "\n", "a")
+                            matching_text = matching_text + "  -> "+ j.name + " has the exact same label: '" + label.get_text() + "'\n"
+                if not start_text == matching_text:
+                    util.write2File("matching.txt", matching_text, "a")
                 #for j in onto1_elements:
                 #    labels = i.get_children_named("{http://www.w3.org/2000/01/rdf-schema#}label")
                 #    for label in labels:
