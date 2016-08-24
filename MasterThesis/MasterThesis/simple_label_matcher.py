@@ -45,6 +45,7 @@ def match_two_ontologies(onto, onto1):
                         if match_result:
                             util.write2File("matching.txt", "Nodes " + i.name + " and " + j.name + " are similar, because of the comment\n", "a")
             except re.error:
+                #just ignore errors during regular expression operations and try to go on
                 pass
         print "Going through ontology " + onto1.name
         for k in onto1_elements:
@@ -69,4 +70,5 @@ def match_two_ontologies(onto, onto1):
                         if match_result1:
                             util.write2File("matching.txt", "Nodes " + k.name + " and " + l.name + " are similar, because of the comment\n", "a")
             except re.error:
+                #just ignore errors during regular expression operations and try to go on
                 pass
