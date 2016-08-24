@@ -58,6 +58,8 @@ def parse_ontology_file(ontology_tree):
 def add_children(node, children):
     for child in children:
         new_elem = onto_element.onto_elem(child.tag,  child.tag.split("}")[-1], child.text)
+        for attr in child.attrib:
+            new_elem.add_attribute(attr, child.attrib[attr])
         if len(child.getchildren()) > 0:
             add_children(new_elem, child)
         node.add_child(new_elem)
