@@ -74,7 +74,7 @@ class onto_elem(object):
 
     def get_attribute(self, key):
         if key in self.attributes:
-            return self.attributes(key)
+            return self.attributes[key]
 
     def get_attributes(self):
         return self.attributes
