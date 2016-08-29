@@ -29,8 +29,11 @@ class onto_elem(object):
 
     def get_name(self):
         return self.name
-
-    def get_namespace(self, namespace):
+    
+    def set_namespace(self, namespace):
+        self.namespace = namespace
+    
+    def get_namespace(self):
         return self.namespace
 
     def get_type(self):
