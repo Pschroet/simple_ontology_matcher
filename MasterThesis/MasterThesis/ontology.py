@@ -26,6 +26,9 @@ class ontology(object):
     def add_namespace(self, abbreviation, namespace):
         self.namespaces[abbreviation] = namespace
     
+    def get_namespaces(self):
+        return self.namespaces
+    
     def add_element(self, elem):
         self.elements.append(elem)
     
