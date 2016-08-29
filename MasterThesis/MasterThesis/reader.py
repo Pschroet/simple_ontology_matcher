@@ -31,7 +31,7 @@ class ontology_reader(object):
             children = root.findall("{http://www.w3.org/2002/07/owl#}Ontology")
             #look if there is exactly one 'Ontology' element from namespace 'owl'
             if len(children) == 1 and children[0].tag.replace("{", "").replace("}", "").replace("#", ""):
-                used_parser = "owl_rdf-xml_parser"
+                used_parser = "owl_rdfxml_parser"
             #load the parser
             if used_parser != "":
                 try:
