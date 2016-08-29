@@ -45,3 +45,18 @@ class ontology(object):
     
     def get_properties(self):
         return self.properties
+    
+    def tostring(self):
+        output = "Ontology " + self.name + ":" + os.linesep
+        if len(self.namespaces) > 0:
+            output = output + "Namespaces:" + os.linesep
+            for namespace in self.namespaces:
+                output = output + "\t-> " + namespace + " " + self.namespaces[namespace] + os.linesep
+        if len(self.properties) > 0:
+            output = output + "Properties:" + os.linesep
+            for prop in self.properties:
+                output = output + "\t-> " + str(prop) + os.linesep
+        if len(self.elements) > 0:
+            output = output + "Elements:" + os.linesep
+            for elem in self.elements:
+                output = output + "\t-> " + elem.tostring(level=1)
