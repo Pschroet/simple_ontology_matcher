@@ -1,0 +1,228 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://terminologies.gfbio.org/terms/cafe#"
+   xml:base="http://terminologies.gfbio.org/terms/cafe"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:xml="http://www.w3.org/XML/1998/namespace"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+   <owl:Ontology rdf:about="http://terminologies.gfbio.org/terms/cafe"/>
+
+   <!-- Properties -->
+
+   <owl:ObjectProperty rdf:about="http://terminologies.gfbio.org/terms/cafe#isCharacterizedBy">
+      <owl:inverseOf rdf:resource="http://terminologies.gfbio.org/terms/cafe#characterizes"/>
+   </owl:ObjectProperty>
+
+   <owl:ObjectProperty rdf:about="http://terminologies.gfbio.org/terms/cafe#characterizes">
+      <owl:inverseOf rdf:resource="http://terminologies.gfbio.org/terms/cafe#isCharacterizedBy"/>
+   </owl:ObjectProperty>
+
+   <owl:ObjectProperty rdf:about="http://terminologies.gfbio.org/terms/cafe#hasPart">
+      <owl:inverseOf rdf:resource="http://terminologies.gfbio.org/terms/cafe#isPartOf"/>
+   </owl:ObjectProperty>
+
+   <owl:ObjectProperty rdf:about="http://terminologies.gfbio.org/terms/cafe#isPartOf">
+      <owl:inverseOf rdf:resource="http://terminologies.gfbio.org/terms/cafe#hasPart"/>
+   </owl:ObjectProperty>
+
+   <!-- Classes -->
+
+   <owl:Class rdf:about="http://terminologies.gfbio.org/terms/cafe#Object">
+      <rdfs:subClassOf>
+	 <owl:Restriction>
+	    <owl:onProperty rdf:resource="http://terminologies.gfbio.org/terms/cafe#isCharacterizedBy"/>
+	    <owl:someValuesFrom rdf:resource="http://terminologies.gfbio.org/terms/cafe#Context"/>
+	 </owl:Restriction>
+      </rdfs:subClassOf>
+      <rdfs:subClassOf>
+	 <owl:Restriction>
+	    <owl:onProperty rdf:resource="http://terminologies.gfbio.org/terms/cafe#isCharacterizedBy"/>
+	    <owl:someValuesFrom rdf:resource="http://terminologies.gfbio.org/terms/cafe#Reference"/>
+	 </owl:Restriction>
+      </rdfs:subClassOf>
+      <rdfs:comment xml:lang="en">
+	 The Object describes one object described via the cafe annotation schema.
+	 It contains all the context information the references and the resources.
+      </rdfs:comment>
+      <rdfs:label xml:lang="en">Object</rdfs:label>
+   </owl:Class>
+
+   <owl:Class rdf:about="http://terminologies.gfbio.org/terms/cafe#Context">
+      <rdfs:subClassOf>
+	 <owl:Restriction>
+	    <owl:onProperty rdf:resource="http://terminologies.gfbio.org/terms/cafe#characterizes"/>
+	    <owl:someValuesFrom rdf:resource="http://terminologies.gfbio.org/terms/cafe#Object"/>
+	 </owl:Restriction>
+      </rdfs:subClassOf>
+      <rdfs:comment xml:lang="en">
+	 The Contexts capture biologcial context information in different categories
+	 These categories are time, space, sphere, orgnism, biome, chemical, method
+	 and process.
+      </rdfs:comment>
+      <rdfs:label xml:lang="en">Context</rdfs:label>
+   </owl:Class>
+
+   <owl:Class rdf:about="http://terminologies.gfbio.org/terms/cafe#TimeContext">
+      <rdfs:subClassOf rdf:resource="http://terminologies.gfbio.org/terms/cafe#Context"/>
+      <rdfs:comment xml:lang="en">
+	 The time context allows to capture the quantitative and qualitative temporal
+	 aspects that describe the the search object.
+      </rdfs:comment>
+      <rdfs:label xml:lang="en">Time Context</rdfs:label>
+   </owl:Class>
+
+   <owl:Class rdf:about="http://terminologies.gfbio.org/terms/cafe#TimeRange">
+      <rdfs:subClassOf>
+	 <owl:Restriction>
+	    <owl:onProperty rdf:resource="http://terminologies.gfbio.org/terms/cafe#isPartOf"/>
+	    <owl:someValuesFrom rdf:resource="http://terminologies.gfbio.org/terms/cafe#TimeContext"/>
+	 </owl:Restriction>
+      </rdfs:subClassOf>
+      <rdfs:comment xml:lang="en">
+	 The time range captures the temporal extent of the search
+	 object. If both the start and the end date are equal this
+	 represents a point in time.
+      </rdfs:comment>
+      <rdfs:label xml:lang="en">Time Range</rdfs:label>
+   </owl:Class>
+
+   <owl:Class rdf:about="http://terminologies.gfbio.org/terms/cafe#RangeStart">
+      <rdfs:subClassOf>
+	 <owl:Restriction>
+	    <owl:onProperty rdf:resource="http://terminologies.gfbio.org/terms/cafe#isPartOf"/>
+	    <owl:someValuesFrom rdf:resource="http://terminologies.gfbio.org/terms/cafe#TimeRange"/>
+	 </owl:Restriction>
+      </rdfs:subClassOf>
+      <rdfs:comment xml:lang="en">
+	 The start of the time range in form of a local date and local time associated
+	 with a timezone. This can be e.g. the start of the data aquisition.
+      </rdfs:comment>
+      <rdfs:label xml:lang="en">Range Start</rdfs:label>
+   </owl:Class>
+
+   <owl:Class rdf:about="http://terminologies.gfbio.org/terms/cafe#RangeEnd">
+      <rdfs:subClassOf>
+	 <owl:Restriction>
+	    <owl:onProperty rdf:resource="http://terminologies.gfbio.org/terms/cafe#isPartOf"/>
+	    <owl:someValuesFrom rdf:resource="http://terminologies.gfbio.org/terms/cafe#TimeRange"/>
+	 </owl:Restriction>
+      </rdfs:subClassOf>
+      <rdfs:comment xml:lang="en">
+	 The start of the time range in form of a local date and local time associated
+	 with a timezone. This can be e.g. the start of the data aquisition.
+      </rdfs:comment>
+      <rdfs:label xml:lang="en">Range End</rdfs:label>
+   </owl:Class>
+
+   <owl:Class rdf:about="http://terminologies.gfbio.org/terms/cafe#DateTime">
+      <rdfs:subClassOf>
+	 <owl:Restriction>
+	    <owl:onProperty rdf:resource="http://terminologies.gfbio.org/terms/cafe#isPartOf"/>
+	    <owl:someValuesFrom rdf:resource="http://terminologies.gfbio.org/terms/cafe#RangeStart"/>
+	 </owl:Restriction>
+      </rdfs:subClassOf>
+      <rdfs:subClassOf>
+	 <owl:Restriction>
+	    <owl:onProperty rdf:resource="http://terminologies.gfbio.org/terms/cafe#isPartOf"/>
+	    <owl:someValuesFrom rdf:resource="http://terminologies.gfbio.org/terms/cafe#RangeEnd"/>
+	 </owl:Restriction>
+      </rdfs:subClassOf>
+      <rdfs:comment xml:lang="en">
+	 This element captures a local time range with date, time and olson timezone
+      </rdfs:comment>
+      <rdfs:label xml:lang="en">Date Time</rdfs:label>
+   </owl:Class>
+
+   <owl:Class rdf:about="http://terminologies.gfbio.org/terms/cafe#date">
+      <rdfs:subClassOf>
+	 <owl:Restriction>
+	    <owl:onProperty rdf:resource="http://terminologies.gfbio.org/terms/cafe#isPartOf"/>
+	    <owl:someValuesFrom rdf:resource="http://terminologies.gfbio.org/terms/cafe#DateTime"/>
+	 </owl:Restriction>
+      </rdfs:subClassOf>
+      <rdfs:comment xml:lang="en">
+	 A single date in form YYYY-MM-DD conform to iso 8601.
+      </rdfs:comment>
+      <rdfs:label xml:lang="en">Date</rdfs:label>
+   </owl:Class>
+
+   <owl:Class rdf:about="http://terminologies.gfbio.org/terms/cafe#time">
+      <rdfs:subClassOf>
+	 <owl:Restriction>
+	    <owl:onProperty rdf:resource="http://terminologies.gfbio.org/terms/cafe#isPartOf"/>
+	    <owl:someValuesFrom rdf:resource="http://terminologies.gfbio.org/terms/cafe#DateTime"/>
+	 </owl:Restriction>
+      </rdfs:subClassOf>
+      <rdfs:comment xml:lang="en">
+	 A single time in form HH:MM:SS conform to iso 8601.
+      </rdfs:comment>
+      <rdfs:label xml:lang="en">Time</rdfs:label>
+   </owl:Class>
+
+   <owl:Class rdf:about="http://terminologies.gfbio.org/terms/cafe#Timezone">
+      <rdfs:subClassOf>
+	 <owl:Restriction>
+	    <owl:onProperty rdf:resource="http://terminologies.gfbio.org/terms/cafe#isPartOf"/>
+	    <owl:someValuesFrom rdf:resource="http://terminologies.gfbio.org/terms/cafe#DateTime"/>
+	 </owl:Restriction>
+      </rdfs:subClassOf>
+      <rdfs:comment xml:lang="en">
+	 The olson timezone to capture the timezone of the given date and time in the
+	 range (e.g. Europe/Berlin)
+      </rdfs:comment>
+      <rdfs:label xml:lang="en">Timezone</rdfs:label>
+   </owl:Class>
+
+   <owl:Class rdf:about="http://terminologies.gfbio.org/terms/cafe#GeologicalTimePeriod">
+      <rdfs:subClassOf>
+	 <owl:Restriction>
+	    <owl:onProperty rdf:resource="http://terminologies.gfbio.org/terms/cafe#isPartOf"/>
+	    <owl:someValuesFrom rdf:resource="http://terminologies.gfbio.org/terms/cafe#TimeContext"/>
+	 </owl:Restriction>
+      </rdfs:subClassOf>
+      <rdfs:comment xml:lang="en">
+	 The geological age is a container that holds one of the possible geological
+	 ages which is relevant for describing the search object. E.g. a sample that
+	 comes from the ordovician time period.
+      </rdfs:comment>
+      <rdfs:label xml:lang="en">Geological Time Period</rdfs:label>
+   </owl:Class>
+
+   <owl:Class rdf:about="http://terminologies.gfbio.org/terms/cafe#geologicalEon">
+      <rdfs:subClassOf rdf:resource="http://terminologies.gfbio.org/terms/cafe#GeologicalTimePeriod"/>
+      <rdfs:comment xml:lang="en">
+	 The geological eon contextualizing the search object. For example: Phanerozoic,
+	 Precambrian.
+      </rdfs:comment>
+      <rdfs:label xml:lang="en">Geological Eon</rdfs:label>
+   </owl:Class>
+
+   <owl:Class rdf:about="http://terminologies.gfbio.org/terms/cafe#geologicalEra">
+      <rdfs:subClassOf rdf:resource="http://terminologies.gfbio.org/terms/cafe#GeologicalTimePeriod"/>
+      <rdfs:comment xml:lang="en">
+	 The geological era contextualizing the search object. For example: Cenozoic,
+	 Mesozoic, Paleozoic.
+      </rdfs:comment>
+      <rdfs:label xml:lang="en">Geological Era</rdfs:label>
+   </owl:Class>
+
+   <owl:Class rdf:about="http://terminologies.gfbio.org/terms/cafe#geologicalPeriod">
+      <rdfs:subClassOf rdf:resource="http://terminologies.gfbio.org/terms/cafe#GeologicalTimePeriod"/>
+      <rdfs:comment xml:lang="en">
+	 The geological period contextualizing the search object. For example:
+	 Quaternary, Neogene, Paleogene.
+      </rdfs:comment>
+      <rdfs:label xml:lang="en">Geological Period</rdfs:label>
+   </owl:Class>
+
+   <owl:Class rdf:about="http://terminologies.gfbio.org/terms/cafe#geologicalEpoch">
+      <rdfs:subClassOf rdf:resource="http://terminologies.gfbio.org/terms/cafe#GeologicalTimePeriod"/>
+      <rdfs:comment xml:lang="en">
+	 The geological epoch contextualizing the search object. For example: Holocene,
+	 Pleistocene, Pilocene.
+      </rdfs:comment>
+      <rdfs:label xml:lang="en">Geological Epoch</rdfs:label>
+   </owl:Class>
+
+</rdf:RDF>
