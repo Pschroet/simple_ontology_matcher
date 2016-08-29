@@ -4,11 +4,14 @@ Created on 14.08.2016
 @author: Philipp Schroeter
 '''
 
+import os
+
 class ontology(object):
     '''
     A class to save an ontology
     '''
     name = ""
+    namespaces = {}
     properties = []
     elements = []
     
@@ -19,6 +22,9 @@ class ontology(object):
 
     def get_name(self):
         return self.name
+    
+    def add_namespace(self, abbreviation, namespace):
+        self.namespaces[abbreviation] = namespace
     
     def add_element(self, elem):
         self.elements.append(elem)

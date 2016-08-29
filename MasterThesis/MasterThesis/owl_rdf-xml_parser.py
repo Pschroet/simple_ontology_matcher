@@ -46,6 +46,10 @@ def parse_ontology_file(ontology_tree):
         onto.add_properties(tempProps)
     if onto != "" and len(tempElems) > 0:
         onto.add_elements(tempElems)
+    #get the namespaces and put them into the ontology
+    rdf_element = ontology_tree.find("{http://www.w3.org/1999/02/22-rdf-syntax-ns#}RDF")
+    for attr in rdf_element.attrib:
+        onto.add_namespace(attr, rdf_element.attrib[attr])
     if onto != "":
         #util.write2File("onto.txt", str(onto) + os.linesep, "a")
         #util.write2File("onto.txt", str(onto.get_elements()) + os.linesep, "a")
