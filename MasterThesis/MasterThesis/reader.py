@@ -35,7 +35,7 @@ class ontology_reader(object):
             #load the parser
             if used_parser != "":
                 try:
-                    self.parser_module = imp.load_source(used_parser, './' + used_parser + ".py")
+                    self.parser_module = imp.load_source(used_parser, './reader/' + used_parser + ".py")
                     print "Loading " + str(self.parser_module)
                     self.ontology = self.parser_module.parse_ontology_file(root)
                 except ImportError as err:

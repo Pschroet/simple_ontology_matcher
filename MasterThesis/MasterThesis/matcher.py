@@ -21,7 +21,7 @@ class ontology_matcher(object):
         '''
         if matcher != "" and ontologies != None and ontologies != "":
             try:
-                self.matcher_module = imp.load_source(matcher, './' + matcher + ".py")
+                self.matcher_module = imp.load_source(matcher, './matcher/' + matcher + ".py")
                 print "Loading " + str(self.matcher_module)
                 self.onto = self.matcher_module.match_two_ontologies(ontologies[0], ontologies[1])
             except ImportError as err:
