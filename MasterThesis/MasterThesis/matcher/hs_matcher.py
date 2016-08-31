@@ -24,7 +24,7 @@ def match_two_ontologies(onto, onto1):
         onto1_elements = onto1.get_elements()
         #print onto_elements
         #print onto1_elements
-        print "Going through ontology " + onto.name
+        print "Comparing ontologies " + onto.name + " and " + onto1.name
         for i in onto_elements:
             #define a text that will be the header of a matching, if a match is found this text will change, if it hasn't changed, do not write it into the file
             start_text = "Node " + i.name + "\n"
