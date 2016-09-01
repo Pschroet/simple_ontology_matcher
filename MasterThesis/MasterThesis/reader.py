@@ -6,8 +6,6 @@ Created on 12.08.2016
 
 import imp
 import logging
-import os
-import util
 
 # This class is a wrapper for reading ontologies
 # - first the file will be tested, to see if there is a known file format
