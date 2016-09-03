@@ -32,15 +32,17 @@ def match_two_ontologies(onto, onto1):
                     for j in onto1_elements:
                         label1 = j.get_child("{http://www.w3.org/2000/01/rdf-schema#}label")
                         if label1 != None:
-                            match_result = re.match(label.get_text(), label1.get_text(), re.IGNORECASE)
+                            match_result = re.match("^" + label.get_text() + "$", label1.get_text(), re.IGNORECASE)
                             if match_result:
-                                util.write2File("matching.txt", "Nodes " + i.name + " and " + j.name + " have the same label: " + label.get_text() + "\n", "a")
-                        #in addition calculate the Levenshtein distance
-                        elif label1 != None and len(label.get_text()) > 3 and len(label1.get_text()) > 3:
-                            distance = dist_calc.calculate_distance(label.get_text(), label1.get_text())
-                            #if the labels are not the same, but are similar, the nodes might be, too
-                            if distance > 0 and distance < 2 and ((distance/2) <= len(label.get_text()) or (distance/2) <= len(label1.get_text())):
-                                util.write2File("matching.txt", "Nodes " + i.name + "(" + label.get_text() + ")" + " and " + j.name + "(" + label1.get_text() + ")" + " have the Levenshtein distance: " + str(distance) + "\n", "a")
+                                util.write2File("matching.txt", "Nodes " + i.name + "(" + label.get_text() + ")" + " and " + j.name + "(" + label1.get_text() + ")" + " have the same label\n", "a")
+                            #in addition calculate the Levenshtein distance, if it is not exactly the same (case insensitive)
+                            elif label1 != None and len(label.get_text()) > 3 and len(label1.get_text()) > 3:
+                                distance = dist_calc.calculate_distance(label.get_text(), label1.get_text())
+                                #if the labels are not the same, but are similar, the nodes might be, too
+                                if distance > 1 and distance < 5 and (distance < len(label.get_text())/2 and distance < len(label1.get_text())/2):
+                                    #extra conditions, kept for testing
+                                    # and label.get_text()[0] == label1.get_text()[0]
+                                    util.write2File("matching.txt", "Nodes " + i.name + "(" + label.get_text() + ")" + " and " + j.name + "(" + label1.get_text() + ")" + " have the Levenshtein distance: " + str(distance) + "\n", "a")
                     #comment = i.get_child("{http://www.w3.org/1999/02/22-rdf-syntax-ns#}comment")
                     #if comment != None:
                     #    match_result = re.match(".*" + comment.get_text() + ".*", j.name, re.IGNORECASE)
