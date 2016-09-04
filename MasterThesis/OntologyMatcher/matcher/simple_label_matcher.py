@@ -36,13 +36,13 @@ def match_two_ontologies(onto, onto1):
                             if match_result:
                                 util.write2File("matching.txt", "Nodes " + i.name + "(" + label.get_text() + ")" + " and " + j.name + "(" + label1.get_text() + ")" + " have the same label\n", "a")
                             #in addition calculate the Levenshtein distance, if it is not exactly the same (case insensitive)
-                            elif label1 != None and len(label.get_text()) > 3 and len(label1.get_text()) > 3:
-                                distance = dist_calc.calculate_distance(label.get_text(), label1.get_text())
-                                #if the labels are not the same, but are similar, the nodes might be, too
-                                if distance > 1 and distance < 5 and (distance < len(label.get_text())/2 and distance < len(label1.get_text())/2):
-                                    #extra conditions, kept for testing
-                                    # and label.get_text()[0] == label1.get_text()[0]
-                                    util.write2File("matching.txt", "Nodes " + i.name + "(" + label.get_text() + ")" + " and " + j.name + "(" + label1.get_text() + ")" + " have the Levenshtein distance: " + str(distance) + "\n", "a")
+                            #elif label1 != None and len(label.get_text()) > 3 and len(label1.get_text()) > 3:
+                            #    distance = dist_calc.calculate_distance(label.get_text(), label1.get_text())
+                            #    #if the labels are not the same, but are similar, the nodes might be, too
+                            #    if distance > 1 and distance < 5:
+                            #        #extra conditions, kept for testing
+                            #        # and (distance < len(label.get_text())/2 and distance < len(label1.get_text())/2) and label.get_text()[0] == label1.get_text()[0]
+                            #        util.write2File("matching.txt", "Nodes " + i.name + "(" + label.get_text() + ")" + " and " + j.name + "(" + label1.get_text() + ")" + " have the Levenshtein distance: " + str(distance) + "\n", "a")
                     #comment = i.get_child("{http://www.w3.org/1999/02/22-rdf-syntax-ns#}comment")
                     #if comment != None:
                     #    match_result = re.match(".*" + comment.get_text() + ".*", j.name, re.IGNORECASE)
