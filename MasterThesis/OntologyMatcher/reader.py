@@ -6,6 +6,7 @@ Created on 12.08.2016
 
 import imp
 import logging
+import os
 
 # This class is a wrapper for reading ontologies
 # - first the file will be tested, to see if there is a known file format
@@ -21,7 +22,7 @@ class ontology_reader(object):
     def __init__(self, reader, ontology_file):
         self.file = ontology_file
         try:
-            self.parser_module = imp.load_source(reader, './reader/' + reader + ".py")
+            self.parser_module = imp.load_source(reader, os.path.dirname(__file__) + '/reader/' + reader + ".py")
             print "Loading " + str(self.parser_module)
             self.ontology = self.parser_module.parse_ontology_file(ontology_file)
         except ImportError as err:

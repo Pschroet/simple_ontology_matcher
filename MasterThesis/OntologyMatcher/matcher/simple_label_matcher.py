@@ -19,7 +19,8 @@ def match_two_ontologies(onto, onto1):
     #ensure that there are actually ontologies to compare
     if onto is not None and onto1 is not None:
         #the current ontology, which is compared to the other ones
-        bridge_ontology = ontology.ontology("bridge-" + str(time.localtime()))
+        #bridge_ontology = ontology.ontology("bridge-" + str(time.localtime()))
+        connections = {"exact":[], "levenshtein":[]}
         #go through all other ontologies
         #go through all elements
         print "Comparing ontologies " + onto.name + " and " + onto1.name
@@ -34,15 +35,17 @@ def match_two_ontologies(onto, onto1):
                         if label1 != None:
                             match_result = re.match("^" + label.get_text() + "$", label1.get_text(), re.IGNORECASE)
                             if match_result:
-                                util.write2File("matching.txt", "Nodes " + i.name + "(" + label.get_text() + ")" + " and " + j.name + "(" + label1.get_text() + ")" + " have the same label\n", "a")
+                                #util.write2File("matching.txt", "Nodes " + i.name + " (" + label.get_text() + ")" + " and " + j.name + " (" + label1.get_text() + ")" + " have the same label\n", "a")
+                                connections["exact"].append([i.name, "(" + label.get_text() + ")", j.name, "(" + label1.get_text() + ")"])
                             #in addition calculate the Levenshtein distance, if it is not exactly the same (case insensitive)
-                            #elif label1 != None and len(label.get_text()) > 3 and len(label1.get_text()) > 3:
-                            #    distance = dist_calc.calculate_distance(label.get_text(), label1.get_text())
-                            #    #if the labels are not the same, but are similar, the nodes might be, too
-                            #    if distance > 1 and distance < 5:
-                            #        #extra conditions, kept for testing
-                            #        # and (distance < len(label.get_text())/2 and distance < len(label1.get_text())/2) and label.get_text()[0] == label1.get_text()[0]
-                            #        util.write2File("matching.txt", "Nodes " + i.name + "(" + label.get_text() + ")" + " and " + j.name + "(" + label1.get_text() + ")" + " have the Levenshtein distance: " + str(distance) + "\n", "a")
+                            elif label1 != None and len(label.get_text()) > 3 and len(label1.get_text()) > 3:
+                                distance = dist_calc.calculate_distance(label.get_text(), label1.get_text())
+                                #if the labels are not the same, but are similar, the nodes might be, too
+                                if 1 < distance and distance < 5 and (distance < len(label.get_text())/3 and distance < len(label1.get_text())/3):
+                                    #extra conditions, kept for testing
+                                    # and label.get_text()[0] == label1.get_text()[0]
+                                    #util.write2File("matching.txt", "Nodes " + i.name + "(" + label.get_text() + ")" + " and " + j.name + "(" + label1.get_text() + ")" + " have the Levenshtein distance: " + str(distance) + "\n", "a")
+                                    connections["levenshtein"].append([i.name, "(" + label.get_text() + ")", j.name, "(" + label1.get_text() + ")", str(distance)])
                     #comment = i.get_child("{http://www.w3.org/1999/02/22-rdf-syntax-ns#}comment")
                     #if comment != None:
                     #    match_result = re.match(".*" + comment.get_text() + ".*", j.name, re.IGNORECASE)
@@ -51,3 +54,4 @@ def match_two_ontologies(onto, onto1):
             except re.error:
                 #just ignore errors during regular expression operations and try to go on
                 pass
+        return connections
