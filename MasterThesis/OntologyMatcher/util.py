@@ -9,6 +9,7 @@ A collection of different support functions
 import logging
 import imp
 import os
+import sys
 
 #returns the separator of the ontology element
 # finds separators of namespaces that separate with '#' or '/'
@@ -49,6 +50,17 @@ def write2File(filename, content, mode):
     f = open(filename, mode)
     f.write(content.encode('utf-8'))
     f.close()
+
+def get_files_in_directory(directory, recursive):
+    output = []
+    content = os.listdir(directory)
+    for item in content:
+        tmp = directory + "/" + item
+        if os.path.isfile(tmp):
+            output.append(item)
+        elif os.path.isdir(tmp) and recursive:
+            output = output + get_files_in_directory(tmp, True)
+    return output
 
 #returns the content of a file as a list or "" if there is no content
 # note: removes line separators
@@ -99,7 +111,6 @@ def levenshtein(s1, s2):
     return previous_row[-1]
 
 class distance_calculator():
-    
     levenshtein_found = False
     Levenshtein = ""
     
