@@ -125,6 +125,14 @@ class distance_calculator():
 
     def calculate_distance(self, string1, string2):
         if self.levenshtein_found:
+            try:
+                string1 = string1.encode('utf8')
+            except UnicodeEncodeError:
+                pass
+            try:
+                string2 = string2.encode('utf8')
+            except UnicodeEncodeError:
+                pass
             return self.Levenshtein.distance(string1, string2)
         else:
             return levenshtein(string1, string2)
