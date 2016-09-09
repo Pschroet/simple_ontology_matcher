@@ -1,4 +1,5 @@
 <?xml version="1.0"?>
 <config>
 	<matcher>simple_label_matcher</matcher>
+	<matcher>levenshtein_distance_matcher</matcher>
 </config>
