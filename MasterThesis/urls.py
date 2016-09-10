@@ -26,5 +26,6 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^matcher/', include('OntologyMatcher.urls')),
     url(r'^matcher/result_writer/matching_result.html', include('OntologyMatcher.urls')),
+    url(r'^error.html', include('OntologyMatcher.urls')),
     #url(r'^admin/', admin.site.urls)
 ]

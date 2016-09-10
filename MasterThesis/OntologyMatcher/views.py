@@ -57,3 +57,6 @@ def index(request):
                     template_content = template.Template(template_raw)
         if context != {}:
             return HttpResponse(template_content.render(template.Context(context)))
+        template_raw = util.readFileContentAsString(os.path.dirname(__file__) + "/error.html")
+        template_content = template.Template(template_raw)
+        return HttpResponse(template_content.render(template.Context({"title":"Ontology Matcher"})))
