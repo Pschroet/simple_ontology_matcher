@@ -38,10 +38,14 @@ def index(request):
                     #check for path wandering
                     if not re.match(".*[.][.].*", param):
                         ontos.append(reader.ontology_reader("owl_rdfxml_parser", "./OntologyMatcher/ontologies/" + param).ontology)
+                    else:
+                        ontos = []
                 for param in params_matcher:
                     #check for path wandering
                     if not re.match(".*[.][.].*", param):
                         matchers.append(param)
+                    else:
+                        matchers = []
                 if ontos != [] and matchers != []:
                     #compare the ontologies
                     chain = matching_tool_chain.tool_chain()
