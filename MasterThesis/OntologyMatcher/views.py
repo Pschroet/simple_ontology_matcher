@@ -10,6 +10,7 @@ import matching_tool_chain
 import reader
 import util
 import os
+import re
 
 
 def index(request):
@@ -34,9 +35,13 @@ def index(request):
             matchers = []
             if params_onto != [] and params_matcher != []:
                 for param in params_onto:
-                    ontos.append(reader.ontology_reader("owl_rdfxml_parser", "./OntologyMatcher/ontologies/" + param).ontology)
+                    #check for path wandering
+                    if not re.match(".*[.][.].*", param):
+                        ontos.append(reader.ontology_reader("owl_rdfxml_parser", "./OntologyMatcher/ontologies/" + param).ontology)
                 for param in params_matcher:
-                    matchers.append(param)
+                    #check for path wandering
+                    if not re.match(".*[.][.].*", param):
+                        matchers.append(param)
                 if ontos != [] and matchers != []:
                     #compare the ontologies
                     chain = matching_tool_chain.tool_chain()
