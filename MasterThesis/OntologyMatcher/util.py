@@ -9,6 +9,7 @@ A collection of different support functions
 import logging
 import imp
 import os
+import re
 import sys
 
 #returns the separator of the ontology element
@@ -60,6 +61,17 @@ def get_files_in_directory(directory, recursive):
             output.append(item)
         elif os.path.isdir(tmp) and recursive:
             output = output + get_files_in_directory(tmp, True)
+    return output
+
+#filters all elements from a list, where the given filter is found as part of a regex
+#returns a list with the elements removed
+def filter_files_from_list(list, expr):
+    output = []
+    for elem in list:
+        print elem
+        if not re.match(".*" + expr + ".*", elem):
+            print "-> not found"
+            output.append(elem)
     return output
 
 #returns the content of a file as a list or "" if there is no content

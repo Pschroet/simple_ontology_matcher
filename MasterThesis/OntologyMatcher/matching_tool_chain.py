@@ -6,6 +6,7 @@ Created on 31.08.2016
 
 import defusedxml.ElementTree
 import matcher
+import os
 
 class tool_chain(object):
     '''
@@ -16,16 +17,23 @@ class tool_chain(object):
     matching_tools = []
     ontologies = []
 
-    def __init__(self, config):
+    def __init__(self):
         '''
         Constructor
         '''
+        pass
+
+    def add_config_from_file(self, config):
         self.config = config
         tree = defusedxml.ElementTree.parse(self.config)
         root = tree.getroot()
         for item in root.getchildren():
             if item.tag == "matcher":
                 self.matching_tools.append(item.text)
+
+    def add_matchers(self, matchers = []):
+        if matchers != []:
+            self.matching_tools = matchers
 
     #read an ontology
     def match_ontologies(self, ontologies = []):

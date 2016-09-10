@@ -1,13 +1,26 @@
 <head>
     <title>{{ title }}</title>
+    
 </head>
 <body>
-    <h1>Ontologies</h1>
-     <form action="result_writer/matching_result.html" method="get">
-		{% for item in ontologies %}
-	    <input type="checkbox" name="onto" value="{{ item }}"/>{{ item }}<br>
-		{% endfor %}
-		<input type="submit" value="Compare">
-	</form>
+	<table>
+		<tr><td>
+		<h1>Ontologies</h1>
+		<form action="result_writer/matching_result.html" method="get">
+			{% for item in ontologies %}
+		    <input type="checkbox" name="onto" value="{{ item }}"/>{{ item }}<br>
+			{% endfor %}
+		</td><td></td><td>
+			<h1>Matchers</h1>
+		<form action="result_writer/matching_result.html" method="get">
+			{% for item in matchers %}
+		    <input type="checkbox" name="matcher" value="{{ item }}"/>{{ item }}<br>
+			{% endfor %}<br/>
+		</td></tr>
+		<tr><td></td><td>
+		<input type="submit" value="Find Matches">
+		</td></tr>
+		</form>
+	</table>
 	<img src="resources/loading.gif" hidden="hidden"></img>
 </body>

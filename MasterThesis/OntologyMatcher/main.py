@@ -16,5 +16,6 @@ if __name__ == '__main__':
     #chain.match_ontologies([r.ontology, r1.ontology])
     r = reader.ontology_reader("owl_rdfxml_parser", "cafe.owl")
     r1 = reader.ontology_reader("owl_rdfxml_parser", "envo.owl")
-    chain = matching_tool_chain.tool_chain("./test-config.xml")
+    chain = matching_tool_chain.tool_chain()
+    chain.add_config_from_file("./test-config.xml")
     chain.match_ontologies([r.ontology, r1.ontology])

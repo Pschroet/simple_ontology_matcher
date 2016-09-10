@@ -15,22 +15,33 @@ import os
 def index(request):
     if request.method == "GET":
         context = {}
+        #show the start page, where the ontologies and matcher can be chosen
         if request.path == "/matcher/":
             ontos = util.get_files_in_directory(os.path.dirname(__file__) + "/ontologies", False)
-            context = {"ontologies":ontos, "title":"Ontology Matcher"}
+            matchers = util.filter_files_from_list(util.get_files_in_directory(os.path.dirname(__file__) + "/matcher", False), "pyc")
+            print  matchers
+            context = {"title":"Ontology Matcher", "ontologies":ontos, "matchers":matchers}
             template_raw = util.readFileContentAsString(os.path.dirname(__file__) + "/index.html")
             template_content = template.Template(template_raw)
+        #get the matches and show the result
         elif request.path == "/matcher/result_writer/matching_result.html":
             params = []
             if request.GET.getlist('onto') != []:
-                params = request.GET.getlist('onto')
+                params_onto = request.GET.getlist('onto')
+            if request.GET.getlist('matcher') != []:
+                params_matcher = request.GET.getlist('matcher')
             ontos = []
-            if params != []:
-                for param in params:
+            matchers = []
+            if params_onto != [] and params_matcher != []:
+                for param in params_onto:
                     ontos.append(reader.ontology_reader("owl_rdfxml_parser", "./OntologyMatcher/ontologies/" + param).ontology)
-                if ontos != []:
+                for param in params_matcher:
+                    matchers.append(param)
+                if ontos != [] and matchers != []:
                     #compare the ontologies
-                    chain = matching_tool_chain.tool_chain("./OntologyMatcher/test-config.xml")
+                    chain = matching_tool_chain.tool_chain()
+                    #chain.add_config_from_file("./OntologyMatcher/test-config.xml")
+                    chain.add_matchers(matchers)
                     result = chain.match_ontologies(ontos)
                     context = {"result":result, "title":"Matched Ontologies"}
                     template_raw = util.readFileContentAsString(os.path.dirname(__file__) + "/result_writer/matching_result.html")
