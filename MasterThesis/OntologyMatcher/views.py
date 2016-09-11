@@ -20,7 +20,6 @@ def index(request):
         if request.path == "/matcher/":
             ontos = util.get_files_in_directory(os.path.dirname(__file__) + "/ontologies", False)
             matchers = util.filter_files_from_list(util.get_files_in_directory(os.path.dirname(__file__) + "/matcher", False), "pyc")
-            print  matchers
             context = {"title":"Ontology Matcher", "ontologies":ontos, "matchers":matchers}
             template_raw = util.readFileContentAsString(os.path.dirname(__file__) + "/index.html")
             template_content = template.Template(template_raw)
