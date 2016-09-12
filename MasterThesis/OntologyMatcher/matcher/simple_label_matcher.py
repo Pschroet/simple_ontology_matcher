@@ -27,15 +27,19 @@ def match_two_ontologies(onto, onto1):
         onto1_elements = onto1.get_elements()
         for i in onto_elements:
             try:
-                label = i.get_child("{http://www.w3.org/2000/01/rdf-schema#}label")
-                if label != None:
-                    for j in onto1_elements:
-                        label1 = j.get_child("{http://www.w3.org/2000/01/rdf-schema#}label")
-                        if label1 != None:
-                            match_result = re.match("^" + label.get_text() + "$", label1.get_text(), re.IGNORECASE)
-                            if match_result:
-                                #util.write2File("matching.txt", "Nodes " + i.name + " (" + label.get_text() + ")" + " and " + j.name + " (" + label1.get_text() + ")" + " have the same label\n", "a")
-                                connections["matches"].append([i.name, "(" + label.get_text() + ")", j.name, "(" + label1.get_text() + ")", " have the same label\n"])
+                label = i.get_children_named("{http://www.w3.org/2000/01/rdf-schema#}label")
+                already_matched = False
+                if label != []:
+                    for item in label:
+                        for j in onto1_elements:
+                            label1 = j.get_children_named("{http://www.w3.org/2000/01/rdf-schema#}label")
+                            if label1 != []:
+                                for item1 in label1:
+                                    match_result = re.match("^" + item.get_text() + "$", item1.get_text(), re.IGNORECASE)
+                                    if match_result and not already_matched:
+                                        #util.write2File("matching.txt", "Nodes " + i.name + " (" + label.get_text() + ")" + " and " + j.name + " (" + label1.get_text() + ")" + " have the same label\n", "a")
+                                        connections["matches"].append([i.name, "(" + item.get_text() + ")", j.name, "(" + item1.get_text() + ")", " have the same label\n"])
+                                        already_matched = True
                     #comment = i.get_child("{http://www.w3.org/1999/02/22-rdf-syntax-ns#}comment")
                     #if comment != None:
                     #    match_result = re.match(".*" + comment.get_text() + ".*", j.name, re.IGNORECASE)
