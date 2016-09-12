@@ -87,6 +87,76 @@
       <rdfs:label xml:lang="en">Time Range</rdfs:label>
    </owl:Class>
 
+   <owl:Class rdf:about="http://terminologies.gfbio.org/terms/cafe#Soil">
+      <rdfs:subClassOf rdf:resource="http://terminologies.gfbio.org/terms/cafe#PedosphereCompartment"/>
+      <rdfs:comment xml:lang="en">
+	 The soil element captures all qualitative and
+	 quantitative characteristics regarding the pedosphere
+	 compartement soil
+      </rdfs:comment>
+      <rdfs:label xml:lang="en">Soil</rdfs:label>
+   </owl:Class>
+
+   <owl:Class rdf:about="http://terminologies.gfbio.org/terms/cafe#Pedosphere">
+      <rdfs:subClassOf rdf:resource="http://terminologies.gfbio.org/terms/cafe#Sphere"/>
+      <rdfs:comment xml:lang="en">
+	 The pedosphere element is a wrapper around all
+	 qualitative and quantitative values of the pedosphere.
+      </rdfs:comment>
+      <rdfs:label xml:lang="en">Pedosphere</rdfs:label>
+   </owl:Class>
+
+   <owl:Class rdf:about="http://terminologies.gfbio.org/terms/cafe#Lake">
+      <rdfs:subClassOf rdf:resource="http://terminologies.gfbio.org/terms/cafe#HydrosphereCompartment"/>
+      <rdfs:comment xml:lang="en">
+	 The lake element is a wrapper around
+	 all qualitative and quantitative values of a lake.
+      </rdfs:comment>
+      <rdfs:label xml:lang="en">Lake</rdfs:label>
+   </owl:Class>
+
+   <owl:Class rdf:about="http://terminologies.gfbio.org/terms/cafe#River">
+      <rdfs:subClassOf rdf:resource="http://terminologies.gfbio.org/terms/cafe#HydrosphereCompartment"/>
+      <rdfs:comment xml:lang="en">
+	 The river element is a wrapper
+	 around all qualitative and quantitative
+	 values of a river.
+      </rdfs:comment>
+      <rdfs:label xml:lang="en">River</rdfs:label>
+   </owl:Class>
+
+   <owl:Class rdf:about="http://terminologies.gfbio.org/terms/cafe#Sphere">
+      <rdfs:subClassOf>
+	 <owl:Restriction>
+	    <owl:onProperty rdf:resource="http://terminologies.gfbio.org/terms/cafe#isPartOf"/>
+	    <owl:someValuesFrom rdf:resource="http://terminologies.gfbio.org/terms/cafe#SphereContext"/>
+	 </owl:Restriction>
+      </rdfs:subClassOf>
+      <rdfs:comment xml:lang="en">
+	 Sphere contains information about a single sphere.
+      </rdfs:comment>
+      <rdfs:label xml:lang="en">Sphere</rdfs:label>
+   </owl:Class>
+
+   <owl:Class rdf:about="http://terminologies.gfbio.org/terms/cafe#Atmosphere">
+      <rdfs:subClassOf rdf:resource="http://terminologies.gfbio.org/terms/cafe#Sphere"/>
+      <rdfs:comment xml:lang="en">
+	 The atmosphere element is a wrapper around all qualitative and  quantitative
+	 values of the atmosphere.
+      </rdfs:comment>
+      <rdfs:label xml:lang="en">Atmosphere</rdfs:label>
+   </owl:Class>
+
+   <owl:Class rdf:about="http://terminologies.gfbio.org/terms/cafe#Time">
+      <rdfs:subClassOf rdf:resource="http://terminologies.gfbio.org/terms/cafe#factorName"/>
+      <rdfs:comment xml:lang="en">
+	 Time as an experimental design parameter. This could be for example used if the
+	 exposure time of animals or plants to certain radiation has been manipulated in
+	 different sets to be compared in the setup.
+      </rdfs:comment>
+      <rdfs:label xml:lang="en">Time</rdfs:label>
+   </owl:Class>
+
    <owl:Class rdf:about="http://terminologies.gfbio.org/terms/cafe#RangeStart">
       <rdfs:subClassOf>
 	 <owl:Restriction>

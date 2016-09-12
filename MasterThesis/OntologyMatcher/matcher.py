@@ -23,7 +23,6 @@ class ontology_matcher(object):
         '''
         if matcher != "" and ontologies != None and ontologies != "":
             try:
-                print os.path.dirname(__file__) + '/matcher/' + matcher + ".py"
                 self.matcher_module = imp.load_source(matcher, os.path.dirname(__file__) + '/matcher/' + matcher)
                 print "Loading " + str(self.matcher_module)
                 self.ontologies = ontologies

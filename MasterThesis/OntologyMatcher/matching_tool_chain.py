@@ -37,17 +37,11 @@ class tool_chain(object):
 
     #read an ontology
     def match_ontologies(self, ontologies = []):
-        results = {}
+        results = []
         if len(ontologies) > 2:
             print "[Error] At least two ontologies needed to compare"
         elif len(ontologies) == 2:
             for matching_tool in self.matching_tools:
                 tmp_tool = matcher.ontology_matcher(matching_tool, ontologies)
-                result = tmp_tool.match_two_ontologies()
-                #collect the results
-                for key in result:
-                    if results.has_key(key):
-                        results[key] = results[key] + result[key]
-                    else:
-                        results[key] = result[key]
+                results.append(tmp_tool.match_two_ontologies())
         return results

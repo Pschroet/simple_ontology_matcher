@@ -2,21 +2,13 @@
     <title>{{ title }}</title>
 </head>
 <body>
-	{% if result.exact %}
-	    <h1>Exact Matches</h1>
+	{% for result in results %}
+	    <h1>{{ result.text }}</h1>
 	    <ul>
-		{% for item in result.exact %}
-	    <li>Nodes <a href='{{ item.0 }}'>{{ item.0 }}</a> {{ item.1 }} and <a href='{{ item.2 }}'>{{ item.2 }}</a> {{ item.3 }} have the same label</li>
+		{% for item in result.matches %}
+	    <li>Nodes <a href='{{ item.0 }}'>{{ item.0 }}</a> {{ item.1 }} and <a href='{{ item.2 }}'>{{ item.2 }}</a> {{ item.3 }} {{ item.4 }}</li>
 		{% endfor %}
 		</ul>
-	{% endif %}
-	{% if result.levenshtein %}
-	    <h1>Levenshtein Distances (1 &lt; distance &lt; 5)</h1>
-	    <ul>
-		{% for item in result.levenshtein %}
-	    <li>Nodes <a href='{{ item.0 }}'>{{ item.0 }}</a> {{ item.1 }} and <a href='{{ item.2 }}'>{{ item.2 }}</a> {{ item.3 }} have the Levenshtein distance: {{ item.4 }}</li>
-		{% endfor %}
-		</ul>
-	{% endif %}
+	{% endfor %}
 	<a href="/matcher/">Back</a>
 </body>

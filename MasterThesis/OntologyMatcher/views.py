@@ -51,7 +51,8 @@ def index(request):
                     #chain.add_config_from_file("./OntologyMatcher/test-config.xml")
                     chain.add_matchers(matchers)
                     result = chain.match_ontologies(ontos)
-                    context = {"result":result, "title":"Matched Ontologies"}
+                    context = {"title":"Matched Ontologies", "results":result}
+                    print context
                     template_raw = util.readFileContentAsString(os.path.dirname(__file__) + "/result_writer/matching_result.html")
                     template_content = template.Template(template_raw)
         if context != {}:

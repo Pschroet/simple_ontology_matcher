@@ -68,9 +68,7 @@ def get_files_in_directory(directory, recursive):
 def filter_files_from_list(list, expr):
     output = []
     for elem in list:
-        print elem
         if not re.match(".*" + expr + ".*", elem):
-            print "-> not found"
             output.append(elem)
     return output
 

@@ -351,6 +351,78 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:label>results in proliferation of</rdfs:label>
         <rdfs:comment>To be ceded to RO</rdfs:comment>
     </rdf:Description>
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000165 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000165">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">time</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001018"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000820 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000820">
+        <rdfs:label xml:lang="en">pedosphere</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000813"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_00001998"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000646"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000267"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000817"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000819"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>This is a very broad and, in practice, poorly defined term. Please consider using or requesting a more specific class.</rdfs:comment>
+        <obo:IAO_0000115>An astronomical body part which is composed of soil, subject to soil formation processes, and found on the surface of a lithosphere.</obo:IAO_0000115>
+    </owl:Class>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Pedosphere</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>An astronomical body part which is composed of soil, subject to soil formation processes, and found on the surface of a lithosphere.</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000820"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000822 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000822">
+        <rdfs:label xml:lang="en">planetary photic zone</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000813"/>
+        <oboInOwl:hasRelatedSynonym>photosphere</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000115>A planetary part which is exposed, at least periodically, to light.</obo:IAO_0000115>
+        <rdfs:comment>In some literature, the term photosphere is used; however, this is more correctly reserved for a part of a star.</rdfs:comment>
+    </owl:Class>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>http://dx.doi.org/10.1126/science.1155495</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>A planetary part which is exposed, at least periodically, to light.</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000822"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
     
 
 

@@ -19,7 +19,7 @@ def match_two_ontologies(onto, onto1):
     if onto is not None and onto1 is not None:
         #the current ontology, which is compared to the other ones
         #bridge_ontology = ontology.ontology("bridge-" + str(time.localtime()))
-        connections = {"exact":[]}
+        connections = {"matches":[], "text":"Exact Matches"}
         #go through all other ontologies
         #go through all elements
         print "Comparing ontologies " + onto.name + " and " + onto1.name
@@ -35,7 +35,7 @@ def match_two_ontologies(onto, onto1):
                             match_result = re.match("^" + label.get_text() + "$", label1.get_text(), re.IGNORECASE)
                             if match_result:
                                 #util.write2File("matching.txt", "Nodes " + i.name + " (" + label.get_text() + ")" + " and " + j.name + " (" + label1.get_text() + ")" + " have the same label\n", "a")
-                                connections["exact"].append([i.name, "(" + label.get_text() + ")", j.name, "(" + label1.get_text() + ")"])
+                                connections["matches"].append([i.name, "(" + label.get_text() + ")", j.name, "(" + label1.get_text() + ")", " have the same label\n"])
                     #comment = i.get_child("{http://www.w3.org/1999/02/22-rdf-syntax-ns#}comment")
                     #if comment != None:
                     #    match_result = re.match(".*" + comment.get_text() + ".*", j.name, re.IGNORECASE)

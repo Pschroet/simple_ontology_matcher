@@ -20,7 +20,7 @@ def match_two_ontologies(onto, onto1):
     if onto is not None and onto1 is not None:
         #the current ontology, which is compared to the other ones
         #bridge_ontology = ontology.ontology("bridge-" + str(time.localtime()))
-        connections = {"levenshtein":[]}
+        connections = {"matches":[], "text": "Levenshtein Distances (1 < distance < 5)"}
         #go through all other ontologies
         #go through all elements
         print "Calculating Levenshtein distance for elements of ontologies " + onto.name + " and " + onto1.name
@@ -39,7 +39,7 @@ def match_two_ontologies(onto, onto1):
                                 #extra conditions, kept for testing
                                 # and label.get_text()[0] == label1.get_text()[0]
                                 #util.write2File("matching.txt", "Nodes " + i.name + "(" + label.get_text() + ")" + " and " + j.name + "(" + label1.get_text() + ")" + " have the Levenshtein distance: " + str(distance) + "\n", "a")
-                                connections["levenshtein"].append([i.name, "(" + label.get_text() + ")", j.name, "(" + label1.get_text() + ")", str(distance)])
+                                connections["matches"].append([i.name, "(" + label.get_text() + ")", j.name, "(" + label1.get_text() + ")", " have the Levenshtein distance: " + str(distance)])
             except re.error:
                 #just ignore errors during regular expression operations and try to go on
                 pass
