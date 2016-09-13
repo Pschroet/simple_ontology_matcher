@@ -6,20 +6,18 @@ Created on 09.09.2016
 
 import imp
 import logging
-import ontology
 import os
 import re
 import time
 import util
 
 #tries to match two ontologies just by comapring the labels of nodes
-#returns a bridge ontology, which holds information about nodes that are assumed to be linked on some way
+#returns a list, which holds information about nodes that are assumed to be linked on some way
+# each item in the list has the following elements (in this order): IRI of the first element, it's label, the IRI of the second element, it's label, a string that states, why those elements have been chosen
 def match_two_ontologies(onto, onto1):
     dist_calc = util.distance_calculator()
     #ensure that there are actually ontologies to compare
     if onto is not None and onto1 is not None:
-        #the current ontology, which is compared to the other ones
-        #bridge_ontology = ontology.ontology("bridge-" + str(time.localtime()))
         connections = {"matches":[], "text": "Levenshtein Distances (1 < distance < 5)"}
         #go through all other ontologies
         #go through all elements
