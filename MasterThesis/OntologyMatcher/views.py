@@ -49,7 +49,7 @@ def index(request):
                 if ontos != [] and matchers != []:
                     #compare the ontologies
                     chain = matching_tool_chain.tool_chain()
-                    #chain.add_config_from_file("./OntologyMatcher/test-config.xml")
+                    #chain.add_config_from_file("./OntologyMatcher/all_matchers-config.xml")
                     chain.add_matchers(matchers)
                     result = chain.match_ontologies(ontos)
                     context = {"title":"Matched Ontologies", "results":result}

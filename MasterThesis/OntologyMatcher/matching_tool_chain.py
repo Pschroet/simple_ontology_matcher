@@ -41,5 +41,5 @@ class tool_chain(object):
         elif len(ontologies) == 2:
             for matching_tool in self.matching_tools:
                 tmp_tool = matcher.ontology_matcher(matching_tool)
-                results.append(tmp_tool.match_two_ontologies(ontologies))
+                results.append(tmp_tool.match_two_ontologies(ontologies[0], ontologies[1]))
         return results
