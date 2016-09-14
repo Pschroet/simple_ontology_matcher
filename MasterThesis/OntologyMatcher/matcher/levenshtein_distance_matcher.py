@@ -26,18 +26,22 @@ def match_two_ontologies(onto, onto1):
         onto1_elements = onto1.get_elements()
         for i in onto_elements:
             try:
-                label = i.get_child("{http://www.w3.org/2000/01/rdf-schema#}label")
-                if label != None:
-                    for j in onto1_elements:
-                        label1 = j.get_child("{http://www.w3.org/2000/01/rdf-schema#}label")
-                        if label1 != None and len(label.get_text()) > 3 and len(label1.get_text()) > 3:
-                            distance = dist_calc.calculate_distance(label.get_text(), label1.get_text())
-                            #if the labels are not the same, but are similar, the nodes might be, too
-                            if 1 < distance and distance < 5 and (distance < len(label.get_text())/3 and distance < len(label1.get_text())/3):
-                                #extra conditions, kept for testing
-                                # and label.get_text()[0] == label1.get_text()[0]
-                                #util.write2File("matching.txt", "Nodes " + i.name + "(" + label.get_text() + ")" + " and " + j.name + "(" + label1.get_text() + ")" + " have the Levenshtein distance: " + str(distance) + "\n", "a")
-                                connections["matches"].append([i.name, "(" + label.get_text() + ")", j.name, "(" + label1.get_text() + ")", " have the Levenshtein distance: " + str(distance)])
+                label = i.get_children_named("{http://www.w3.org/2000/01/rdf-schema#}label")
+                already_matched = False
+                if label != []:
+                    for item in label:
+                        for j in onto1_elements:
+                            label1 = j.get_children_named("{http://www.w3.org/2000/01/rdf-schema#}label")
+                            if label1 != []:
+                                for item1 in label1:
+                                    if len(item.get_text()) > 3 and len(item1.get_text()) > 3:
+                                        distance = dist_calc.calculate_distance(item.get_text(), item1.get_text())
+                                        #if the labels are not the same, but are similar, the nodes might be, too
+                                        if 1 < distance and distance < 5 and (distance < len(item.get_text())/3 and distance < len(item.get_text())/3) and not already_matched:
+                                            #extra conditions, kept for testing
+                                            # and label.get_text()[0] == label1.get_text()[0]
+                                            connections["matches"].append([i.name, "(" + item.get_text() + ")", j.name, "(" + item1.get_text() + ")", " have the Levenshtein distance: " + str(distance)])
+                                            already_matched = True
             except re.error:
                 #just ignore errors during regular expression operations and try to go on
                 pass
