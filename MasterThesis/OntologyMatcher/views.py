@@ -25,7 +25,8 @@ def index(request):
             template_content = template.Template(template_raw)
         #get the matches and show the result
         elif request.path == "/matcher/result_writer/matching_result.html":
-            params = []
+            params_onto = []
+            params_matcher = []
             if request.GET.getlist('onto') != []:
                 params_onto = request.GET.getlist('onto')
             if request.GET.getlist('matcher') != []:
@@ -52,7 +53,6 @@ def index(request):
                     chain.add_matchers(matchers)
                     result = chain.match_ontologies(ontos)
                     context = {"title":"Matched Ontologies", "results":result}
-                    print context
                     template_raw = util.readFileContentAsString(os.path.dirname(__file__) + "/result_writer/matching_result.html")
                     template_content = template.Template(template_raw)
         if context != {}:
