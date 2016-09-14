@@ -2,4 +2,6 @@
 <config>
 	<matcher>simple_label_matcher</matcher>
 	<matcher>levenshtein_distance_matcher</matcher>
+	<matcher>synonym_matcher</matcher>
+	<matcher>antonym_matcher</matcher>
 </config>

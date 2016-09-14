@@ -6,7 +6,7 @@ Created on 13.08.2016
 
 import matching_tool_chain
 import reader
-#import matcher
+#import PyDictionary
 
 if __name__ == '__main__':
     #r = reader.ontology_reader("owl_rdfxml_parser", "/home/philipp/Dokumente/Ontologie/AnimalMotionOntology.owl")
@@ -17,5 +17,8 @@ if __name__ == '__main__':
     r = reader.ontology_reader("owl_rdfxml_parser", "cafe.owl")
     r1 = reader.ontology_reader("owl_rdfxml_parser", "envo.owl")
     chain = matching_tool_chain.tool_chain()
-    chain.add_config_from_file("./test-config.xml")
+    chain.add_config_from_file("./all_matchers-config.xml")
     chain.match_ontologies([r.ontology, r1.ontology])
+    #for testing PyDictionary
+    #dictionary = PyDictionary.PyDictionary()
+    #print dictionary.synonym("m3u")

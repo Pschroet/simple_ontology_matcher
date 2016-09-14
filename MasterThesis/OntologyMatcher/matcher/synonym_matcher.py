@@ -4,13 +4,8 @@ Created on 13.09.2016
 @author: Philipp Schroeter
 '''
 
-import collections
-import imp
-import logging
-import os
 import PyDictionary
 import re
-import util
 
 #tries to match two ontologies just by comapring the labels of nodes
 #returns a list, which holds information about nodes that are assumed to be linked on some way
@@ -32,7 +27,6 @@ def match_two_ontologies(onto, onto1):
                 if label != []:
                     for item in label:
                         synonyms = dictionary.synonym(item.get_text().encode('utf8'))
-                        print synonyms
                         #check if there is a list of synonyms and not None or a message
                         if synonyms is not None and hasattr(synonyms, '__getitem__') and hasattr(synonyms, '__iter__'):
                             for j in onto1_elements:

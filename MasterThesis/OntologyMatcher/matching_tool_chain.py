@@ -1,12 +1,11 @@
 '''
 Created on 31.08.2016
 
-@author: philipp
+@author: Philipp Schroeter
 '''
 
 import defusedxml.ElementTree
 import matcher
-import os
 
 class tool_chain(object):
     '''
@@ -15,7 +14,6 @@ class tool_chain(object):
 
     config = ""
     matching_tools = []
-    ontologies = []
 
     def __init__(self):
         '''
@@ -42,6 +40,6 @@ class tool_chain(object):
             print "[Error] At least two ontologies needed to compare"
         elif len(ontologies) == 2:
             for matching_tool in self.matching_tools:
-                tmp_tool = matcher.ontology_matcher(matching_tool, ontologies)
-                results.append(tmp_tool.match_two_ontologies())
+                tmp_tool = matcher.ontology_matcher(matching_tool)
+                results.append(tmp_tool.match_two_ontologies(ontologies))
         return results

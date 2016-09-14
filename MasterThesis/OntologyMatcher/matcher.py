@@ -15,21 +15,18 @@ class ontology_matcher(object):
 
     matcher_module = ""
     onto = ""
-    ontologies = []
 
-    def __init__(self, matcher, ontologies):
+    def __init__(self, matcher):
         '''
         Constructor
         '''
-        if matcher != "" and ontologies != None and ontologies != "":
+        if matcher != "" and matcher != None:
             try:
                 self.matcher_module = imp.load_source(matcher, os.path.dirname(__file__) + '/matcher/' + matcher)
                 print "Loading " + str(self.matcher_module)
-                self.ontologies = ontologies
             except ImportError as err:
                 logging.error("Failed to load module " + matcher + ":")
                 logging.error(err)
 
-    def match_two_ontologies(self):
-        self.onto = self.matcher_module.match_two_ontologies(self.ontologies[0], self.ontologies[1])
-        return self.onto
+    def match_two_ontologies(self, ontology1, ontology2):
+        return self.matcher_module.match_two_ontologies(ontology1, ontology2)

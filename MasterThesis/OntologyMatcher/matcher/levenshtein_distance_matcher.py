@@ -4,11 +4,7 @@ Created on 09.09.2016
 @author: Philipp Schroeter
 '''
 
-import imp
-import logging
-import os
 import re
-import time
 import util
 
 #tries to match two ontologies just by comapring the labels of nodes
