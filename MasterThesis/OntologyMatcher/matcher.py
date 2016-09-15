@@ -27,6 +27,9 @@ class ontology_matcher(object):
             except ImportError as err:
                 logging.error("Failed to load module " + matcher + ":")
                 logging.error(err)
+            except IOError as err:
+                logging.error("Could not find module " + matcher + ":")
+                logging.error(err)
 
-    def match_two_ontologies(self, ontology1, ontology2):
-        return self.matcher_module.match_two_ontologies(ontology1, ontology2)
+    def match_two_ontologies(self, results, ontology1, ontology2):
+        return self.matcher_module.match_two_ontologies(results, ontology1, ontology2)

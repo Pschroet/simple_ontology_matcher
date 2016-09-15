@@ -6,6 +6,7 @@ Created on 04.09.2016
 
 from django import template
 from django.http import HttpResponse
+from django.http import FileResponse
 import matching_tool_chain
 import reader
 import util
@@ -17,13 +18,9 @@ def index(request):
     if request.method == "GET":
         context = {}
         #show the start page, where the ontologies and matcher can be chosen
-        if request.path == "/matcher/":
-            ontos = util.get_files_in_directory(os.path.dirname(__file__) + "/ontologies", False)
-            matchers = util.filter_files_from_list(util.get_files_in_directory(os.path.dirname(__file__) + "/matcher", False), "pyc")
-            context = {"title":"Ontology Matcher", "ontologies":ontos, "matchers":matchers}
-            template_raw = util.readFileContentAsString(os.path.dirname(__file__) + "/index.html")
-            template_content = template.Template(template_raw)
         #get the matches and show the result
+        if request.path == "/resources/scripts.js":
+            return FileResponse(util.readFileContentAsString("resources/scripts.js"))
         elif request.path == "/matcher/result_writer/matching_result.html":
             params_onto = []
             params_matcher = []
@@ -55,6 +52,12 @@ def index(request):
                     context = {"title":"Matched Ontologies", "results":result}
                     template_raw = util.readFileContentAsString(os.path.dirname(__file__) + "/result_writer/matching_result.html")
                     template_content = template.Template(template_raw)
+        elif request.path == "/matcher/":
+            ontos = util.get_files_in_directory(os.path.dirname(__file__) + "/ontologies", False)
+            matchers = util.filter_files_from_list(util.get_files_in_directory(os.path.dirname(__file__) + "/matcher", False), "pyc")
+            context = {"title":"Ontology Matcher", "ontologies":ontos, "matchers":matchers}
+            template_raw = util.readFileContentAsString(os.path.dirname(__file__) + "/index.html")
+            template_content = template.Template(template_raw)
         if context != {}:
             return HttpResponse(template_content.render(template.Context(context)))
         template_raw = util.readFileContentAsString(os.path.dirname(__file__) + "/error.html")

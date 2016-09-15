@@ -18,6 +18,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(BASE_DIR + "/OntologyMatcher")
 sys.path.append(BASE_DIR + "/OntologyMatcher/reader")
 sys.path.append(BASE_DIR + "/OntologyMatcher/matcher")
+sys.path.append(BASE_DIR + "/OntologyMatcher/resources")
 
 
 # Quick-start development settings - unsuitable for production
@@ -121,4 +122,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR + "/OntologyMatcher/static"
+
+STATIC_URL = '/resources/'
+
+STATICFILES_DIRS = [
+    BASE_DIR + "/OntologyMatcher/resources/",
+]

@@ -10,7 +10,7 @@ import util
 #tries to match two ontologies just by comapring the labels of nodes
 #returns a list, which holds information about nodes that are assumed to be linked on some way
 # each item in the list has the following elements (in this order): IRI of the first element, it's label, the IRI of the second element, it's label, a string that states, why those elements have been chosen
-def match_two_ontologies(onto, onto1):
+def match_two_ontologies(results, onto, onto1):
     dist_calc = util.distance_calculator()
     #ensure that there are actually ontologies to compare
     if onto is not None and onto1 is not None:
@@ -41,4 +41,4 @@ def match_two_ontologies(onto, onto1):
             except re.error:
                 #just ignore errors during regular expression operations and try to go on
                 pass
-        return connections
+        return results.append(connections)
