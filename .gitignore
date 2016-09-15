@@ -7,3 +7,5 @@
 matching.txt
 regex.txt
 distances.txt
+#ignore static content from Django, which is system dependent
+MasterThesis/OntologyMatcher/static
