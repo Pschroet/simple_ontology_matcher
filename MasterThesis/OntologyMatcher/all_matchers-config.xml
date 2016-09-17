@@ -4,4 +4,5 @@
 	<matcher>levenshtein_distance_matcher.py</matcher>
 	<matcher>synonym_matcher.py</matcher>
 	<matcher>antonym_matcher.py</matcher>
+	<matcher>count_matcher.py</matcher>
 </config>
