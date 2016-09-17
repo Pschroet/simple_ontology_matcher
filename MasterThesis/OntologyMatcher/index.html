@@ -7,20 +7,22 @@
 	<table>
 		<tr><td>
 		<h1>Ontologies</h1>
-		<form action="result_writer/matching_result.html" method="get">
+			<ul id="matcherList">
 			{% for item in ontologies %}
-		    <input type="checkbox" name="onto" value="{{ item }}"/>{{ item }}<br>
+		    <button id="add-{{ item }}" onClick="addItem('Onto', '{{ item }}')">Add {{ item }}</button>
 			{% endfor %}
-		</td><td></td><td>
+			</ul>
 			<h1>Matchers</h1>
-		<form action="result_writer/matching_result.html" method="get">
 			{% for item in matchers %}
-		    <input type="checkbox" name="matcher" value="{{ item }}"/>{{ item }}<br>
+		    <button id="add-{{ item }}" onClick="addItem('Matcher', '{{ item }}')">Add {{ item }}</button>
 			{% endfor %}<br/>
-		</td></tr>
-		<tr><td></td><td>
-		<input type="submit" value="Find Matches">
-		</td></tr>
+		<h1>Using Matchers</h1>
+		<div id="usedMatchers"></div><br/>
+		<h1>on Ontologies</h1>
+		<div id="usedOntos"></div><br/>
+		<form id="availableOntologies" action="/matcher/result_writer/matching_result.html?" method="post">
+			<input type="submit" value="Find Matches">
+			{% csrf_token %}
 		</form>
 	</table>
 	<img src="resources/loading.gif" hidden="hidden"></img>

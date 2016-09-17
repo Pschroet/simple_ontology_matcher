@@ -12,22 +12,25 @@ import reader
 import util
 import os
 import re
+from django.views.decorators.csrf import csrf_exempt
 
-
+@csrf_exempt
 def index(request):
-    if request.method == "GET":
+    if request.method == "GET" or request.method == "POST":
         context = {}
-        #show the start page, where the ontologies and matcher can be chosen
         #get the matches and show the result
         if request.path == "/resources/scripts.js":
             return FileResponse(util.readFileContentAsString("resources/scripts.js"))
         elif request.path == "/matcher/result_writer/matching_result.html":
+            print "Path: " + request.path
+            print "-> " + str(request.GET.getlist('Onto'))
+            print "-> " + str(request.GET.getlist('Matcher'))
             params_onto = []
             params_matcher = []
-            if request.GET.getlist('onto') != []:
-                params_onto = request.GET.getlist('onto')
-            if request.GET.getlist('matcher') != []:
-                params_matcher = request.GET.getlist('matcher')
+            if request.GET.getlist('Onto') != []:
+                params_onto = request.GET.getlist('Onto')
+            if request.GET.getlist('Matcher') != []:
+                params_matcher = request.GET.getlist('Matcher')
             ontos = []
             matchers = []
             if params_onto != [] and params_matcher != []:
@@ -52,6 +55,7 @@ def index(request):
                     context = {"title":"Matched Ontologies", "results":result}
                     template_raw = util.readFileContentAsString(os.path.dirname(__file__) + "/result_writer/matching_result.html")
                     template_content = template.Template(template_raw)
+        #show the start page, where the ontologies and matcher can be chosen
         elif request.path == "/matcher/":
             ontos = util.get_files_in_directory(os.path.dirname(__file__) + "/ontologies", False)
             matchers = util.filter_files_from_list(util.get_files_in_directory(os.path.dirname(__file__) + "/matcher", False), "pyc")
