@@ -22,9 +22,6 @@ def index(request):
         if request.path == "/resources/scripts.js":
             return FileResponse(util.readFileContentAsString("resources/scripts.js"))
         elif request.path == "/matcher/result_writer/matching_result.html":
-            print "Path: " + request.path
-            print "-> " + str(request.GET.getlist('Onto'))
-            print "-> " + str(request.GET.getlist('Matcher'))
             params_onto = []
             params_matcher = []
             if request.GET.getlist('Onto') != []:
@@ -40,12 +37,14 @@ def index(request):
                         ontos.append(reader.ontology_reader("owl_rdfxml_parser", "./OntologyMatcher/ontologies/" + param).ontology)
                     else:
                         ontos = []
+                        break
                 for param in params_matcher:
                     #check for path wandering
                     if not re.match(".*[.][.].*", param):
                         matchers.append(param)
                     else:
                         matchers = []
+                        break
                 if ontos != [] and matchers != []:
                     #compare the ontologies
                     chain = matching_tool_chain.tool_chain()
