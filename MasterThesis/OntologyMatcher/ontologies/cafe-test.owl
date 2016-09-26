@@ -28,6 +28,19 @@
 
    <!-- Classes -->
 
+   <owl:Class rdf:about="http://terminologies.gfbio.org/terms/cafe#Process">
+      <rdfs:subClassOf>
+	 <owl:Restriction>
+	    <owl:onProperty rdf:resource="http://terminologies.gfbio.org/terms/cafe#isPartOf"/>
+	    <owl:someValuesFrom rdf:resource="http://terminologies.gfbio.org/terms/cafe#ProcessContext"/>
+	 </owl:Restriction>
+      </rdfs:subClassOf>
+      <rdfs:comment xml:lang="en">
+	 A process that is relevant for the search object
+      </rdfs:comment>
+      <rdfs:label xml:lang="en">Process</rdfs:label>
+   </owl:Class>
+
    <owl:Class rdf:about="http://terminologies.gfbio.org/terms/cafe#Object">
       <rdfs:subClassOf>
 	 <owl:Restriction>
@@ -293,6 +306,56 @@
 	 Pleistocene, Pilocene.
       </rdfs:comment>
       <rdfs:label xml:lang="en">Geological Epoch</rdfs:label>
+   </owl:Class>
+
+   <owl:Class rdf:about="http://terminologies.gfbio.org/terms/cafe#Phosphates">
+      <rdfs:subClassOf rdf:resource="http://terminologies.gfbio.org/terms/cafe#compoundType"/>
+      <rdfs:comment xml:lang="en">
+	 Phosphates are salts of phosphoric acid characterized by the presence of the
+	 phosphat ion PO43-. (https://en.wikipedia.org/wiki/Phosphate)
+      </rdfs:comment>
+      <rdfs:label xml:lang="en">Phosphates</rdfs:label>
+   </owl:Class>
+
+   <owl:Class rdf:about="http://terminologies.gfbio.org/terms/cafe#Hydrocarbons">
+      <rdfs:subClassOf rdf:resource="http://terminologies.gfbio.org/terms/cafe#compoundType"/>
+      <rdfs:comment xml:lang="en">
+	 Compounds consisting of carbon and hydrogen only.
+	 (http://goldbook.iupac.org/H02889.html)
+      </rdfs:comment>
+      <rdfs:label xml:lang="en">Hydrocarbons</rdfs:label>
+   </owl:Class>
+
+   <owl:Class rdf:about="http://terminologies.gfbio.org/terms/cafe#Microcosm">
+      <rdfs:subClassOf rdf:resource="http://terminologies.gfbio.org/terms/cafe#approachLocalization"/>
+      <rdfs:comment xml:lang="en">
+	 Experiments in laboratory or similar.
+      </rdfs:comment>
+      <rdfs:label xml:lang="en">Microcosm</rdfs:label>
+   </owl:Class>
+
+   <owl:Class rdf:about="http://terminologies.gfbio.org/terms/cafe#Mesocosm">
+      <rdfs:subClassOf rdf:resource="http://terminologies.gfbio.org/terms/cafe#approachLocalization"/>
+      <rdfs:comment xml:lang="en">
+	 Outdoor experimental systems (e.g. ecotron, greenhouse).
+      </rdfs:comment>
+      <rdfs:label xml:lang="en">Mesocosm</rdfs:label>
+   </owl:Class>
+
+   <owl:Class rdf:about="http://terminologies.gfbio.org/terms/cafe#Macrocosm">
+      <rdfs:subClassOf rdf:resource="http://terminologies.gfbio.org/terms/cafe#approachLocalization"/>
+      <rdfs:comment xml:lang="en">
+	 Field experiments.
+      </rdfs:comment>
+      <rdfs:label xml:lang="en">Macrocosm</rdfs:label>
+   </owl:Class>
+
+   <owl:Class rdf:about="http://terminologies.gfbio.org/terms/cafe#sub">
+      <rdfs:subClassOf rdf:resource="http://terminologies.gfbio.org/terms/cafe#imageMimeType"/>
+      <rdfs:comment xml:lang="en">
+	 Close Captioning - Subtitle (image/vnd.dvb.subtitle)
+      </rdfs:comment>
+      <rdfs:label xml:lang="en">sub</rdfs:label>
    </owl:Class>
 
 </rdf:RDF>
