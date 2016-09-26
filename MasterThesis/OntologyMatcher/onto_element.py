@@ -83,7 +83,7 @@ class onto_elem(object):
         return self.attributes
 
     def tostring(self, level=0):
-        output = ("\t" * level)+ "Element: " + self.name + os.linesep
+        output = ("\t" * level) + "Element: " + self.name + os.linesep
         output = output + ("\t" * level) + "-> Attributes: " + str(self.attributes) + os.linesep
         output = output + ("\t" * level) + "-> Children:\n"
         for child in self.children:

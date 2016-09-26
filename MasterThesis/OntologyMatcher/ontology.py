@@ -62,5 +62,5 @@ class ontology(object):
         if len(self.elements) > 0:
             output = output + "Elements:" + os.linesep
             for elem in self.elements:
-                output = output + "\t-> " + elem.tostring(level=1)
+                output = output + elem.tostring(level=1)
         return output
