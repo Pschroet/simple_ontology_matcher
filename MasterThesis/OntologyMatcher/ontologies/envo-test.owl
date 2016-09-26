@@ -692,7 +692,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33429"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_79389"/>
     </owl:Class>
-    
 
 
     <!-- https://purl.obolibrary.org/obo/ENVO_01000548 -->
@@ -717,9 +716,197 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:Class rdf:about="https://purl.obolibrary.org/obo/ENVO_01000549">
         <rdfs:label xml:lang="en">mass of biological material</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002004"/>
+    </owl:Class>    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_26020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_26020">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phosphate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26079"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000539 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000539">
+        <rdfs:label>mesosphere</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/ENVO_01000543"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002220"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000538"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002220"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000541"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000267"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
+        <obo:IAO_0000115>The mesosphere is part of the earth&apos;s atmosphere which is between the stratosphere and the thermosphere in which temperature decreases with altitude to the atmosphere&apos;s absolute minimum</obo:IAO_0000115>
+    </owl:Class>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref>http://www.merriam-webster.com/dictionary/mesosphere</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>The mesosphere is part of the earth&apos;s atmosphere which is between the stratosphere and the thermosphere in which temperature decreases with altitude to the atmosphere&apos;s absolute minimum</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000539"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000554 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000554">
+        <rdfs:label xml:lang="en">hydrocarbon gas</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000797"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001547"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24632"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A gas that is primarily composed of hydrocarbon molecules.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000620 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000620">
+        <rdfs:label xml:lang="en">mesocosm</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00010622"/>
+        <obo:IAO_0000115>A mesocosm is a vivarium that is embedded within a natural environment and is used to place a relatively small part of that environment under experimental control for the purposes of scientific investigation.</obo:IAO_0000115>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget>A mesocosm is a vivarium that is embedded within a natural environment and is used to place a relatively small part of that environment under experimental control for the purposes of scientific investigation.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>Adapted from Wikipedia:Mesocosm</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000620"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000621 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000621">
+        <rdfs:label xml:lang="en">microcosm</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00010622"/>
+        <obo:IAO_0000115>A microcosm is a vivarium within which a simple ecosystem is artificially established and used to simulate and predict the behaviour of natural ecosystems under controlled conditions.</obo:IAO_0000115>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget>A microcosm is a vivarium within which a simple ecosystem is artificially established and used to simulate and predict the behaviour of natural ecosystems under controlled conditions.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>Adapted from Wikipedia:Microcosm</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000621"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00000495 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00000495">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tributary</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ENVO_00000023"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002376"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000012"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000023"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002376"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000012"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A stream or river which flows into another river (a parent river) or body of water but which may not flow directly into the sea.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO:00000495</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EcoLexicon:affluent</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FTT:105</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FTT:1261</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SWEETRealm:Tributary</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TGN:21157</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Tributary</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">affluent</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">affluent stream</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confluent stream</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">river tributary</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stream</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">watercourse</oboInOwl:hasBroadSynonym>
+    </owl:Class>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADL:FTT</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">affluent</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000495"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Getty:TGN</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">river tributary</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000495"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A stream or river which flows into another river (a parent river) or body of water but which may not flow directly into the sea.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Tributary</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000495"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">USGS:SDTS</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">watercourse</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000495"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADL:FTT</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stream</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000495"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000205 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000205">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subtropical</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000203"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-04-07T14:36:47Z</oboInOwl:creation_date>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A subtropical condition is an environmental condition in which an envrionmental system receives more solar irradiance than those with temperate conditions, but less than those with tropical conditions. At low elevations, this typically results in eight months of the year having average temperatures greater than or equal to 10 degrees Celsius with the coldest monthly temperature averaging between 2 and 13 degrees Celsius.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">As with most other climatic zones and conditions, multiple classification schemes have somehat different definitions and criteria. To quote from Wikipedia: &quot;Several methods have been used to define the subtropical climate. In the Trewartha climate classification, a subtropical region should have at least eight months with a mean temperature of 10 Â°C (50.0 Â°F) or above. German climatologists Carl Troll and Karlheinz Paffen defined Warm temperate zones as plain and hilly lands having an average temperature of the coldest month between 2 Â°C (35.6 Â°F) and 13 Â°C (55.4 Â°F) in the Northern Hemisphere and between 6 Â°C (42.8 Â°F) and 13 Â°C (55.4 Â°F) in the Southern Hemisphere, excluding oceanic and continental climates. According to the Troll-Paffen climate classification, there generally exists one large subtropical zone named the warm-temperate subtropical zone,[4] which is subdivided into seven smaller areas.[5]
+
+According to the E. Neef climate classification, the subtropical zone is divided into two parts: Rainy winters of the west sides and Eastern subtropical climate.[6] According to the Wilhelm Lauer &amp; Peter Frankenberg climate classification, the subtropical zone is divided into three parts: high-continental, continental, and maritime.[7] According to the Siegmund/Frankenberg climate classification, subtropical is one of six climate zones in the world.[8]&quot;</rdfs:comment>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO:01000205</oboInOwl:id>
+        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:created_by>
     </owl:Class>
 </rdf:RDF>
-
 
 
 <!-- Generated by the OWL API (version 0.2.2-SNAPSHOT) http://owlapi.sourceforge.net -->

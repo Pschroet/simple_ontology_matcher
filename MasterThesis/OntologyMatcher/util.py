@@ -146,3 +146,28 @@ class distance_calculator():
             return self.Levenshtein.distance(string1, string2)
         else:
             return levenshtein(string1, string2)
+
+class dictionary_wrapper():
+    PyDictionary_found = False
+    PyDictionary = ""
+    
+    def __init__(self):
+        #test if  PyDictionary module is installed and if it is, import it
+        try:
+            imp.find_module('PyDictionary')
+            self.PyDictionary = __import__('PyDictionary').PyDictionary()
+            self.PyDictionary_found = True
+        except ImportError:
+            logging.error("PyDictionary module not found, using own implementation")
+
+    def synonym(self, string):
+        if self.PyDictionary_found:
+            return self.PyDictionary.synonym(string)
+        else:
+            return ""
+
+    def antonym(self, string):
+        if self.PyDictionary_found:
+            return self.PyDictionary.antonym(string)
+        else:
+            return ""
