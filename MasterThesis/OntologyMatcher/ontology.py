@@ -63,3 +63,4 @@ class ontology(object):
             output = output + "Elements:" + os.linesep
             for elem in self.elements:
                 output = output + "\t-> " + elem.tostring(level=1)
+        return output
