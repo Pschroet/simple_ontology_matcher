@@ -10,6 +10,7 @@ import logging
 import imp
 import os
 import re
+import requests
 import sys
 
 #returns the separator of the ontology element
@@ -99,7 +100,9 @@ def readFileContentAsString(fileToRead):
     return ""
 
 def get_ontologies():
+    #get local ontologies
     file_list = get_files_in_directory(os.path.dirname(__file__) + "/ontologies", False)
+    #get available ontologies from http://terminologies.gfbio.org/api/terminologies/
     return file_list
 
 def get_matchers():
