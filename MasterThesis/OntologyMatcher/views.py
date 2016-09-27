@@ -34,7 +34,7 @@ def index(request):
                 for param in params_onto:
                     #check for path wandering
                     if not re.match(".*[.][.].*", param):
-                        ontos.append(reader.ontology_reader("owl_rdfxml_parser", "./OntologyMatcher/ontologies/" + param).ontology)
+                        ontos.append(reader.ontology_reader("owl_rdfxml_parser", os.path.dirname(__file__) + "/ontologies/" + param).ontology)
                     else:
                         ontos = []
                         break
@@ -56,8 +56,8 @@ def index(request):
                     template_content = template.Template(template_raw)
         #show the start page, where the ontologies and matcher can be chosen
         elif request.path == "/matcher/":
-            ontos = util.get_files_in_directory(os.path.dirname(__file__) + "/ontologies", False)
-            matchers = util.filter_files_from_list(util.get_files_in_directory(os.path.dirname(__file__) + "/matcher", False), "pyc")
+            ontos = util.get_ontologies()
+            matchers = util.get_matchers()
             context = {"title":"Ontology Matcher", "ontologies":ontos, "matchers":matchers}
             template_raw = util.readFileContentAsString(os.path.dirname(__file__) + "/index.html")
             template_content = template.Template(template_raw)

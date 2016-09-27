@@ -65,9 +65,9 @@ def get_files_in_directory(directory, recursive):
 
 #filters all elements from a list, where the given filter is found as part of a regex
 #returns a list with the elements removed
-def filter_files_from_list(list, expr):
+def filter_files_from_list(file_list, expr):
     output = []
-    for elem in list:
+    for elem in file_list:
         if not re.match(".*" + expr + ".*", elem):
             output.append(elem)
     return output
@@ -97,6 +97,14 @@ def readFileContentAsString(fileToRead):
         openedFile.close()
         return content
     return ""
+
+def get_ontologies():
+    file_list = get_files_in_directory(os.path.dirname(__file__) + "/ontologies", False)
+    return file_list
+
+def get_matchers():
+    file_list = filter_files_from_list(get_files_in_directory(os.path.dirname(__file__) + "/matcher", False), "pyc")
+    return file_list
 
 #calculates the Levenshtein distance
 # source: https://en.wikibooks.org/wiki/Algorithm_Implementation/Strings/Levenshtein_distance#Python
