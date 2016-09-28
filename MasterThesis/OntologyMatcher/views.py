@@ -35,7 +35,6 @@ def index(request):
             if params_onto != [] and params_matcher != []:
                 for param in params_onto:
                     source = available_ontologies[param][1]
-                    print source
                     #print urlparse.urlparse(available_ontologies[param][1]).scheme
                     if bool(urlparse.urlparse(source).scheme):
                         print param + ": " + available_ontologies[param][1]

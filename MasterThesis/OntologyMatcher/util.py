@@ -103,7 +103,6 @@ def readFileContentAsString(fileToRead):
     return ""
 
 def get_ontologies():
-    print settings
     return settings.ONTOLOGIES
 
 def get_matchers():

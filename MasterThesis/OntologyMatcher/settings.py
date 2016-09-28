@@ -146,14 +146,15 @@ jo = json.loads(re.text)
 for item in jo["results"]:
     #check if URL is working
     try:
-        print item["acronym"]
+        #print item["acronym"]
         onto = requests.head(item["uri"])
-        print onto.headers
+        #print onto.headers
         if ("text/plain" in onto.headers['content-type'] or "text/xml" in onto.headers['content-type']) and 'Content-Length' in onto.headers and int(onto.headers['Content-Length']) < 1000000:
             ONTOLOGIES[item["acronym"]] = [item["name"], item["uri"]]
-            print "-> added"
+            #print "-> added"
         else:
-            print "-> not added, because: " + str(("text/plain" in onto.headers['content-type'] or "text/xml" in onto.headers['content-type'])) + ", " + str('Content-Length' in onto.headers)
+            pass
+            #print "-> not added, because: " + str(("text/plain" in onto.headers['content-type'] or "text/xml" in onto.headers['content-type'])) + ", " + str('Content-Length' in onto.headers)
     except requests.exceptions.RequestException:
         pass
 
