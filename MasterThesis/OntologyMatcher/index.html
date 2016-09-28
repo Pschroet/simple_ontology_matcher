@@ -9,12 +9,12 @@
 		<h1>Ontologies</h1>
 			<ul id="matcherList">
 			{% for item in ontologies %}
-		    <button id="add-{{ item }}" onClick="addItem('Onto', '{{ item }}')">Add {{ item }}</button>
+		    <button id="add-{{ item }}" onClick="addItem('Onto', '{{ item }}', '{{ item }}')">{{ item }}</button>
 			{% endfor %}
 			</ul>
 			<h1>Matchers</h1>
 			{% for item in matchers %}
-		    <button id="add-{{ item }}" onClick="addItem('Matcher', '{{ item }}')">Add {{ item }}</button>
+		    <button id="add-{{ item }}" onClick="addItem('Matcher', '{{ item }}', '{{ item }}')">{{ item }}</button>
 			{% endfor %}<br/>
 		<h1>Using Matchers</h1>
 		<div id="usedMatchers"></div><br/>

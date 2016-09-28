@@ -13,6 +13,7 @@ import util
 import os
 import re
 from django.views.decorators.csrf import csrf_exempt
+import urlparse
 
 @csrf_exempt
 def index(request):
@@ -30,14 +31,17 @@ def index(request):
                 params_matcher = request.GET.getlist('Matcher')
             ontos = []
             matchers = []
+            available_ontologies = util.get_ontologies()
             if params_onto != [] and params_matcher != []:
                 for param in params_onto:
-                    #check for path wandering
-                    if not re.match(".*[.][.].*", param):
-                        ontos.append(reader.ontology_reader("owl_rdfxml_parser", os.path.dirname(__file__) + "/ontologies/" + param).ontology)
-                    else:
-                        ontos = []
-                        break
+                    source = available_ontologies[param][1]
+                    print source
+                    #print urlparse.urlparse(available_ontologies[param][1]).scheme
+                    if bool(urlparse.urlparse(source).scheme):
+                        print param + ": " + available_ontologies[param][1]
+                        ontos.append(reader.ontology_reader("owl_rdfxml_web_parser", source).ontology)
+                    elif os.path.isfile(source):
+                        ontos.append(reader.ontology_reader("owl_rdfxml_parser", source).ontology)
                 for param in params_matcher:
                     #check for path wandering
                     if not re.match(".*[.][.].*", param):

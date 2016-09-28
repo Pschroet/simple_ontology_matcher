@@ -13,6 +13,10 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 import os
 import sys
 
+import json
+import requests
+import util
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(BASE_DIR + "/OntologyMatcher")
@@ -129,3 +133,29 @@ STATIC_URL = '/resources/'
 STATICFILES_DIRS = [
     BASE_DIR + "/OntologyMatcher/resources/",
 ]
+
+# set the constants for the ontologies, their URLs and the matchers
+
+#get local ontologies
+ONTOLOGIES = {}
+for item in util.get_files_in_directory(os.path.dirname(__file__) + "/ontologies", False):
+    ONTOLOGIES[item.replace(".owl", "")] = [item, os.path.dirname(__file__) + "/ontologies/" + item]
+#get available ontologies from http://terminologies.gfbio.org/api/terminologies/
+re = requests.get("http://terminologies.gfbio.org/api/terminologies/")
+jo = json.loads(re.text)
+for item in jo["results"]:
+    #check if URL is working
+    try:
+        print item["acronym"]
+        onto = requests.head(item["uri"])
+        print onto.headers
+        if ("text/plain" in onto.headers['content-type'] or "text/xml" in onto.headers['content-type']) and 'Content-Length' in onto.headers and int(onto.headers['Content-Length']) < 1000000:
+            ONTOLOGIES[item["acronym"]] = [item["name"], item["uri"]]
+            print "-> added"
+        else:
+            print "-> not added, because: " + str(("text/plain" in onto.headers['content-type'] or "text/xml" in onto.headers['content-type'])) + ", " + str('Content-Length' in onto.headers)
+    except requests.exceptions.RequestException:
+        pass
+
+#get the matchers
+MATCHERS = util.filter_files_from_list(util.get_files_in_directory(os.path.dirname(__file__) + "/matcher", False), "pyc")

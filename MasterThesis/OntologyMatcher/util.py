@@ -6,12 +6,15 @@ A collection of different support functions
 @author: Philipp Schroeter
 '''
 
+import cgi
 import logging
 import imp
+import json
 import os
 import re
 import requests
 import sys
+from django.conf import settings
 
 #returns the separator of the ontology element
 # finds separators of namespaces that separate with '#' or '/'
@@ -100,14 +103,11 @@ def readFileContentAsString(fileToRead):
     return ""
 
 def get_ontologies():
-    #get local ontologies
-    file_list = get_files_in_directory(os.path.dirname(__file__) + "/ontologies", False)
-    #get available ontologies from http://terminologies.gfbio.org/api/terminologies/
-    return file_list
+    print settings
+    return settings.ONTOLOGIES
 
 def get_matchers():
-    file_list = filter_files_from_list(get_files_in_directory(os.path.dirname(__file__) + "/matcher", False), "pyc")
-    return file_list
+    return settings.MATCHERS
 
 #calculates the Levenshtein distance
 # source: https://en.wikibooks.org/wiki/Algorithm_Implementation/Strings/Levenshtein_distance#Python
