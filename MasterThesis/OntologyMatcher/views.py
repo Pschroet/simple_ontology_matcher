@@ -37,10 +37,13 @@ def index(request):
                     source = available_ontologies[param][1]
                     #print urlparse.urlparse(available_ontologies[param][1]).scheme
                     if bool(urlparse.urlparse(source).scheme):
-                        print param + ": " + available_ontologies[param][1]
-                        ontos.append(reader.ontology_reader("owl_rdfxml_web_parser", source).ontology)
+                        tmp = reader.ontology_reader("owl_rdfxml_web_parser", source).ontology
+                        #print tmp.tostring()
+                        ontos.append(tmp)
                     elif os.path.isfile(source):
-                        ontos.append(reader.ontology_reader("owl_rdfxml_parser", source).ontology)
+                        tmp = reader.ontology_reader("owl_rdfxml_parser", source).ontology
+                        #print tmp.tostring()
+                        ontos.append(tmp)
                 for param in params_matcher:
                     #check for path wandering
                     if not re.match(".*[.][.].*", param):

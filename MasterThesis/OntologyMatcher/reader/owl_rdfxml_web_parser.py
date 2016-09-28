@@ -9,11 +9,17 @@ import ontology
 import onto_element
 import re
 import requests
+from inspect import isfunction
 
 def parse_ontology_file(ontology_url):
     ontology_content = requests.get(ontology_url)
     #print ontology_content
-    root = defusedxml.ElementTree.fromstring(ontology_content.text.encode('utf8'), forbid_entities=False)
+    #print ontology_content.headers
+    tree = defusedxml.ElementTree.fromstring(ontology_content.text.encode('utf8'), forbid_entities=False)
+    if hasattr(tree, "getroot") and isfunction(tree.getroot):
+        root = tree.getroot()
+    else:
+        root = tree
     #check if the file could even be an OWL file in RDF XML syntax
     if root.tag == "{http://www.w3.org/1999/02/22-rdf-syntax-ns#}RDF":
         onto_info = root.findall("{http://www.w3.org/2002/07/owl#}Ontology")
