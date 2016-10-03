@@ -27,6 +27,9 @@ def match_two_ontologies(results, onto, onto1):
                 if label != []:
                     for item in label:
                         synonyms = dictionary.synonym(item.get_text().encode('utf8'))
+                        #if the element has an attribute that contains synonyms use them
+                        if i.get_attribute("synonyms") is not None:
+                            synonyms = synonyms + i.get_attribute("synonyms")
                         #check if there is a list of synonyms and not None or a message
                         if synonyms is not None and hasattr(synonyms, '__getitem__') and hasattr(synonyms, '__iter__'):
                             for j in onto1_elements:

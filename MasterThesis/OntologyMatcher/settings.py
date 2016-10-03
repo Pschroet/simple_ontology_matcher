@@ -137,10 +137,13 @@ STATICFILES_DIRS = [
 # set the constants for the ontologies, their URLs and the matchers
 
 #get local ontologies
+print "Getting ontologies..."
 ONTOLOGIES = {}
+print "... from disk"
 for item in util.get_files_in_directory(os.path.dirname(__file__) + "/ontologies", False):
     ONTOLOGIES[item.replace(".owl", "")] = [item, os.path.dirname(__file__) + "/ontologies/" + item]
 #get available ontologies from http://terminologies.gfbio.org/api/terminologies/
+print "... from http://terminologies.gfbio.org/api/terminologies/"
 re = requests.get("http://terminologies.gfbio.org/api/terminologies/")
 jo = json.loads(re.text)
 for item in jo["results"]:
@@ -158,5 +161,22 @@ for item in jo["results"]:
     except requests.exceptions.RequestException:
         pass
 
+#get available ontology information from http://terminologies.gfbio.org/api/terminologies/
+print "Getting terminologies..."
+TERMINOLOGIES = {}
+print "... from http://terminologies.gfbio.org/api/terminologies/"
+#re = requests.get("http://terminologies.gfbio.org/api/terminologies/")
+#jo = json.loads(re.text)
+for item in jo["results"]:
+    #check if URL is working
+    try:
+        #print item["acronym"]
+        onto = requests.head(item["uri"])
+        TERMINOLOGIES[item["acronym"]] = [item["name"], "http://terminologies.gfbio.org/api/terminologies/" + item["acronym"]]
+        print item["acronym"] + " added: " + item["name"] + ", " + "http://terminologies.gfbio.org/api/terminologies/" + item["acronym"]
+    except requests.exceptions.RequestException:
+        pass
+
 #get the matchers
+print "Getting matchers"
 MATCHERS = util.filter_files_from_list(util.get_files_in_directory(os.path.dirname(__file__) + "/matcher", False), "pyc")

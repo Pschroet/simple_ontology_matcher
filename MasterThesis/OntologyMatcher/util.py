@@ -15,6 +15,7 @@ import re
 import requests
 import sys
 from django.conf import settings
+from operator import itemgetter
 
 #returns the separator of the ontology element
 # finds separators of namespaces that separate with '#' or '/'
@@ -105,6 +106,9 @@ def readFileContentAsString(fileToRead):
 def get_ontologies():
     return settings.ONTOLOGIES
 
+def get_terminologies():
+    return settings.TERMINOLOGIES
+
 def get_matchers():
     return settings.MATCHERS
 
@@ -156,6 +160,18 @@ class distance_calculator():
             return self.Levenshtein.distance(string1, string2)
         else:
             return levenshtein(string1, string2)
+
+#moves all elements from dict1 to dict
+# items are excluded, if there is already an element named like one in dict
+#returns the result as a new dictionary
+def combine_dicts(dict, dict1):
+    output = {}
+    for item in dict:
+        output[item] = dict[item]
+    for item in dict1:
+        if item not in dict:
+            output[item] = dict1[item]
+    return output
 
 class dictionary_wrapper():
     PyDictionary_found = False

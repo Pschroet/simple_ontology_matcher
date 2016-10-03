@@ -5,21 +5,30 @@
 </head>
 <body>
 	<table>
-		<tr><td>
-		<h1>Ontologies</h1>
-			<ul id="matcherList">
+			<h1>Ontologies</h1>
+			<ul id="ontologyList">
 			{% for item in ontologies %}
-		    <button id="add-{{ item }}" onClick="addItem('Onto', '{{ item }}', '{{ item }}')">{{ item }}</button>
+		    <button id="add-Onto-{{ item }}" onClick="addItem('Onto', '{{ item }}', '{{ item }}')">{{ item }}</button>
+			{% endfor %}
+			</ul>
+			<h1>Terminologies</h1>
+			<ul id="terminologyList">
+			{% for item in terminologies %}
+		    <button id="add-Term-{{ item }}" onClick="addItem('Term', '{{ item }}', '{{ item }}')">{{ item }}</button>
 			{% endfor %}
 			</ul>
 			<h1>Matchers</h1>
+			<ul id="matcherList">
 			{% for item in matchers %}
-		    <button id="add-{{ item }}" onClick="addItem('Matcher', '{{ item }}', '{{ item }}')">{{ item }}</button>
-			{% endfor %}<br/>
+		    <button id="add-Matcher-{{ item }}" onClick="addItem('Matcher', '{{ item }}', '{{ item }}')">{{ item }}</button>
+			{% endfor %}
+			</ul><br/>
 		<h1>Using Matchers</h1>
 		<div id="usedMatchers"></div><br/>
 		<h1>on Ontologies</h1>
 		<div id="usedOntos"></div><br/>
+		<h1>on Terminologies</h1>
+		<div id="usedTerms"></div><br/>
 		<form id="availableOntologies" action="/matcher/result_writer/matching_result.html?" method="post">
 			<input type="submit" value="Find Matches">
 			{% csrf_token %}

@@ -12,6 +12,7 @@ import requests
 from inspect import isfunction
 
 def parse_ontology_file(ontology_url):
+    print "Parsing " + ontology_file
     ontology_content = requests.get(ontology_url)
     #print ontology_content
     #print ontology_content.headers
@@ -66,6 +67,7 @@ def parse_ontology_file(ontology_url):
             if onto != "":
                 #util.write2File("onto.txt", str(onto) + os.linesep, "a")
                 #util.write2File("onto.txt", str(onto.get_elements()) + os.linesep, "a")
+                print onto.tostring()
                 return onto
             else:
                 return ""

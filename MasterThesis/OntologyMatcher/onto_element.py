@@ -1,7 +1,7 @@
 '''
 Created on 14.08.2016
 
-@author: Phil
+@author: Philipp Schroeter
 '''
 
 import os
@@ -75,9 +75,13 @@ class onto_elem(object):
         #util.write2File("test1.txt", "\tadding attribute " + str(key) + ":" + value + " (" + str(self) + ")\n", "a")
         self.attributes[key] = value
 
+    #returns the attribute of this element with the given key
+    # returns None with it is not found
     def get_attribute(self, key):
         if key in self.attributes:
             return self.attributes[key]
+        else:
+            return None
 
     def get_attributes(self):
         return self.attributes

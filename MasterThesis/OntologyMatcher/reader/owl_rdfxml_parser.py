@@ -11,6 +11,7 @@ import re
 import util
 
 def parse_ontology_file(ontology_file):
+    print "Parsing " + ontology_file
     tree = defusedxml.ElementTree.parse(ontology_file)
     root = tree.getroot()
     #check if the file could even be an OWL file in RDF XML syntax

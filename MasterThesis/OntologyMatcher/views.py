@@ -24,19 +24,25 @@ def index(request):
             return FileResponse(util.readFileContentAsString("resources/scripts.js"))
         elif request.path == "/matcher/result_writer/matching_result.html":
             params_onto = []
+            params_term = []
             params_matcher = []
             if request.GET.getlist('Onto') != []:
                 params_onto = request.GET.getlist('Onto')
+            if request.GET.getlist('Term') != []:
+                params_term = request.GET.getlist('Term')
             if request.GET.getlist('Matcher') != []:
                 params_matcher = request.GET.getlist('Matcher')
             ontos = []
             matchers = []
-            available_ontologies = util.get_ontologies()
-            if params_onto != [] and params_matcher != []:
-                for param in params_onto:
+            available_ontologies = util.combine_dicts(util.get_terminologies(), util.get_ontologies())
+            if params_onto is not [] and (params_matcher is not [] or params_term is not []):
+                for param in params_onto + params_term:
                     source = available_ontologies[param][1]
-                    #print urlparse.urlparse(available_ontologies[param][1]).scheme
-                    if bool(urlparse.urlparse(source).scheme):
+                    if bool(urlparse.urlparse(source).scheme) and "terminologies.gfbio.org" in source:
+                        tmp = reader.ontology_reader("GFBio_terminology_server_parser", source).ontology
+                        #print tmp.tostring()
+                        ontos.append(tmp)
+                    elif bool(urlparse.urlparse(source).scheme):
                         tmp = reader.ontology_reader("owl_rdfxml_web_parser", source).ontology
                         #print tmp.tostring()
                         ontos.append(tmp)
@@ -51,7 +57,7 @@ def index(request):
                     else:
                         matchers = []
                         break
-                if ontos != [] and matchers != []:
+                if ontos is not [] and matchers is not []:
                     #compare the ontologies
                     chain = matching_tool_chain.tool_chain()
                     #chain.add_config_from_file("./OntologyMatcher/all_matchers-config.xml")
@@ -63,8 +69,9 @@ def index(request):
         #show the start page, where the ontologies and matcher can be chosen
         elif request.path == "/matcher/":
             ontos = util.get_ontologies()
+            terms = util.get_terminologies()
             matchers = util.get_matchers()
-            context = {"title":"Ontology Matcher", "ontologies":ontos, "matchers":matchers}
+            context = {"title":"Ontology Matcher", "ontologies":ontos, "terminologies":terms, "matchers":matchers}
             template_raw = util.readFileContentAsString(os.path.dirname(__file__) + "/index.html")
             template_content = template.Template(template_raw)
         if context != {}:

@@ -1,12 +1,12 @@
 function addItem(type, item, name){
 	//hide the button
-	toggleHide("add-" + name);
+	toggleHide("add-" + type + "-" + name);
 	//<button id="remove-{{ item }}" onClick="removeItem('{{ item }}')" hidden="hidden">Remove {{ item }}</button><br>
 	//<button id="remove-{{ item }}" onClick="removeItem('{{ item }}')" hidden="hidden">Remove {{ item }}</button><br>
 	//create the element for the item
 	matcherList = document.getElementById("used" + type + "s");
 	tmp = document.createElement("button");
-	tmp.setAttribute("id", "remove-" + name);
+	tmp.setAttribute("id", "remove-" + type + "-" + name);
 	tmp.setAttribute("onClick", "removeItem('" + type + "', '" + name + "')");
 	tmp.innerHTML = item;
 	matcherList.appendChild(tmp);
@@ -15,9 +15,9 @@ function addItem(type, item, name){
 }
 
 function removeItem(type, name){
-	toggleHide("add-" + name);
+	toggleHide("add-" + type + "-" + name);
 	parent = document.getElementById("used" + type + "s");
-	child = document.getElementById("remove-" + name);
+	child = document.getElementById("remove-" + type + "-" + name);
 	parent.removeChild(child);
 	document.getElementById("availableOntologies").action = document.getElementById("availableOntologies").action.replace(type + "=" + name + "&", "");
 }
