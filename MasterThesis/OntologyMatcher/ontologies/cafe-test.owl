@@ -230,6 +230,14 @@
       <rdfs:label xml:lang="en">Date</rdfs:label>
    </owl:Class>
 
+   <owl:Class rdf:about="http://terminologies.gfbio.org/terms/cafe#Macrocosm">
+      <rdfs:subClassOf rdf:resource="http://terminologies.gfbio.org/terms/cafe#approachLocalization"/>
+      <rdfs:comment xml:lang="en">
+	 Field experiments.
+      </rdfs:comment>
+      <rdfs:label xml:lang="en">Macrocosm</rdfs:label>
+   </owl:Class>
+
    <owl:Class rdf:about="http://terminologies.gfbio.org/terms/cafe#time">
       <rdfs:subClassOf>
 	 <owl:Restriction>
@@ -340,14 +348,6 @@
 	 Outdoor experimental systems (e.g. ecotron, greenhouse).
       </rdfs:comment>
       <rdfs:label xml:lang="en">Mesocosm</rdfs:label>
-   </owl:Class>
-
-   <owl:Class rdf:about="http://terminologies.gfbio.org/terms/cafe#Macrocosm">
-      <rdfs:subClassOf rdf:resource="http://terminologies.gfbio.org/terms/cafe#approachLocalization"/>
-      <rdfs:comment xml:lang="en">
-	 Field experiments.
-      </rdfs:comment>
-      <rdfs:label xml:lang="en">Macrocosm</rdfs:label>
    </owl:Class>
 
    <owl:Class rdf:about="http://terminologies.gfbio.org/terms/cafe#sub">
