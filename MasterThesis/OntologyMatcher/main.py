@@ -12,11 +12,15 @@ import os
 from django.template import Context, Template
 
 if __name__ == '__main__':
-    #r = reader.ontology_reader("owl_rdfxml_parser", "/home/philipp/Dokumente/Ontologie/AnimalMotionOntology.owl")
-    #r1 = reader.ontology_reader("owl_rdfxml_parser", "/home/philipp/Dokumente/Ontologie/envo.owl")
+    #testing readers and matchers in general
+    #r = reader.ontology_reader("owl_rdfxml_parser", "ontologies/AnimalMotionOntology.owl")
+    #print r.ontology.tostring()
+    #r1 = reader.ontology_reader("owl_rdfxml_parser", "ontologies/envo.owl")
     #chain = matching_tool_chain.tool_chain("./hs-config.xml")
     #chain = matching_tool_chain.tool_chain("./test-config.xml")
     #chain.match_ontologies([r.ontology, r1.ontology])
+    ##############################
+    #testing local HTML template parsing
     r = reader.ontology_reader("owl_rdfxml_parser", "ontologies/cafe-test.owl")
     r1 = reader.ontology_reader("owl_rdfxml_parser", "ontologies/envo-test.owl")
     chain = matching_tool_chain.tool_chain()
@@ -26,6 +30,7 @@ if __name__ == '__main__':
     template_raw = util.readFileContentAsString(os.path.dirname(__file__) + "/result_writer/matching_result.html")
     template_content = Template(template_raw)
     util.write2File("matches.html", template_content.render(Context(context)), "w")
+    ##############################
     #for testing PyDictionary
     #dictionary = PyDictionary.PyDictionary()
     #print dictionary.synonym("m3u")
