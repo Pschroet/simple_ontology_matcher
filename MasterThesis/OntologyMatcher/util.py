@@ -187,13 +187,13 @@ class dictionary_wrapper():
             logging.error("PyDictionary module not found, using own implementation")
 
     def synonym(self, string):
-        if self.PyDictionary_found:
+        if self.PyDictionary_found and " " not in string:
             return self.PyDictionary.synonym(string)
         else:
             return ""
 
     def antonym(self, string):
-        if self.PyDictionary_found:
+        if self.PyDictionary_found and " " not in string:
             return self.PyDictionary.antonym(string)
         else:
             return ""
