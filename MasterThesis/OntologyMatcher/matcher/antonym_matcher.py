@@ -23,20 +23,34 @@ def match_two_ontologies(results, onto, onto1):
         for i in onto_elements:
             try:
                 label = i.get_children_named("{http://www.w3.org/2000/01/rdf-schema#}label")
-                already_matched = False
                 if label != []:
                     for item in label:
+                        already_matched = False
                         antonyms = dictionary.antonym(item.get_text().encode('utf8'))
                         #check if there is a list of antonyms and not None or a message
                         if antonyms is not None and hasattr(antonyms, '__getitem__') and hasattr(antonyms, '__iter__'):
                             for j in onto1_elements:
+                                already_matched = False
                                 label1 = j.get_children_named("{http://www.w3.org/2000/01/rdf-schema#}label")
                                 if label1 != []:
                                     for item1 in label1:
-                                        #if the labels are not the same, but are similar, the nodes might be, too
-                                        if item1.get_text() in antonyms and not already_matched:
-                                            connections["matches"].append([i.name, "(" + item.get_text() + ")", j.name, "(" + item1.get_text() + ")", " are antonyms"])
-                                            already_matched = True
+                                        for antonym in antonyms:
+                                            if not already_matched and re.match(item1.get_text(), antonym, re.IGNORECASE):
+                                                connections["matches"].append([i.name, "(" + item.get_text() + ")", j.name, "(" + item1.get_text() + ")", " are antonyms"])
+                                                already_matched = True
+                                                break
+                        #if the dictionary is not bidirectional, check the other direction
+                        for k in onto1_elements:
+                            label1 = k.get_children_named("{http://www.w3.org/2000/01/rdf-schema#}label")
+                            if label1 is not []:
+                                for item1 in label1:
+                                    tmp_antonyms = dictionary.antonym(item1.get_text().encode('utf8'))
+                                    if tmp_antonyms is not [] and hasattr(tmp_antonyms, '__getitem__') and hasattr(tmp_antonyms, '__iter__'):
+                                        for tmp_antonym in tmp_antonyms:
+                                            if not already_matched and re.match(item.get_text(), tmp_antonym, re.IGNORECASE):
+                                                connections["matches"].append([i.name, "(" + item.get_text() + ")", k.name, "(" + item1.get_text() + ")", " are antonyms"])
+                                                already_matched = True
+                                                break
             except re.error:
                 #just ignore errors during regular expression operations and try to go on
                 pass

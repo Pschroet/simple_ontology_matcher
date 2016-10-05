@@ -190,10 +190,10 @@ class dictionary_wrapper():
         if self.PyDictionary_found and " " not in string:
             return self.PyDictionary.synonym(string)
         else:
-            return ""
+            return []
 
     def antonym(self, string):
         if self.PyDictionary_found and " " not in string:
             return self.PyDictionary.antonym(string)
         else:
-            return ""
+            return []
