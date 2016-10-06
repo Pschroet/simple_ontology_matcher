@@ -7,20 +7,26 @@
 	<table>
 			<h1>Ontologies</h1>
 			<ul id="ontologyList">
-			{% for item in ontologies %}
-		    <button id="add-Onto-{{ item }}" onClick="addItem('Onto', '{{ item }}', '{{ item }}')">{{ item }}</button>
-			{% endfor %}
+				{% for item in ontologies %}
+		    	<button id="add-Onto-{{ item }}" onClick="addItem('Onto', '{{ item }}', '{{ item }}')">{{ item }}</button>
+		    	{% empty %}
+		    	<p>None found</p>
+				{% endfor %}
 			</ul>
 			<h1>Terminologies</h1>
 			<ul id="terminologyList">
 			{% for item in terminologies %}
-		    <button id="add-Term-{{ item }}" onClick="addItem('Term', '{{ item }}', '{{ item }}')">{{ item }}</button>
+		    	<button id="add-Term-{{ item }}" onClick="addItem('Term', '{{ item }}', '{{ item }}')">{{ item }}</button>
+		    	{% empty %}
+		    	<p>None found</p>
 			{% endfor %}
 			</ul>
 			<h1>Matchers</h1>
 			<ul id="matcherList">
-			{% for item in matchers %}
-		    <button id="add-Matcher-{{ item }}" onClick="addItem('Matcher', '{{ item }}', '{{ item }}')">{{ item }}</button>
+				{% for item in matchers %}
+		    	<button id="add-Matcher-{{ item }}" onClick="addItem('Matcher', '{{ item }}', '{{ item }}')">{{ item }}</button>
+		    	{% empty %}
+		    	<p>None found</p>
 			{% endfor %}
 			</ul><br/>
 		<h1>Using Matchers</h1>
