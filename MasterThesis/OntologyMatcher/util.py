@@ -173,6 +173,15 @@ def combine_dicts(dict, dict1):
             output[item] = dict1[item]
     return output
 
+#checks if the item is in the list
+# uses case-insensitive regular expressions
+# returns true, if the item was found, false, otherwise
+def is_in_list(item, compare_list):
+    for list_item in compare_list:
+        if re.match(item, list_item, re.IGNORECASE):
+            return True
+    return False
+
 class dictionary_wrapper():
     PyDictionary_found = False
     PyDictionary = ""
@@ -190,10 +199,10 @@ class dictionary_wrapper():
         if self.PyDictionary_found and " " not in string:
             return self.PyDictionary.synonym(string)
         else:
-            return []
+            return None
 
     def antonym(self, string):
         if self.PyDictionary_found and " " not in string:
             return self.PyDictionary.antonym(string)
         else:
-            return []
+            return None

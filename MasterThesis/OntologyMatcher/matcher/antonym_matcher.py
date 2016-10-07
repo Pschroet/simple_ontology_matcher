@@ -39,18 +39,12 @@ def match_two_ontologies(results, onto, onto1):
                                                 connections["matches"].append([i.name, "(" + item.get_text() + ")", j.name, "(" + item1.get_text() + ")", " are antonyms"])
                                                 already_matched = True
                                                 break
-                        #if the dictionary is not bidirectional, check the other direction
-                        for k in onto1_elements:
-                            label1 = k.get_children_named("{http://www.w3.org/2000/01/rdf-schema#}label")
-                            if label1 is not []:
-                                for item1 in label1:
-                                    tmp_antonyms = dictionary.antonym(item1.get_text().encode('utf8'))
-                                    if tmp_antonyms is not [] and hasattr(tmp_antonyms, '__getitem__') and hasattr(tmp_antonyms, '__iter__'):
-                                        for tmp_antonym in tmp_antonyms:
-                                            if not already_matched and re.match(item.get_text(), tmp_antonym, re.IGNORECASE):
-                                                connections["matches"].append([i.name, "(" + item.get_text() + ")", k.name, "(" + item1.get_text() + ")", " are antonyms"])
-                                                already_matched = True
-                                                break
+                                        #if the dictionary is not bidirectional, check the other direction
+                                        tmp_antonyms = dictionary.antonyms(item1.get_text().encode('utf8'))
+                                        if tmp_antonyms is not None and not already_matched and util.is_in_list(item.get_text(), tmp_antonyms):
+                                            connections["matches"].append([i.name, "(" + item.get_text() + ")", j.name, "(" + item1.get_text() + ")", " are antonyms"])
+                                            already_matched = True
+                                            break
             except re.error:
                 #just ignore errors during regular expression operations and try to go on
                 pass
