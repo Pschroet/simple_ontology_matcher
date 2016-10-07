@@ -193,7 +193,7 @@ class dictionary_wrapper():
             self.PyDictionary = __import__('PyDictionary').PyDictionary()
             self.PyDictionary_found = True
         except ImportError:
-            logging.error("PyDictionary module not found, using own implementation")
+            logging.error("PyDictionary module not found")
 
     def synonym(self, string):
         if self.PyDictionary_found and " " not in string:
