@@ -153,9 +153,9 @@ try:
         #print item["acronym"]
         onto = requests.head(item["uri"])
         #print onto.headers
-        if ("text/plain" in onto.headers['content-type'] or "text/xml" in onto.headers['content-type']) and 'Content-Length' in onto.headers and int(onto.headers['Content-Length']) < 1000000:
+        if ("text/plain" in onto.headers['content-type'] or "text/xml" in onto.headers['content-type']) and 'Content-Length' in onto.headers and int(onto.headers['Content-Length']) < 10000000:
             ONTOLOGIES[item["acronym"]] = [item["name"], item["uri"]]
-            #print "-> added"
+            print item["acronym"] + " added: " + item["name"] + ", " + item["uri"]
         else:
             pass
             #print "-> not added, because: " + str(("text/plain" in onto.headers['content-type'] or "text/xml" in onto.headers['content-type'])) + ", " + str('Content-Length' in onto.headers)

@@ -34,7 +34,7 @@ def index(request):
                 params_matcher = request.GET.getlist('Matcher')
             ontos = []
             matchers = []
-            available_ontologies = util.combine_dicts(util.get_terminologies(), util.get_ontologies())
+            available_ontologies = util.combine_dicts(util.get_ontologies(), util.get_terminologies())
             if params_onto is not [] and (params_matcher is not [] or params_term is not []):
                 for param in params_onto + params_term:
                     source = available_ontologies[param][1]
@@ -42,12 +42,12 @@ def index(request):
                         tmp = reader.ontology_reader("GFBio_terminology_server_parser", source).ontology
                         #print tmp.tostring()
                         ontos.append(tmp)
-                    elif bool(urlparse.urlparse(source).scheme):
-                        tmp = reader.ontology_reader("owl_rdfxml_web_parser", source).ontology
-                        #print tmp.tostring()
-                        ontos.append(tmp)
                     elif os.path.isfile(source):
                         tmp = reader.ontology_reader("owl_rdfxml_parser", source).ontology
+                        #print tmp.tostring()
+                        ontos.append(tmp)
+                    elif bool(urlparse.urlparse(source).scheme):
+                        tmp = reader.ontology_reader("owl_rdfxml_web_parser", source).ontology
                         #print tmp.tostring()
                         ontos.append(tmp)
                 for param in params_matcher:
@@ -63,7 +63,8 @@ def index(request):
                     #chain.add_config_from_file("./OntologyMatcher/all_matchers-config.xml")
                     chain.add_matchers(matchers)
                     result = chain.match_ontologies(ontos)
-                    context = {"title":"Matched Ontologies", "results":result}
+                    connection_options = ["None", "rdfs:subClassOf", "owl:equivalentClass", "owl:disjointWith"]
+                    context = {"title":"Matched Ontologies", "results":result, "connection_options":connection_options}
                     template_raw = util.readFileContentAsString(os.path.dirname(__file__) + "/result_writer/matching_result.html")
                     template_content = template.Template(template_raw)
         #show the start page, where the ontologies and matcher can be chosen
