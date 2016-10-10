@@ -137,44 +137,40 @@ STATICFILES_DIRS = [
 # set the constants for the ontologies, their URLs and the matchers
 
 #get local ontologies
-print "Getting ontologies..."
 ONTOLOGIES = {}
 TERMINOLOGIES = {}
-print "... from disk"
+print "Getting ontologies from disk"
 for item in util.get_files_in_directory(os.path.dirname(__file__) + "/ontologies", False):
     ONTOLOGIES[item.replace(".owl", "")] = [item, os.path.dirname(__file__) + "/ontologies/" + item]
-#get available ontologies from http://terminologies.gfbio.org/api/terminologies/
-print "... from http://terminologies.gfbio.org/api/terminologies/"
 try:
     re = requests.get("http://terminologies.gfbio.org/api/terminologies/")
     jo = json.loads(re.text)
-    for item in jo["results"]:
-        #check if URL is working
-        #print item["acronym"]
-        onto = requests.head(item["uri"])
-        #print onto.headers
-        if ("text/plain" in onto.headers['content-type'] or "text/xml" in onto.headers['content-type']) and 'Content-Length' in onto.headers and int(onto.headers['Content-Length']) < 10000000:
-            ONTOLOGIES[item["acronym"]] = [item["name"], item["uri"]]
-            print item["acronym"] + " added: " + item["name"] + ", " + item["uri"]
-        else:
-            pass
-            #print "-> not added, because: " + str(("text/plain" in onto.headers['content-type'] or "text/xml" in onto.headers['content-type'])) + ", " + str('Content-Length' in onto.headers)
     #get available ontology information from http://terminologies.gfbio.org/api/terminologies/
-    print "Getting terminologies..."
-    print "... from http://terminologies.gfbio.org/api/terminologies/"
-    #re = requests.get("http://terminologies.gfbio.org/api/terminologies/")
-    #jo = json.loads(re.text)
+    print "Getting terminologies from http://terminologies.gfbio.org/api/terminologies/"
     for item in jo["results"]:
         #check if URL is working
         #print item["acronym"]
         onto = requests.head(item["uri"])
         TERMINOLOGIES[item["acronym"]] = [item["name"], "http://terminologies.gfbio.org/api/terminologies/" + item["acronym"]]
         print item["acronym"] + " added: " + item["name"] + ", " + "http://terminologies.gfbio.org/api/terminologies/" + item["acronym"]
+    #get available ontologies from http://terminologies.gfbio.org/api/terminologies/
+    print "Getting ontologies from http://terminologies.gfbio.org/api/terminologies/"
+    for item in jo["results"]:
+        #check if URL is working
+        #print item["acronym"]
+        onto = requests.head(item["uri"])
+        #print onto.headers
+        if ("text/plain" in onto.headers['content-type'] or "text/xml" in onto.headers['content-type']) and 'Content-Length' in onto.headers and int(onto.headers['Content-Length']) < 10000000 and (TERMINOLOGIES[item["acronym"]] is None or TERMINOLOGIES[item["acronym"]] is ""):
+            ONTOLOGIES[item["acronym"]] = [item["name"], item["uri"]]
+            print item["acronym"] + " added: " + item["name"] + ", " + item["uri"]
+        else:
+            pass
+            #print "-> not added, because: " + str(("text/plain" in onto.headers['content-type'] or "text/xml" in onto.headers['content-type'])) + ", " + str('Content-Length' in onto.headers)
 except requests.exceptions.RequestException:
     pass
 except requests.exceptions.ConnectionError:
     pass
 
 #get the matchers
-print "Getting matchers"
+print "Getting matchers from disk"
 MATCHERS = util.filter_files_from_list(util.get_files_in_directory(os.path.dirname(__file__) + "/matcher", False), "pyc")
