@@ -7,6 +7,7 @@ Created on 04.09.2016
 from django import template
 from django.http import HttpResponse
 from django.http import FileResponse
+from django.template import RequestContext
 import matching_tool_chain
 import reader
 import util
@@ -64,7 +65,7 @@ def index(request):
                     chain.add_matchers(matchers)
                     result = chain.match_ontologies(ontos)
                     connection_options = ["None", "rdfs:subClassOf", "owl:equivalentClass", "owl:disjointWith"]
-                    context = {"title":"Matched Ontologies", "results":result, "connection_options":connection_options}
+                    context = RequestContext(request, {"title":"Matched Ontologies", "results":result, "connection_options":connection_options})
                     template_raw = util.readFileContentAsString(os.path.dirname(__file__) + "/result_writer/matching_result.html")
                     template_content = template.Template(template_raw)
         #show the start page, where the ontologies and matcher can be chosen
@@ -72,11 +73,11 @@ def index(request):
             ontos = util.get_ontologies()
             terms = util.get_terminologies()
             matchers = util.get_matchers()
-            context = {"title":"Ontology Matcher", "ontologies":ontos, "terminologies":terms, "matchers":matchers}
+            context = RequestContext(request, {"title":"Ontology Matcher", "ontologies":ontos, "terminologies":terms, "matchers":matchers})
             template_raw = util.readFileContentAsString(os.path.dirname(__file__) + "/index.html")
             template_content = template.Template(template_raw)
         if context != {}:
-            return HttpResponse(template_content.render(template.Context(context)))
+            return HttpResponse(template_content.render(RequestContext(request, context)))
         template_raw = util.readFileContentAsString(os.path.dirname(__file__) + "/error.html")
         template_content = template.Template(template_raw)
-        return HttpResponse(template_content.render(template.Context({"title":"Ontology Matcher"})))
+        return HttpResponse(template_content.render(RequestContext(request, {"title":"Ontology Matcher"})))
