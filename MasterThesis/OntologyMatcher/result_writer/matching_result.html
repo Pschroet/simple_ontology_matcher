@@ -1,9 +1,10 @@
 <head>
     <title>{{ title }}</title>
+    <script src="/resources/scripts.js"></script>
     <script src="/resources/FileSaver.js"></script>
 </head>
 <body>
-	<form action="select.html">
+	<form id="matchingResults" action="select.html">
 	{% for result in results %}
 	    <h1>{{ result.text }}</h1>
 	    ({{ result.matches|length }} possible matches found)
@@ -20,6 +21,8 @@
 		</ul>
 	{% endfor %}
 	</form><br/>
-	<a href="/matcher/">Save Results</a><br/>
-	<a href="/matcher/">Back</a>
+	<button type="button" onclick="saveResult()">Save Results</button><br/>
+	<form action="/matcher/">
+		<button type="submit">Back</button>
+	</form>
 </body>

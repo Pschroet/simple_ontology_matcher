@@ -30,3 +30,18 @@ function toggleHide(id){
 		elem.setAttribute("hidden", "hidden");
 	}
 }
+
+function saveResult(){
+	//get all matches...
+	matchingResults = document.getElementById("matchingResults").getElementsByTagName("li");
+	//... go through them
+	for(var i = 0; i < matchingResults.length; i++){
+		connectionOptions = matchingResults[i].getElementsByTagName("select")[0];
+		chosenOption = connectionOptions.options[connectionOptions.selectedIndex].value;
+		if(chosenOption != "None"){
+			console.log(matchingResults[i].getElementsByTagName("a")[0].getAttribute("href"));
+			console.log(matchingResults[i].getElementsByTagName("a")[1].getAttribute("href"));
+			console.log(chosenOption);
+		}
+	}
+}
