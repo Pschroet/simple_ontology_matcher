@@ -43,6 +43,8 @@ def match_two_ontologies(results, onto, onto1):
                                             break
                                         #if the dictionary is not bidirectional, check the other direction
                                         tmp_synonyms = dictionary.synonym(item1.get_text().encode('utf8'))
+                                        if j.get_attribute("synonyms") is not None:
+                                            tmp_synonyms = tmp_synonyms + j.get_attribute("synonyms")
                                         if tmp_synonyms is not None and not already_matched and util.is_in_list(item.get_text(), tmp_synonyms):
                                             connections["matches"].append([i.name, "(" + item.get_text() + ")", j.name, "(" + item1.get_text() + ")", " are synonyms"])
                                             already_matched = True
