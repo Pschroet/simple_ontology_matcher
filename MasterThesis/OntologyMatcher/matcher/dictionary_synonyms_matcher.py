@@ -1,5 +1,5 @@
 '''
-Created on 13.09.2016
+Created on 23.10.2016
 
 @author: Philipp Schroeter
 '''
@@ -17,7 +17,7 @@ def match_two_ontologies(results, onto, onto1):
         connections = {"matches":[], "text": "Synonyms"}
         #go through all other ontologies
         #go through all elements
-        print "Searching for synonyms for elements of ontologies " + onto.name + " and " + onto1.name
+        print "Searching for synonyms in dictionaries for elements of ontologies " + onto.name + " and " + onto1.name
         onto_elements = onto.get_elements()
         onto1_elements = onto1.get_elements()
         for i in onto_elements:
@@ -26,9 +26,6 @@ def match_two_ontologies(results, onto, onto1):
                 if label != []:
                     for item in label:
                         synonyms = dictionary.synonym(item.get_text().encode('utf8'))
-                        #if the element has an attribute that contains synonyms use them
-                        if i.get_attribute("synonyms") is not None:
-                            synonyms = synonyms + i.get_attribute("synonyms")
                         #check if there is a list of synonyms and not None or a message
                         if synonyms is not None and hasattr(synonyms, '__getitem__') and hasattr(synonyms, '__iter__'):
                             for j in onto1_elements:
