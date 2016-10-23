@@ -29,22 +29,20 @@ def match_two_ontologies(results, onto, onto1):
                         #if the element has an attribute that contains synonyms use them
                         if i.get_attribute("synonyms") is not None:
                             synonyms = synonyms + i.get_attribute("synonyms")
-                        #check if there is a list of synonyms and not None or a message
-                        if synonyms is not None and hasattr(synonyms, '__getitem__') and hasattr(synonyms, '__iter__'):
-                            for j in onto1_elements:
-                                synonyms1 = []
-                                #if the other element has an attribute that contains synonyms use them
-                                if j.get_attribute("synonyms") is not None:
-                                    synonyms1 = synonyms1 + j.get_attribute("synonyms")
-                                already_matched = False
-                                label1 = j.get_children_named("{http://www.w3.org/2000/01/rdf-schema#}label")
-                                if label1 != []:
-                                    for item1 in label1:
-                                        #if the labels are not the same, but are similar, the nodes might be, too
-                                        if not already_matched and (util.is_in_list(item1.get_text(), synonyms) or util.is_in_list(item.get_text(), synonyms1)):
-                                            connections["matches"].append([i.name, "(" + item.get_text() + ")", j.name, "(" + item1.get_text() + ")", " are synonyms"])
-                                            already_matched = True
-                                            break
+                        for j in onto1_elements:
+                            synonyms1 = []
+                            #if the other element has an attribute that contains synonyms use them
+                            if j.get_attribute("synonyms") is not None:
+                                synonyms1 = synonyms1 + j.get_attribute("synonyms")
+                            already_matched = False
+                            label1 = j.get_children_named("{http://www.w3.org/2000/01/rdf-schema#}label")
+                            if label1 != []:
+                                for item1 in label1:
+                                    #if the labels are not the same, but are similar, the nodes might be, too
+                                    if not already_matched and (util.is_in_list(item1.get_text(), synonyms) or util.is_in_list(item.get_text(), synonyms1)):
+                                        connections["matches"].append([i.name, "(" + item.get_text() + ")", j.name, "(" + item1.get_text() + ")", " are synonyms"])
+                                        already_matched = True
+                                        break
             except re.error:
                 #just ignore errors during regular expression operations and try to go on
                 pass
