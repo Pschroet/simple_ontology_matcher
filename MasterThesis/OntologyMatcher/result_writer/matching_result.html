@@ -4,9 +4,15 @@
     <script src="/resources/FileSaver.js"></script>
 </head>
 <body>
+	<h1>Matching Results</h1>
+	<div id="ontologies">Compared ontologies:
+		{% for ontology in ontologies %}
+		<div>{{ ontology.name }}</div>
+		{% endfor %}
+	</div>
 	<form id="matchingResults" action="select.html">
 	{% for result in results %}
-	    <h1>{{ result.text }}</h1>
+	    <h3>{{ result.text }}</h3>
 	    ({{ result.matches|length }} possible matches found)
 	    <ul>
 		{% for item in result.matches %}

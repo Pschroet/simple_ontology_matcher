@@ -35,13 +35,27 @@ function saveResult(){
 	//get all matches...
 	matchingResults = document.getElementById("matchingResults").getElementsByTagName("li");
 	//... go through them
-	for(var i = 0; i < matchingResults.length; i++){
-		connectionOptions = matchingResults[i].getElementsByTagName("select")[0];
-		chosenOption = connectionOptions.options[connectionOptions.selectedIndex].value;
-		if(chosenOption != "None"){
-			console.log(matchingResults[i].getElementsByTagName("a")[0].getAttribute("href"));
-			console.log(matchingResults[i].getElementsByTagName("a")[1].getAttribute("href"));
-			console.log(chosenOption);
-		}
+	result = "<?xml version='1.0' encoding='utf-8'?>\n<rdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'\nxmlns:xsd='http://www.w3.org/2001/XMLSchema#'>\n<Alignment>\n";
+	ontologies = document.getElementById("ontologies").getElementsByTagName("div");
+	for(var i = 0; i < ontologies.length; i++){
+		result = result + "\t<onto" + i + ">" + ontologies[i].innerHTML + "</onto" + i + ">\n";
 	}
+	for(var i = 0; i < ontologies.length; i++){
+		result = result + "\t<uri" + i + ">" + ontologies[i].innerHTML + "</uri" + i + ">\n";
+	}
+	for(var i = 0; i < matchingResults.length; i++){
+		//connectionOptions = matchingResults[i].getElementsByTagName("select")[0];
+		//chosenOption = connectionOptions.options[connectionOptions.selectedIndex].value;
+		//if(chosenOption != "None"){
+			//console.log(matchingResults[i].getElementsByTagName("a")[0].getAttribute("href"));
+			//console.log(matchingResults[i].getElementsByTagName("a")[1].getAttribute("href"));
+			//console.log(chosenOption);
+		//}
+		result = result + "\t<map>\n\t\t<Cell>\n\t\t\t<entity1 rdf:resource='" + matchingResults[i].getElementsByTagName("a")[0].getAttribute("href") + "'/>\n";
+		result = result + "\t\t\t<entity2 rdf:resource='" + matchingResults[i].getElementsByTagName("a")[1].getAttribute("href") + "'/>\t\n";
+		result = result + "\t\t</Cell>\n\t</map>\n";
+	}
+	result = result + "</Alignment>\n</rdf:RDF>";
+	var b = new Blob([result],{type:"text/plain;charset=utf-8"});
+	saveAs(b, "matches.rdf");
 }
