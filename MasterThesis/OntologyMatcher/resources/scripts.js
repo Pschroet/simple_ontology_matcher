@@ -35,7 +35,7 @@ function saveResult(){
 	//get all matches...
 	matchingResults = document.getElementById("matchingResults").getElementsByTagName("li");
 	//... go through them
-	result = "<?xml version='1.0' encoding='utf-8'?>\n<rdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'\nxmlns:xsd='http://www.w3.org/2001/XMLSchema#'>\n<Alignment>\n";
+	result = "<?xml version='1.0' encoding='utf-8'?>\n<rdf:RDF  xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment'\n xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'\n xmlns:xsd='http://www.w3.org/2001/XMLSchema#'>\n<Alignment>\n";
 	ontologies = document.getElementById("ontologies").getElementsByTagName("div");
 	for(var i = 0; i < ontologies.length; i++){
 		result = result + "\t<onto" + i + ">" + ontologies[i].innerHTML + "</onto" + i + ">\n";
