@@ -1,5 +1,6 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<rdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'
+<rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment'
+xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'
 xmlns:xsd='http://www.w3.org/2001/XMLSchema#'>
 <Alignment>
 	<onto0>http://terminologies.gfbio.org/api/terminologies/ENVO</onto0>
