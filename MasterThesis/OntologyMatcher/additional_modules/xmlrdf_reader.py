@@ -17,9 +17,9 @@ def parse_matchings_file(matchings_file):
         matchings = []
         maps = root.findall("{http://knowledgeweb.semanticweb.org/heterogeneity/alignment}map")
         #print maps
-        for map in maps:
+        for map_ in maps:
             match = matching.matching()
-            children = map.find("{http://knowledgeweb.semanticweb.org/heterogeneity/alignment}Cell").getchildren()
+            children = map_.find("{http://knowledgeweb.semanticweb.org/heterogeneity/alignment}Cell").getchildren()
             #print children
             for child in children:
                 #print child
