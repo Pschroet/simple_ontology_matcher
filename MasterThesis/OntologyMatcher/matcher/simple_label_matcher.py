@@ -33,7 +33,7 @@ def match_two_ontologies(results, onto, onto1):
                                     match_result = re.match("^" + item.get_text() + "$", item1.get_text(), re.IGNORECASE)
                                     if match_result and not already_matched:
                                         #util.write2File("matching.txt", "Nodes " + i.name + " (" + label.get_text() + ")" + " and " + j.name + " (" + label1.get_text() + ")" + " have the same label\n", "a")
-                                        connections["matches"].append([i.name, "(" + item.get_text() + ")", j.name, "(" + item1.get_text() + ")", " have the same label\n"])
+                                        connections["matches"].append([i.name, item.get_text(), j.name, item1.get_text(), " have the same label\n"])
                                         already_matched = True
                     #comment = i.get_child("{http://www.w3.org/1999/02/22-rdf-syntax-ns#}comment")
                     #if comment != None:

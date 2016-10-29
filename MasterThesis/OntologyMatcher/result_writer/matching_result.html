@@ -16,7 +16,7 @@
 	    ({{ result.matches|length }} possible matches found)
 	    <ul>
 		{% for item in result.matches %}
-		    <li>Nodes <a href='{{ item.0 }}'>{{ item.0 }}</a> {{ item.1 }} and <a href='{{ item.2 }}'>{{ item.2 }}</a> {{ item.3 }} {{ item.4 }}
+		    <li>Nodes <a href='{{ item.0 }}'>{{ item.0 }}</a> ({{ item.1 }}) and <a href='{{ item.2 }}'>{{ item.2 }}</a> ({{ item.3 }}) {{ item.4 }}
 		    <select name="{{ item.0 }}!!!{{ item.2 }}!!!options">
 		    {% for option in connection_options %}
 		    	<option>{{ option }}</option>
