@@ -35,7 +35,7 @@ function saveResult(){
 	//get all matches...
 	matchingResults = document.getElementById("matchingResults").getElementsByTagName("li");
 	//... go through them
-	result = "<?xml version='1.0' encoding='utf-8'?>\n<rdf:RDF  xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment'\n xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'\n xmlns:xsd='http://www.w3.org/2001/XMLSchema#'>\n<Alignment>\n";
+	result = "<?xml version='1.0' encoding='utf-8'?>\n<rdf:RDF  xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment'\n xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'\n xmlns:rdfs='http://www.w3.org/2000/01/rdf-schema#'\n xmlns:xsd='http://www.w3.org/2001/XMLSchema#'>\n<Alignment>\n";
 	ontologies = document.getElementById("ontologies").getElementsByTagName("div");
 	for(var i = 0; i < ontologies.length; i++){
 		result = result + "\t<onto" + i + ">" + ontologies[i].innerHTML + "</onto" + i + ">\n";
@@ -51,8 +51,20 @@ function saveResult(){
 			//console.log(matchingResults[i].getElementsByTagName("a")[1].getAttribute("href"));
 			//console.log(chosenOption);
 		//}
-		result = result + "\t<map>\n\t\t<Cell>\n\t\t\t<entity1 rdf:resource='" + matchingResults[i].getElementsByTagName("a")[0].getAttribute("href") + "'/>\n";
-		result = result + "\t\t\t<entity2 rdf:resource='" + matchingResults[i].getElementsByTagName("a")[1].getAttribute("href") + "'/>\t\n";
+		result = result + "\t<map>\n\t\t<Cell>\n\t\t\t<entity1 rdf:resource='" + matchingResults[i].getElementsByTagName("a")[0].getAttribute("href") + "'";
+		//if there is a label, add it to the result
+		if(matchingResults[i].getElementsByTagName("i")[0].innerHTML != ""){
+			result = result + ">\n\t\t\t\t<rdfs:label>" + matchingResults[i].getElementsByTagName("a")[0].innerHTML + "</rdfs:label>\n\t\t\t</entity1>\n"
+		}else{
+			result = result + "/>\n";
+		}
+		result = result + "\t\t\t<entity2 rdf:resource='" + matchingResults[i].getElementsByTagName("a")[1].getAttribute("href") + "'";
+		//if there is a label, add it to the result
+		if(matchingResults[i].getElementsByTagName("i")[1].innerHTML != ""){
+			result = result + ">\n\t\t\t\t<rdfs:label>" + matchingResults[i].getElementsByTagName("a")[1].innerHTML + "</rdfs:label>\n\t\t\t</entity2>\n";
+		}else{
+			result = result + "/>\n";
+		}
 		result = result + "\t\t</Cell>\n\t</map>\n";
 	}
 	result = result + "</Alignment>\n</rdf:RDF>";
