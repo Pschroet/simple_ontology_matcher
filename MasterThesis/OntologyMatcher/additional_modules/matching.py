@@ -11,7 +11,7 @@ class matching(object):
     - the properties of the matching (expected is a dictionary)
     '''
     elements = []
-    properties = {}
+    properties = []
     
     def __init__(self):
         pass
@@ -24,17 +24,37 @@ class matching(object):
     def add_elements(self, elements):
         self.elements = self.elements + elements
     
+    def has_element(self, element):
+        if element in self.elements:
+            return True
+        else:
+            return False
+    
+    #empties a copy of the elements of this object
+    # if there are no elements left, then True is returned
+    # if there is an element in the given elements, that is not in the one of this object, False is returned
+    # if there are elements left, False is returned
+    def is_same(self, elements):
+        #print "Comparing " + str(elements) + " with " + str(self.elements)
+        tmp = list(self.elements)
+        for elem in elements:
+            try:
+                tmp.remove(elem)
+            except ValueError:
+                return False
+        try:
+            tmp.pop()
+            return False
+        except IndexError:
+            return True
+    
     #add a property as a key value pair
     def add_property(self, key, value):
-        self.properties[key] = value
+        self.properties.append([key, value])
     
     #add an amount of properties from a dictionary
     def add_properties(self, properties):
-        for prop in properties:
-            self.properties[prop] = properties[prop]
+        self.properties = self.properties + properties
     
     def tostring(self):
-        output = "Elements: " + str(self.elements)
-        for prop in self.properties:
-            output = output + ", Property: " + prop + ": " + self.properties[prop]
-        return output
+        return "Elements: " + str(self.elements) + ", Properties: " + str(self.properties)

@@ -18,16 +18,28 @@ def parse_matchings_file(matchings_file):
         maps = root.findall("{http://knowledgeweb.semanticweb.org/heterogeneity/alignment}map")
         #print maps
         for map_ in maps:
-            match = matching.matching()
             children = map_.find("{http://knowledgeweb.semanticweb.org/heterogeneity/alignment}Cell").getchildren()
-            #print children
+            #print "Element: " + str(map_)
+            #print "-> " + str(children)
+            match = matching.matching()
+            tmp_elements = []
+            tmp_properties = []
             for child in children:
-                #print child
+                #print "-> " + str(child)
                 if re.match("[{]http[:][/][/]knowledgeweb[.]semanticweb[.]org[/]heterogeneity[/]alignment[}]entity[0-9]*", child.tag, re.IGNORECASE):
-                    match.add_element(child.attrib["{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource"])
+                    tmp_elements.append(child.attrib["{http://www.w3.org/1999/02/22-rdf-syntax-ns#}resource"])
                 elif re.match("[{]http[:][/][/]knowledgeweb[.]semanticweb[.]org[/]heterogeneity[/]alignment[}]measure", child.tag, re.IGNORECASE):
-                    match.add_property(child.tag, child.text)
+                    tmp_properties.append([child.tag, child.text])
                 elif re.match("[{]http[:][/][/]knowledgeweb[.]semanticweb[.]org[/]heterogeneity[/]alignment[}]relation", child.tag, re.IGNORECASE):
-                    match.add_property(child.tag, child.text)
+                    tmp_properties.append([child.tag, child.text])
+                #get the label if the entity has one
+                label = child.find("{http://www.w3.org/2000/01/rdf-schema#}label")
+                #print label.text
+                if label is not None and label is not "":
+                    tmp_properties.append(["{http://www.w3.org/2000/01/rdf-schema#}label", label.text])
+            match.add_elements(tmp_elements)
+            match.add_properties(tmp_properties)
+            #print match.tostring()
             matchings.append(match)
+        #print matchings
         return matchings

@@ -1,0 +1,2932 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<rdf:RDF  xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment'
+ xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'
+ xmlns:rdfs='http://www.w3.org/2000/01/rdf-schema#'
+ xmlns:xsd='http://www.w3.org/2001/XMLSchema#'>
+<Alignment>
+	<onto0>http://terminologies.gfbio.org/api/terminologies/ENVO</onto0>
+	<onto1>http://terminologies.gfbio.org/api/terminologies/PATO</onto1>
+	<uri0>http://terminologies.gfbio.org/api/terminologies/ENVO</uri0>
+	<uri1>http://terminologies.gfbio.org/api/terminologies/PATO</uri1>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/ENVO_01000458'>
+				<rdfs:label>concrete</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000436'>
+				<rdfs:label>concrete</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/BFO_0000002'>
+				<rdfs:label>continuant</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000914'>
+				<rdfs:label>continuant</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/BFO_0000016'>
+				<rdfs:label>disposition</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001727'>
+				<rdfs:label>disposition</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/BFO_0000034'>
+				<rdfs:label>function</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000173'>
+				<rdfs:label>function</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/BFO_0000003'>
+				<rdfs:label>occurrent</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000663'>
+				<rdfs:label>occurrent</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/BFO_0000015'>
+				<rdfs:label>process</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000006'>
+				<rdfs:label>process</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/BFO_0000019'>
+				<rdfs:label>quality</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000001'>
+				<rdfs:label>quality</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001708'>
+				<rdfs:label>1-D extent</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001708'>
+				<rdfs:label>1-D extent</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001709'>
+				<rdfs:label>2-D extent</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001709'>
+				<rdfs:label>2-D extent</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002006'>
+				<rdfs:label>2-D shape</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002006'>
+				<rdfs:label>2-D shape</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001710'>
+				<rdfs:label>3-D extent</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001710'>
+				<rdfs:label>3-D extent</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002266'>
+				<rdfs:label>3-D shape</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002266'>
+				<rdfs:label>3-D shape</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002269'>
+				<rdfs:label>accumulation</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002269'>
+				<rdfs:label>accumulation</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001429'>
+				<rdfs:label>acidic</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001429'>
+				<rdfs:label>acidic</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001842'>
+				<rdfs:label>acidity</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001842'>
+				<rdfs:label>acidity</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001455'>
+				<rdfs:label>aerobic</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001455'>
+				<rdfs:label>aerobic</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000011'>
+				<rdfs:label>age</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000011'>
+				<rdfs:label>age</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001629'>
+				<rdfs:label>aggregated</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001629'>
+				<rdfs:label>aggregated</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001430'>
+				<rdfs:label>alkaline</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001430'>
+				<rdfs:label>alkaline</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001332'>
+				<rdfs:label>amorphous</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001332'>
+				<rdfs:label>amorphous</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001456'>
+				<rdfs:label>anaerobic</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001456'>
+				<rdfs:label>anaerobic</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001977'>
+				<rdfs:label>angular</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001977'>
+				<rdfs:label>angular</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001594'>
+				<rdfs:label>arched</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001594'>
+				<rdfs:label>arched</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001323'>
+				<rdfs:label>area</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001323'>
+				<rdfs:label>area</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000402'>
+				<rdfs:label>branched</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000402'>
+				<rdfs:label>branched</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002009'>
+				<rdfs:label>branchiness</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002009'>
+				<rdfs:label>branchiness</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002359'>
+				<rdfs:label>broad</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002359'>
+				<rdfs:label>broad</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001444'>
+				<rdfs:label>broken</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001444'>
+				<rdfs:label>broken</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002080'>
+				<rdfs:label>broken into two pieces</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002080'>
+				<rdfs:label>broken into two pieces</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001447'>
+				<rdfs:label>calcified</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001447'>
+				<rdfs:label>calcified</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/ENVO_00000526'>
+				<rdfs:label>cleft</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000403'>
+				<rdfs:label>cleft</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000608'>
+				<rdfs:label>closed</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000608'>
+				<rdfs:label>closed</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000136'>
+				<rdfs:label>closure</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000136'>
+				<rdfs:label>closure</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000609'>
+				<rdfs:label>closure incomplete</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000609'>
+				<rdfs:label>closure incomplete</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000019'>
+				<rdfs:label>color pattern</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000019'>
+				<rdfs:label>color pattern</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000337'>
+				<rdfs:label>colorless</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000337'>
+				<rdfs:label>colorless</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002063'>
+				<rdfs:label>columnar</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002063'>
+				<rdfs:label>columnar</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000025'>
+				<rdfs:label>composition</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000025'>
+				<rdfs:label>composition</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001857'>
+				<rdfs:label>concave</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001857'>
+				<rdfs:label>concave</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002008'>
+				<rdfs:label>concave 3-D shape</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002008'>
+				<rdfs:label>concave 3-D shape</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002005'>
+				<rdfs:label>concavity</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002005'>
+				<rdfs:label>concavity</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001159'>
+				<rdfs:label>concentrated</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001159'>
+				<rdfs:label>concentrated</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000033'>
+				<rdfs:label>concentration of</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000033'>
+				<rdfs:label>concentration of</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001485'>
+				<rdfs:label>condensed</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001485'>
+				<rdfs:label>condensed</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002021'>
+				<rdfs:label>conical</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002021'>
+				<rdfs:label>conical</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002007'>
+				<rdfs:label>convex 3-D shape</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002007'>
+				<rdfs:label>convex 3-D shape</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000619'>
+				<rdfs:label>crowded</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000619'>
+				<rdfs:label>crowded</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001591'>
+				<rdfs:label>curvature</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001591'>
+				<rdfs:label>curvature</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000406'>
+				<rdfs:label>curved</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000406'>
+				<rdfs:label>curved</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/ENVO_00000474'>
+				<rdfs:label>cut</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001978'>
+				<rdfs:label>cut</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001873'>
+				<rdfs:label>cylindrical</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001873'>
+				<rdfs:label>cylindrical</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001422'>
+				<rdfs:label>dead</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001422'>
+				<rdfs:label>dead</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001432'>
+				<rdfs:label>decayed</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001432'>
+				<rdfs:label>decayed</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002271'>
+				<rdfs:label>decreased accumulation</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002271'>
+				<rdfs:label>decreased accumulation</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002058'>
+				<rdfs:label>decreased area</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002058'>
+				<rdfs:label>decreased area</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001163'>
+				<rdfs:label>decreased concentration</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001163'>
+				<rdfs:label>decreased concentration</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001472'>
+				<rdfs:label>decreased depth</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001472'>
+				<rdfs:label>decreased depth</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001675'>
+				<rdfs:label>decreased efficiency</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001675'>
+				<rdfs:label>decreased efficiency</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001838'>
+				<rdfs:label>decreased fluid flow</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001838'>
+				<rdfs:label>decreased fluid flow</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000381'>
+				<rdfs:label>decreased frequency</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000381'>
+				<rdfs:label>decreased frequency</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001624'>
+				<rdfs:label>decreased functionality</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001624'>
+				<rdfs:label>decreased functionality</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000574'>
+				<rdfs:label>decreased length</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000574'>
+				<rdfs:label>decreased length</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001562'>
+				<rdfs:label>decreased mass</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001562'>
+				<rdfs:label>decreased mass</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002303'>
+				<rdfs:label>decreased object quality</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002303'>
+				<rdfs:label>decreased object quality</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001713'>
+				<rdfs:label>decreased perimeter</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001713'>
+				<rdfs:label>decreased perimeter</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002302'>
+				<rdfs:label>decreased process quality</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002302'>
+				<rdfs:label>decreased process quality</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002301'>
+				<rdfs:label>decreased quality</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002301'>
+				<rdfs:label>decreased quality</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000911'>
+				<rdfs:label>decreased rate</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000911'>
+				<rdfs:label>decreased rate</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000587'>
+				<rdfs:label>decreased size</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000587'>
+				<rdfs:label>decreased size</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001779'>
+				<rdfs:label>decreased strength</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001779'>
+				<rdfs:label>decreased strength</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001595'>
+				<rdfs:label>depth</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001595'>
+				<rdfs:label>depth</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001986'>
+				<rdfs:label>dissolved</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001986'>
+				<rdfs:label>dissolved</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001566'>
+				<rdfs:label>distributed</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001566'>
+				<rdfs:label>distributed</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001789'>
+				<rdfs:label>domed</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001789'>
+				<rdfs:label>domed</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001824'>
+				<rdfs:label>dry</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001824'>
+				<rdfs:label>dry</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002138'>
+				<rdfs:label>edibility</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002138'>
+				<rdfs:label>edibility</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002139'>
+				<rdfs:label>edible</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002139'>
+				<rdfs:label>edible</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001029'>
+				<rdfs:label>efficiency</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001029'>
+				<rdfs:label>efficiency</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001678'>
+				<rdfs:label>efficient</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001678'>
+				<rdfs:label>efficient</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/ENVO_00000176'>
+				<rdfs:label>elevation</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001687'>
+				<rdfs:label>elevation</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001687'>
+				<rdfs:label>elevation</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001687'>
+				<rdfs:label>elevation</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001154'>
+				<rdfs:label>elongated</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001154'>
+				<rdfs:label>elongated</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000622'>
+				<rdfs:label>erect</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000622'>
+				<rdfs:label>erect</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002453'>
+				<rdfs:label>eroding</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002453'>
+				<rdfs:label>eroding</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002425'>
+				<rdfs:label>exposed</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002425'>
+				<rdfs:label>exposed</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002219'>
+				<rdfs:label>fan-shaped</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002219'>
+				<rdfs:label>fan-shaped</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002064'>
+				<rdfs:label>fenestrated</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002064'>
+				<rdfs:label>fenestrated</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000407'>
+				<rdfs:label>flat</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000407'>
+				<rdfs:label>flat</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002254'>
+				<rdfs:label>flattened</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002254'>
+				<rdfs:label>flattened</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001543'>
+				<rdfs:label>flexibility</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001543'>
+				<rdfs:label>flexibility</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001544'>
+				<rdfs:label>flexible</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001544'>
+				<rdfs:label>flexible</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001574'>
+				<rdfs:label>flow rate</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001574'>
+				<rdfs:label>flow rate</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002243'>
+				<rdfs:label>fluid flow rate</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002243'>
+				<rdfs:label>fluid flow rate</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000044'>
+				<rdfs:label>frequency</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000044'>
+				<rdfs:label>frequency</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001985'>
+				<rdfs:label>frozen</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001985'>
+				<rdfs:label>frozen</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001510'>
+				<rdfs:label>functional</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001510'>
+				<rdfs:label>functional</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001509'>
+				<rdfs:label>functionality</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001509'>
+				<rdfs:label>functionality</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001759'>
+				<rdfs:label>granular</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001759'>
+				<rdfs:label>granular</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000386'>
+				<rdfs:label>hard</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000386'>
+				<rdfs:label>hard</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000048'>
+				<rdfs:label>hardness</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000048'>
+				<rdfs:label>hardness</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002078'>
+				<rdfs:label>hollow</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002078'>
+				<rdfs:label>hollow</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001855'>
+				<rdfs:label>horizontal</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001855'>
+				<rdfs:label>horizontal</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001887'>
+				<rdfs:label>hydrophilic</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001887'>
+				<rdfs:label>hydrophilic</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001886'>
+				<rdfs:label>hydrophilicity</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001886'>
+				<rdfs:label>hydrophilicity</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001885'>
+				<rdfs:label>hydrophobic</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001885'>
+				<rdfs:label>hydrophobic</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001884'>
+				<rdfs:label>hydrophobicity</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001884'>
+				<rdfs:label>hydrophobicity</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000983'>
+				<rdfs:label>impermeable</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000983'>
+				<rdfs:label>impermeable</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002270'>
+				<rdfs:label>increased accumulation</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002270'>
+				<rdfs:label>increased accumulation</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001844'>
+				<rdfs:label>increased acidity</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001844'>
+				<rdfs:label>increased acidity</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001671'>
+				<rdfs:label>increased distribution</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001671'>
+				<rdfs:label>increased distribution</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001676'>
+				<rdfs:label>increased efficiency</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001676'>
+				<rdfs:label>increased efficiency</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001839'>
+				<rdfs:label>increased fluid flow</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001839'>
+				<rdfs:label>increased fluid flow</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000380'>
+				<rdfs:label>increased frequency</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000380'>
+				<rdfs:label>increased frequency</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000573'>
+				<rdfs:label>increased length</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000573'>
+				<rdfs:label>increased length</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001563'>
+				<rdfs:label>increased mass</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001563'>
+				<rdfs:label>increased mass</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002305'>
+				<rdfs:label>increased object quality</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002305'>
+				<rdfs:label>increased object quality</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001657'>
+				<rdfs:label>increased osmolarity</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001657'>
+				<rdfs:label>increased osmolarity</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001712'>
+				<rdfs:label>increased perimeter</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001712'>
+				<rdfs:label>increased perimeter</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001475'>
+				<rdfs:label>increased position</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001475'>
+				<rdfs:label>increased position</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001576'>
+				<rdfs:label>increased pressure</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001576'>
+				<rdfs:label>increased pressure</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002304'>
+				<rdfs:label>increased process quality</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002304'>
+				<rdfs:label>increased process quality</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002300'>
+				<rdfs:label>increased quality</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002300'>
+				<rdfs:label>increased quality</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000912'>
+				<rdfs:label>increased rate</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000912'>
+				<rdfs:label>increased rate</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000586'>
+				<rdfs:label>increased size</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000586'>
+				<rdfs:label>increased size</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001305'>
+				<rdfs:label>increased temperature</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001305'>
+				<rdfs:label>increased temperature</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000595'>
+				<rdfs:label>increased volume</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000595'>
+				<rdfs:label>increased volume</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002140'>
+				<rdfs:label>inedible</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002140'>
+				<rdfs:label>inedible</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000330'>
+				<rdfs:label>irregular spatial pattern</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000330'>
+				<rdfs:label>irregular spatial pattern</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002124'>
+				<rdfs:label>laminar</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002124'>
+				<rdfs:label>laminar</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000122'>
+				<rdfs:label>length</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000122'>
+				<rdfs:label>length</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001199'>
+				<rdfs:label>linear</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001199'>
+				<rdfs:label>linear</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001685'>
+				<rdfs:label>magnetic</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001685'>
+				<rdfs:label>magnetic</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001682'>
+				<rdfs:label>magnetism</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001682'>
+				<rdfs:label>magnetism</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000125'>
+				<rdfs:label>mass</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000125'>
+				<rdfs:label>mass</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001428'>
+				<rdfs:label>medium acidity</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001428'>
+				<rdfs:label>medium acidity</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002182'>
+				<rdfs:label>molecular quality</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002182'>
+				<rdfs:label>molecular quality</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000051'>
+				<rdfs:label>morphology</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000051'>
+				<rdfs:label>morphology</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001906'>
+				<rdfs:label>movement quality</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001906'>
+				<rdfs:label>movement quality</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000946'>
+				<rdfs:label>oblong</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000946'>
+				<rdfs:label>oblong</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000058'>
+				<rdfs:label>odor</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000058'>
+				<rdfs:label>odor</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001208'>
+				<rdfs:label>odorless</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001208'>
+				<rdfs:label>odorless</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000308'>
+				<rdfs:label>old</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000308'>
+				<rdfs:label>old</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000610'>
+				<rdfs:label>open</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000610'>
+				<rdfs:label>open</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001995'>
+				<rdfs:label>organismal quality</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001995'>
+				<rdfs:label>organismal quality</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001655'>
+				<rdfs:label>osmolarity</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001655'>
+				<rdfs:label>osmolarity</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001711'>
+				<rdfs:label>perimeter</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001711'>
+				<rdfs:label>perimeter</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000970'>
+				<rdfs:label>permeability</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000970'>
+				<rdfs:label>permeability</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001241'>
+				<rdfs:label>physical object quality</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001241'>
+				<rdfs:label>physical object quality</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001018'>
+				<rdfs:label>physical quality</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001018'>
+				<rdfs:label>physical quality</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002062'>
+				<rdfs:label>physical quality of a process</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002062'>
+				<rdfs:label>physical quality of a process</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002253'>
+				<rdfs:label>platelike</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002253'>
+				<rdfs:label>platelike</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000973'>
+				<rdfs:label>porosity</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000973'>
+				<rdfs:label>porosity</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000984'>
+				<rdfs:label>porous</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000984'>
+				<rdfs:label>porous</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000140'>
+				<rdfs:label>position</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000140'>
+				<rdfs:label>position</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001025'>
+				<rdfs:label>pressure</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001025'>
+				<rdfs:label>pressure</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001236'>
+				<rdfs:label>process quality</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001236'>
+				<rdfs:label>process quality</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001598'>
+				<rdfs:label>protruding</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001598'>
+				<rdfs:label>protruding</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001645'>
+				<rdfs:label>protruding into</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001645'>
+				<rdfs:label>protruding into</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001646'>
+				<rdfs:label>protruding out of</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001646'>
+				<rdfs:label>protruding out of</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000068'>
+				<rdfs:label>qualitative</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000068'>
+				<rdfs:label>qualitative</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000001'>
+				<rdfs:label>quality</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000001'>
+				<rdfs:label>quality</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001547'>
+				<rdfs:label>quality of a gas</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001547'>
+				<rdfs:label>quality of a gas</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001548'>
+				<rdfs:label>quality of a liquid</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001548'>
+				<rdfs:label>quality of a liquid</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001546'>
+				<rdfs:label>quality of a solid</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001546'>
+				<rdfs:label>quality of a solid</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002198'>
+				<rdfs:label>quality of a substance</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002198'>
+				<rdfs:label>quality of a substance</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001739'>
+				<rdfs:label>radiation quality</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001739'>
+				<rdfs:label>radiation quality</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001741'>
+				<rdfs:label>radioactive</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001741'>
+				<rdfs:label>radioactive</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000161'>
+				<rdfs:label>rate</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000161'>
+				<rdfs:label>rate</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001799'>
+				<rdfs:label>ruffled</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001799'>
+				<rdfs:label>ruffled</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002260'>
+				<rdfs:label>semi erect</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002260'>
+				<rdfs:label>semi erect</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001454'>
+				<rdfs:label>sensitivity to oxygen</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001454'>
+				<rdfs:label>sensitivity to oxygen</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000085'>
+				<rdfs:label>sensitivity toward</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000085'>
+				<rdfs:label>sensitivity toward</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000052'>
+				<rdfs:label>shape</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000052'>
+				<rdfs:label>shape</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001729'>
+				<rdfs:label>shedability</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001729'>
+				<rdfs:label>shedability</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000117'>
+				<rdfs:label>size</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000117'>
+				<rdfs:label>size</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002212'>
+				<rdfs:label>slender</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002212'>
+				<rdfs:label>slender</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001481'>
+				<rdfs:label>sloped</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001481'>
+				<rdfs:label>sloped</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002143'>
+				<rdfs:label>sloped downward</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002143'>
+				<rdfs:label>sloped downward</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001536'>
+				<rdfs:label>solubility</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001536'>
+				<rdfs:label>solubility</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000060'>
+				<rdfs:label>spatial pattern</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000060'>
+				<rdfs:label>spatial pattern</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000428'>
+				<rdfs:label>sporadic</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000428'>
+				<rdfs:label>sporadic</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002180'>
+				<rdfs:label>straight</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002180'>
+				<rdfs:label>straight</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002067'>
+				<rdfs:label>stratification</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002067'>
+				<rdfs:label>stratification</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002068'>
+				<rdfs:label>stratified</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002068'>
+				<rdfs:label>stratified</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001230'>
+				<rdfs:label>strength</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001230'>
+				<rdfs:label>strength</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000141'>
+				<rdfs:label>structure</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000141'>
+				<rdfs:label>structure</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002014'>
+				<rdfs:label>structure, cavities</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002014'>
+				<rdfs:label>structure, cavities</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002416'>
+				<rdfs:label>sunken</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002416'>
+				<rdfs:label>sunken</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000146'>
+				<rdfs:label>temperature</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000146'>
+				<rdfs:label>temperature</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002323'>
+				<rdfs:label>temporal distribution quality</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002323'>
+				<rdfs:label>temporal distribution quality</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000165'>
+				<rdfs:label>time</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000165'>
+				<rdfs:label>time</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001890'>
+				<rdfs:label>tripartite</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001890'>
+				<rdfs:label>tripartite</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002299'>
+				<rdfs:label>tubular</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002299'>
+				<rdfs:label>tubular</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001879'>
+				<rdfs:label>U-shaped</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001879'>
+				<rdfs:label>U-shaped</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000967'>
+				<rdfs:label>undulate</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000967'>
+				<rdfs:label>undulate</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002224'>
+				<rdfs:label>V-shaped</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002224'>
+				<rdfs:label>V-shaped</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001854'>
+				<rdfs:label>vertical</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001854'>
+				<rdfs:label>vertical</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000169'>
+				<rdfs:label>viability</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000169'>
+				<rdfs:label>viability</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000992'>
+				<rdfs:label>viscosity</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000992'>
+				<rdfs:label>viscosity</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000998'>
+				<rdfs:label>viscous</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000998'>
+				<rdfs:label>viscous</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000918'>
+				<rdfs:label>volume</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000918'>
+				<rdfs:label>volume</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001822'>
+				<rdfs:label>wetness</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001822'>
+				<rdfs:label>wetness</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001442'>
+				<rdfs:label>wholeness</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001442'>
+				<rdfs:label>wholeness</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001201'>
+				<rdfs:label>Y-shaped</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001201'>
+				<rdfs:label>Y-shaped</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000309'>
+				<rdfs:label>young</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000309'>
+				<rdfs:label>young</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/ENVO_02500032'>
+				<rdfs:label>revegetation</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000220'>
+				<rdfs:label>regeneration</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/ENVO_01000753'>
+				<rdfs:label>air temperature</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000148'>
+				<rdfs:label>body temperature</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/BFO_0000002'>
+				<rdfs:label>continuant</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000425'>
+				<rdfs:label>continual</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/ENVO_02500001'>
+				<rdfs:label>desertification</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002067'>
+				<rdfs:label>stratification</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/BFO_0000003'>
+				<rdfs:label>occurrent</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001984'>
+				<rdfs:label>decurrent</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001456'>
+				<rdfs:label>anaerobic</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001455'>
+				<rdfs:label>aerobic</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/UBERON_0004905'>
+				<rdfs:label>articulation</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002013'>
+				<rdfs:label>fasciculation</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/UBERON_0001805'>
+				<rdfs:label>autonomic ganglion</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000174'>
+				<rdfs:label>autonomic function</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/CHEBI_24432'>
+				<rdfs:label>biological role</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000047'>
+				<rdfs:label>biological sex</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000337'>
+				<rdfs:label>colorless</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001208'>
+				<rdfs:label>odorless</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002008'>
+				<rdfs:label>concave 3-D shape</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002007'>
+				<rdfs:label>convex 3-D shape</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001159'>
+				<rdfs:label>concentrated</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001160'>
+				<rdfs:label>unconcentrated</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001485'>
+				<rdfs:label>condensed</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002452'>
+				<rdfs:label>decondensed</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002007'>
+				<rdfs:label>convex 3-D shape</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002008'>
+				<rdfs:label>concave 3-D shape</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002271'>
+				<rdfs:label>decreased accumulation</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002270'>
+				<rdfs:label>increased accumulation</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002058'>
+				<rdfs:label>decreased area</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001765'>
+				<rdfs:label>decreased age</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001163'>
+				<rdfs:label>decreased concentration</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001162'>
+				<rdfs:label>increased concentration</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001472'>
+				<rdfs:label>decreased depth</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000569'>
+				<rdfs:label>decreased height</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001675'>
+				<rdfs:label>decreased efficiency</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001676'>
+				<rdfs:label>increased efficiency</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001838'>
+				<rdfs:label>decreased fluid flow</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001839'>
+				<rdfs:label>increased fluid flow</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000381'>
+				<rdfs:label>decreased frequency</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002362'>
+				<rdfs:label>decreased tendency</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001624'>
+				<rdfs:label>decreased functionality</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001625'>
+				<rdfs:label>increased functionality</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000574'>
+				<rdfs:label>decreased length</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001472'>
+				<rdfs:label>decreased depth</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001562'>
+				<rdfs:label>decreased mass</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001765'>
+				<rdfs:label>decreased age</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002303'>
+				<rdfs:label>decreased object quality</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002305'>
+				<rdfs:label>increased object quality</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001713'>
+				<rdfs:label>decreased perimeter</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001715'>
+				<rdfs:label>decreased diameter</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002302'>
+				<rdfs:label>decreased process quality</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002304'>
+				<rdfs:label>increased process quality</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002301'>
+				<rdfs:label>decreased quality</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001843'>
+				<rdfs:label>decreased acidity</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000911'>
+				<rdfs:label>decreased rate</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001765'>
+				<rdfs:label>decreased age</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000587'>
+				<rdfs:label>decreased size</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001765'>
+				<rdfs:label>decreased age</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001779'>
+				<rdfs:label>decreased strength</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000574'>
+				<rdfs:label>decreased length</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/ENVO_00000069'>
+				<rdfs:label>distributary</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001566'>
+				<rdfs:label>distributed</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001566'>
+				<rdfs:label>distributed</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001567'>
+				<rdfs:label>undistributed</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001029'>
+				<rdfs:label>efficiency</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001678'>
+				<rdfs:label>efficient</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001678'>
+				<rdfs:label>efficient</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001029'>
+				<rdfs:label>efficiency</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/UBERON_0001691'>
+				<rdfs:label>external ear</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002483'>
+				<rdfs:label>external to</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/UBERON_0007827'>
+				<rdfs:label>external nose</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002025'>
+				<rdfs:label>external angle</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001510'>
+				<rdfs:label>functional</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000173'>
+				<rdfs:label>function</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001509'>
+				<rdfs:label>functionality</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001510'>
+				<rdfs:label>functional</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001887'>
+				<rdfs:label>hydrophilic</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001885'>
+				<rdfs:label>hydrophobic</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001886'>
+				<rdfs:label>hydrophilicity</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001887'>
+				<rdfs:label>hydrophilic</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001885'>
+				<rdfs:label>hydrophobic</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001887'>
+				<rdfs:label>hydrophilic</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001884'>
+				<rdfs:label>hydrophobicity</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001886'>
+				<rdfs:label>hydrophilicity</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000983'>
+				<rdfs:label>impermeable</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000982'>
+				<rdfs:label>permeable</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002270'>
+				<rdfs:label>increased accumulation</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002271'>
+				<rdfs:label>decreased accumulation</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001844'>
+				<rdfs:label>increased acidity</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001843'>
+				<rdfs:label>decreased acidity</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001671'>
+				<rdfs:label>increased distribution</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001672'>
+				<rdfs:label>decreased distribution</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001676'>
+				<rdfs:label>increased efficiency</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001675'>
+				<rdfs:label>decreased efficiency</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001839'>
+				<rdfs:label>increased fluid flow</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001838'>
+				<rdfs:label>decreased fluid flow</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000380'>
+				<rdfs:label>increased frequency</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000381'>
+				<rdfs:label>decreased frequency</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000573'>
+				<rdfs:label>increased length</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000574'>
+				<rdfs:label>decreased length</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001563'>
+				<rdfs:label>increased mass</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001562'>
+				<rdfs:label>decreased mass</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002305'>
+				<rdfs:label>increased object quality</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002303'>
+				<rdfs:label>decreased object quality</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001657'>
+				<rdfs:label>increased osmolarity</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002028'>
+				<rdfs:label>decreased osmolality</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001712'>
+				<rdfs:label>increased perimeter</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001713'>
+				<rdfs:label>decreased perimeter</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001475'>
+				<rdfs:label>increased position</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001476'>
+				<rdfs:label>decreased position</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001576'>
+				<rdfs:label>increased pressure</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001575'>
+				<rdfs:label>decreased pressure</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002304'>
+				<rdfs:label>increased process quality</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002302'>
+				<rdfs:label>decreased process quality</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002300'>
+				<rdfs:label>increased quality</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002301'>
+				<rdfs:label>decreased quality</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000912'>
+				<rdfs:label>increased rate</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000911'>
+				<rdfs:label>decreased rate</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000586'>
+				<rdfs:label>increased size</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000587'>
+				<rdfs:label>decreased size</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001305'>
+				<rdfs:label>increased temperature</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001306'>
+				<rdfs:label>decreased temperature</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000595'>
+				<rdfs:label>increased volume</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000596'>
+				<rdfs:label>decreased volume</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000330'>
+				<rdfs:label>irregular spatial pattern</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000440'>
+				<rdfs:label>regular spatial pattern</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/ENVO_00002053'>
+				<rdfs:label>limestone</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000183'>
+				<rdfs:label>limb tone</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001682'>
+				<rdfs:label>magnetism</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001685'>
+				<rdfs:label>magnetic</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/CHEBI_23367'>
+				<rdfs:label>molecular entity</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002182'>
+				<rdfs:label>molecular quality</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002182'>
+				<rdfs:label>molecular quality</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001396'>
+				<rdfs:label>cellular quality</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/CHEBI_29075'>
+				<rdfs:label>mononucleotide</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001407'>
+				<rdfs:label>mononucleate</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000057'>
+				<rdfs:label>occurrence</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000663'>
+				<rdfs:label>occurrent</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001018'>
+				<rdfs:label>physical quality</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001300'>
+				<rdfs:label>optical quality</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/CHEBI_52211'>
+				<rdfs:label>physiological role</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001912'>
+				<rdfs:label>physiological state</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002253'>
+				<rdfs:label>platelike</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002467'>
+				<rdfs:label>lathlike</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001645'>
+				<rdfs:label>protruding into</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001646'>
+				<rdfs:label>protruding out of</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001646'>
+				<rdfs:label>protruding out of</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001645'>
+				<rdfs:label>protruding into</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001548'>
+				<rdfs:label>quality of a liquid</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001546'>
+				<rdfs:label>quality of a solid</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001546'>
+				<rdfs:label>quality of a solid</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001548'>
+				<rdfs:label>quality of a liquid</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0001739'>
+				<rdfs:label>radiation quality</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002353'>
+				<rdfs:label>activation quality</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/UBERON_0001004'>
+				<rdfs:label>respiratory system</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000289'>
+				<rdfs:label>respiratory rate</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/UBERON_0000065'>
+				<rdfs:label>respiratory tract</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000289'>
+				<rdfs:label>respiratory rate</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/UBERON_0000117'>
+				<rdfs:label>respiratory tube</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000289'>
+				<rdfs:label>respiratory rate</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000085'>
+				<rdfs:label>sensitivity toward</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000516'>
+				<rdfs:label>sensitive toward</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/UBERON_0001800'>
+				<rdfs:label>sensory ganglion</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000225'>
+				<rdfs:label>sensory function</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002068'>
+				<rdfs:label>stratified</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002069'>
+				<rdfs:label>unstratified</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/ENVO_01000206'>
+				<rdfs:label>temperate</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000146'>
+				<rdfs:label>temperature</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000169'>
+				<rdfs:label>viability</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0002405'>
+				<rdfs:label>friability</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+	<map>
+		<Cell>
+			<entity1 rdf:resource='http://purl.obolibrary.org/obo/ENVO_01000266'>
+				<rdfs:label>water vapour</rdfs:label>
+			</entity1>
+			<entity2 rdf:resource='http://purl.obolibrary.org/obo/PATO_0000671'>
+				<rdfs:label>water value</rdfs:label>
+			</entity2>
+		</Cell>
+	</map>
+</Alignment>
+</rdf:RDF>
