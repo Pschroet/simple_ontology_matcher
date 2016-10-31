@@ -1,0 +1,20 @@
+<head>
+    <title>{{ title }}</title>
+</head>
+<body>
+	<h1>Matching Results</h1>
+    <h3>Same</h3>
+    ({{ same|length }} are the same)
+    <ul>
+	{% for item in same %}
+	    <li>{{ item.0 }} and {{ item.1 }}</li>
+	{% endfor %}
+	</ul>
+    <!-- <h3>Different</h3>
+    ({{ different|length }} are different)
+    <ul>
+	{% for item in different %}
+	    <li>{{ item.0 }} and {{ item.1 }}</li>
+	{% endfor %}
+	</ul> -->
+</body>
