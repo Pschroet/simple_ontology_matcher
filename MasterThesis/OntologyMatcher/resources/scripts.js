@@ -54,14 +54,14 @@ function saveResult(){
 		result = result + "\t<map>\n\t\t<Cell>\n\t\t\t<entity1 rdf:resource='" + matchingResults[i].getElementsByTagName("a")[0].getAttribute("href") + "'";
 		//if there is a label, add it to the result
 		if(matchingResults[i].getElementsByTagName("i")[0].innerHTML != ""){
-			result = result + ">\n\t\t\t\t<rdfs:label>" + matchingResults[i].getElementsByTagName("a")[0].innerHTML + "</rdfs:label>\n\t\t\t</entity1>\n"
+			result = result + ">\n\t\t\t\t<rdfs:label>" + matchingResults[i].getElementsByTagName("i")[0].innerHTML + "</rdfs:label>\n\t\t\t</entity1>\n"
 		}else{
 			result = result + "/>\n";
 		}
 		result = result + "\t\t\t<entity2 rdf:resource='" + matchingResults[i].getElementsByTagName("a")[1].getAttribute("href") + "'";
 		//if there is a label, add it to the result
 		if(matchingResults[i].getElementsByTagName("i")[1].innerHTML != ""){
-			result = result + ">\n\t\t\t\t<rdfs:label>" + matchingResults[i].getElementsByTagName("a")[1].innerHTML + "</rdfs:label>\n\t\t\t</entity2>\n";
+			result = result + ">\n\t\t\t\t<rdfs:label>" + matchingResults[i].getElementsByTagName("i")[1].innerHTML + "</rdfs:label>\n\t\t\t</entity2>\n";
 		}else{
 			result = result + "/>\n";
 		}
