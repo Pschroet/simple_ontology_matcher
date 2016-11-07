@@ -30,24 +30,6 @@ class matching(object):
         else:
             return False
     
-    #empties a copy of the elements of this object
-    # if there are no elements left, then True is returned
-    # if there is an element in the given elements, that is not in the one of this object, False is returned
-    # if there are elements left, False is returned
-    def is_same(self, elements):
-        #print "Comparing " + str(elements) + " with " + str(self.elements)
-        tmp = list(self.elements)
-        for elem in elements:
-            try:
-                tmp.remove(elem)
-            except ValueError:
-                return False
-        try:
-            tmp.pop()
-            return False
-        except IndexError:
-            return True
-    
     #add a property as a key value pair
     def add_property(self, key, value):
         self.properties.append([key, value])
@@ -55,6 +37,42 @@ class matching(object):
     #add an amount of properties from a dictionary
     def add_properties(self, properties):
         self.properties = self.properties + properties
+    
+    #returns the value of a key value pair in the properties of this matching object
+    # if no property with the given key is found, None is returned
+    # if there is more than one property with the given key the first is returned
+    def get_property_named(self, key):
+        for prop in self.properties:
+            if prop[0] == key:
+                return prop[1]
+        return None
+    
+    #returns all list of all values of a key value pair in the properties of this matching object
+    # if no property with the given key is found, None is returned
+    # even if only one item is returned, still a list will be returned
+    def get_properties_named(self, key):
+        output = []
+        for prop in self.properties:
+            if prop[0] == key:
+                output.append(prop[1])
+        if len(output) > 0:
+            return output
+        else:
+            return None
+    
+    #empties a copy of the elements of this object
+    # if there are no elements left, then True is returned
+    # if there is an element in the given elements, that is not in the one of this object, False is returned
+    # if there are elements left, False is returned
+    def is_same(self, comp_elements):
+        #print "Comparing " + str(self.elements) + " with " + str(comp_elements)
+        tmp = set(self.elements)
+        tmp1 = set(comp_elements)
+        diff =  tmp - tmp1
+        if len(tmp) == len(tmp1) and len(diff) == 0:
+            return True
+        else:
+            return False
     
     def tostring(self):
         return "Elements: " + str(self.elements) + ", Properties: " + str(self.properties)

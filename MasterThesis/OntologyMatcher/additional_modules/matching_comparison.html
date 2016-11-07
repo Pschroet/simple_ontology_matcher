@@ -7,7 +7,7 @@
     ({{ same|length }} are the same)
     <ul>
 	{% for item in same %}
-	    <li>{{ item.0 }} and {{ item.1 }}</li>
+	    <li><a href='{{ item.0 }}'>{{ item.0 }}</a> ({{ item.2 }}) and <a href='{{ item.1 }}'>{{ item.1 }}</a> ({{ item.3 }})</li>
 	{% endfor %}
 	</ul>
     <!-- <h3>Different</h3>
