@@ -2,7 +2,5 @@
 <config>
 	<matcher>simple_label_matcher.py</matcher>
 	<matcher>levenshtein_distance_matcher.py</matcher>
-	<matcher>synonym_matcher.py</matcher>
-	<matcher>antonym_matcher.py</matcher>
-	<matcher>count_matcher.py</matcher>
+	<matcher>synonym_attribute_matcher.py</matcher>
 </config>
