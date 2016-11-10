@@ -64,7 +64,7 @@ def index(request):
                     #chain.add_config_from_file("./OntologyMatcher/all_matchers-config.xml")
                     chain.add_matchers(matchers)
                     result = chain.match_ontologies(ontos)
-                    connection_options = ["None", "rdfs:subClassOf", "owl:equivalentClass", "owl:differentFrom", "owl:disjointWith"]
+                    connection_options = ["None", "rdfs:subClassOf", "owl:equivalentClass", "owl:intersectionOf", "owl:differentFrom", "owl:disjointWith", "owl:inverseOf"]
                     context = RequestContext(request, {"title":"Matched Ontologies", "results":result, "connection_options":connection_options, "ontologies":ontos})
                     template_raw = util.readFileContentAsString(os.path.dirname(__file__) + "/result_writer/matching_result.html")
                     template_content = template.Template(template_raw)
