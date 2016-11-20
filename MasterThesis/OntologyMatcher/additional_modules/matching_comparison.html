@@ -15,18 +15,14 @@
     	({{ different.0|length }} are different)
 	    <ul>
 		{% for item in different.0 %}
-			{% for item in different.0 %}
-		    	<li><a href='{{ item.0 }}'>{{ item.0 }}</a> ({{ item.2 }}) and <a href='{{ item.1 }}'>{{ item.1 }}</a> ({{ item.3 }})</li>
-		    {% endfor %}
+		    <li><a href='{{ item.0 }}'>{{ item.0 }}</a> ({{ item.2 }}) and <a href='{{ item.1 }}'>{{ item.1 }}</a> ({{ item.3 }})</li>
 		{% endfor %}
 		</ul>
 		<h3>{{ different_names.1 }}</h3>
     	({{ different.1|length }} are different)
 	    <ul>
 		{% for item in different.1 %}
-			{% for item in different.1 %}
-		    	<li><a href='{{ item.0 }}'>{{ item.0 }}</a> ({{ item.2 }}) and <a href='{{ item.1 }}'>{{ item.1 }}</a> ({{ item.3 }})</li>
-		    {% endfor %}
+		    <li><a href='{{ item.0 }}'>{{ item.0 }}</a> ({{ item.2 }}) and <a href='{{ item.1 }}'>{{ item.1 }}</a> ({{ item.3 }})</li>
 		{% endfor %}
 		</ul>
 </body>
