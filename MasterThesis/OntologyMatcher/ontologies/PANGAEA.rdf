@@ -1,0 +1,824 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#" > 
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34429">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lakes &amp; Rivers</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37535">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cephalorhyncha</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37591">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cephalopoda</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34049">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Psychology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37494">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plantae</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33993">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Materials Science, Multidisciplinary</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33981">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Immunology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34000">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mechanics</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33994">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Materials Science, Paper &amp; Wood</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34024">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Operations Research &amp; Management Science</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33902">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Agriculture, Dairy &amp; Animal Science</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/870">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34012">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mining &amp; Mineral Processing</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34048">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Psychiatry</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34036">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physics, Applied</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33938">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Critical Care Medicine</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33926">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chemistry, Multidisciplinary</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33914">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biochemistry &amp; Molecular Biology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37536">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chaetognatha</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37548">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porifera</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37495">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Protozoa</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34038">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physics, Condensed Matter</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37580">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cnidaria</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37592">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dinoflagellata</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33982">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Infectious Diseases</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33970">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genetics &amp; Heredity</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33995">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Materials Science, Textiles</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33983">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Instruments &amp; Instrumentation</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34013">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multidisciplinary Sciences</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34001">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medical Ethics</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34037">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physics, Atomic, Molecular &amp; Chemical</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34025">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ophthalmology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33939">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crystallography</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33927">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chemistry, Organic</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33915">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biodiversity Conservation</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33903">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Agriculture, Multidisciplinary</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37537">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chordata</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37549">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radiozoa</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37533">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bryophyta</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37545">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nematoda</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37557">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chironomidae</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34039">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physics, Fluids &amp; Plasmas</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/873">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pedosphere</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37492">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chromista</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34027">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ornithology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33971">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geochemistry</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33996">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mathematical &amp; Computational Biology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33984">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Integrative &amp; Complementary Medicine</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33972">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geography</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34002">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medical Informatics</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34026">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Optics</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33899">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Acoustics</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34014">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mycology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/872">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biosphere</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33928">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chemistry, Physical</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33916">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33904">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Agronomy</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37558">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cirripedia</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34070">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Urology &amp; Nephrology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37546">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nemertea</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37590">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pteropoda</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34028">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orthopedics</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34016">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neuroimaging</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37493">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fungi</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33960">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Engineering, Multidisciplinary</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33997">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mathematics</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33985">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Limnology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33973">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33961">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Engineering, Ocean</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34015">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nanoscience &amp; Nanotechnology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/871">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cryosphere</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34003">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medical Laboratory Technology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33917">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biophysics</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33905">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Allergy</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37547">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ochrophyta</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34071">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Veterinary Sciences</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37559">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Copepoda</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33929">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clinical Neurology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37543">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mollusca</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37555">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amphipoda</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37567">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Limoniidae</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37579">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ciliophora</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37531">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arthropoda</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37490">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Archaea</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34020">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nutrition &amp; Dietetics</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34044">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physiology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34032">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34068">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transportation Science &amp; Technology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33946">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Emergency Medicine</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34056">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rheumatology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33934">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computer Science, Interdisciplinary Applications</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33922">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chemistry, Analytical</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33910">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Audiology &amp; Speech-Language Pathology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33958">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Engineering, Marine</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37532">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bacillariophyta</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37544">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Myzozoa</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37556">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Branchiopoda</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37568">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mysidacea</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37491">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bacteria</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33990">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Materials Science, Characterization &amp; Testing</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34033">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pediatrics</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34021">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Obstetrics &amp; Gynecology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34057">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Robotics</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33935">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computer Science, Software Engineering</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34045">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plant Sciences</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33923">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chemistry, Applied</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33911">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Automatition &amp; Control Systems</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34069">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tropical Medicine</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33959">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Engineering, Mechanical</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33947">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Endocrinology &amp; Metabolism</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37569">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ostracoda</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37565">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Euphausiacea</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37577">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ascidiacea</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37589">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gastropoda</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34427">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Topic</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37541">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Echinodermata</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37553">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oligochaeta</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33870">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Subject</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33991">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Materials Science, Coatings &amp; Films</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34022">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oceanography</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34010">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microscopy</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34397">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geophysics</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34046">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polymer Science</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33924">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chemistry, Inorganic &amp; Nuclear</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34034">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peripheral Vascular Disease</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33912">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behavioural Sciences</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33900">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Agricultural Economics &amp; Policy</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34058">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Soil Science</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33948">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Energy &amp; Fuels</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33936">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computer Science, Theory &amp; Methods</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37554">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polychaeta</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37566">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Isopoda</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34428">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oceans</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37578">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pisces</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37530">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Annelida</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37542">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Foraminifera</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33992">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Materials Science, Composites</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33980">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Imaging Science &amp; Photographic Technology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34011">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mineralogy</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34035">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pharmacology &amp; Pharmacy</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33913">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biochemical Research Methods</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34023">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oncology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33901">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Agricultural Engineering</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34059">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectroscopy</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34047">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primary Health Care</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33949">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Engineering, Aerospace</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33937">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Construction &amp; Building Technology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33925">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chemistry, Medicinal</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37587">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bivalvia</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37551">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rotifera</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37563">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Decapoda</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37575">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tunicata</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34106">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anthropology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34009">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microbiology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34064">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Telecommunications</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33942">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Developmental Biology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34052">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rehabilitation</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33930">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computer Science, Artificial Intelligence</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33869">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Classifying terms, PANGAEA</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33978">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">History &amp; Philosophy of Science</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33966">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fisheries</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33954">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Engineering, Environmental</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34432">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biological Classification</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34040">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physics, Mathematical</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37576">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Appendicularia</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37588">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polyplacophora</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37540">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discomitochondria</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37552">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sipuncula</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37564">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ephemeroptera</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34107">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geography</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34053">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Remote Sensing</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33931">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computer Science, Cybernetics</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34041">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physics, Multidisciplinary</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34065">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thermodynamics</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33979">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Horticulture</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33967">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Food Science &amp; Technology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33955">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Engineering, Geological</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33943">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ecology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34433">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chemistry</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37488">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Taxa</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37561">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Insecta</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37573">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Priapulida</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37585">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crinoidea</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37597">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phaeophyceae</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/869">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hydrosphere</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34042">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physics, Nuclear</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33920">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell &amp; Tissue Engineering</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34030">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paleontology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34066">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Toxicology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34054">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reproductive Biology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33968">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Forestry</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33956">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Engineering, Industrial</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33944">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Education, Scientific Disciplines</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33932">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computer Science, Hardware &amp; Architecture</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37489">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animalia</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37550">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rhodophyta</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37562">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cumacea</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37586">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Holothuroidea</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/868">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environment</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34031">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parasitology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34055">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Respiratory System</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34043">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physics, Particles &amp; Fields</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33957">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Engineering, Manufacturing</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34067">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transplantation</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33945">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electrochemistry</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33933">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computer Science, Information Systems</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33921">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell Biology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33969">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gastroenterology &amp; Hepatology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37583">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hydrozoa</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37595">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Silicoflagellata</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34017">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neurosciences</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34005">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medicine, Legal</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/875">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anthroposphere</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34029">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Otorhinolaryngology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37571">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bryophyta</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33986">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Logic</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33974">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geosciences, Multidisciplinary</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33962">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Engineering, Petroleum</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33950">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Engineering, Biomedical</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34004">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medicine, General &amp; Internal</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33998">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mathematics, Applied</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33906">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anatomy &amp; Morphology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34060">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sport Sciences</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33918">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biotechnology &amp; Applied Microbiology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34072">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Virology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37572">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bryozoa</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37584">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asterozoa</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37596">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bolboforma</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34006">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medicine, Research &amp; Experimental</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/874">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lithosphere</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34018">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nuclear Science &amp; Technology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37560">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crustacea</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33975">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geriatrics &amp; Gerontology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33963">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Entomology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33951">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Engineering, Chemical</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33999">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mathematics, Interdisciplinary Applications</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33987">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marine Biology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33919">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cardiac &amp; Cardiovascular Systems</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34073">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Water Resources</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33907">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Andrology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34061">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Statistics &amp; Probability</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37496">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Viruses</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34104">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Law</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37581">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anthozoa</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34019">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nursing</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34007">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Metallurgy &amp; Metallurgical Engineering</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33964">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environmental Sciences</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34074">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zoology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33952">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Engineering, Civil</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33940">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dentistry, Oral Surgery &amp; Medicine</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33988">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Materials Science, Biomaterials</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33976">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Health Care Sciences &amp; Services</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34430">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human Dimensions</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37538">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ciliophora</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33908">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anesthesiology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34062">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Substance Abuse</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34050">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Public, Environmental &amp; Occupational Health</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37594">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Archaeomonadaceae</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37497">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">incertae sedis</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34105">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Archaeology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37570">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diatomeae</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34008">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Meteorology &amp; Atmospheric Sciences</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/37582">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scyphozoa</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33953">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Engineering, Electrical &amp; Electronic</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34063">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Surgery</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33941">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dermatology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33989">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Materials Science, Ceramics</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33977">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hematology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33965">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Evolutionary Biology</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34443">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Agriculture</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34431">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Land Surface</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/33909">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Astronomy</rdfs:label>
+  </owl:Class>
+<owl:Class rdf:about="http://www.pangaea.de/ID_feature/34051">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radiology, Nuclear Medicine &amp; Medical Imaging</rdfs:label>
+  </owl:Class>
+</rdf:RDF>
