@@ -43,8 +43,12 @@ def index(request):
                         tmp = reader.ontology_reader("GFBio_terminology_server_parser", source).ontology
                         #print tmp.tostring()
                         ontos.append(tmp)
-                    elif os.path.isfile(source):
+                    elif os.path.isfile(source) and re.match(os.path.basename(source).split(".")[1], "owl", re.IGNORECASE):
                         tmp = reader.ontology_reader("owl_rdfxml_parser", source).ontology
+                        #print tmp.tostring()
+                        ontos.append(tmp)
+                    elif os.path.isfile(source) and re.match(os.path.basename(source).split(".")[1], "rdf", re.IGNORECASE):
+                        tmp = reader.ontology_reader("rdf_xml_parser", source).ontology
                         #print tmp.tostring()
                         ontos.append(tmp)
                     elif bool(urlparse.urlparse(source).scheme):
