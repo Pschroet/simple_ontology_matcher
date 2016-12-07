@@ -164,8 +164,7 @@ try:
             ONTOLOGIES[item["acronym"]] = [item["name"], item["uri"]]
             print item["acronym"] + " added: " + item["name"] + ", " + item["uri"]
         else:
-            pass
-            #print "-> not added, because: " + str(("text/plain" in onto.headers['content-type'] or "text/xml" in onto.headers['content-type'])) + ", " + str('Content-Length' in onto.headers)
+            print item["acronym"] + " not added"
 except requests.exceptions.RequestException:
     pass
 except requests.exceptions.ConnectionError:
