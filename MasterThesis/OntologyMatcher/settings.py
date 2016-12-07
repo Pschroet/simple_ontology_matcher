@@ -141,7 +141,7 @@ ONTOLOGIES = {}
 TERMINOLOGIES = {}
 print "Getting ontologies from disk"
 for item in util.get_files_in_directory(os.path.dirname(__file__) + "/ontologies", False):
-    ONTOLOGIES[item.replace(".owl", "")] = [item, os.path.dirname(__file__) + "/ontologies/" + item]
+    ONTOLOGIES[item.split(".")[0]] = [item, os.path.dirname(__file__) + "/ontologies/" + item]
 try:
     re = requests.get("http://terminologies.gfbio.org/api/terminologies/")
     jo = json.loads(re.text)
