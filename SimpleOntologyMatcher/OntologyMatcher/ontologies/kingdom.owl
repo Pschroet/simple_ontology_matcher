@@ -1,28 +1,14 @@
 <?xml version="1.0"?>
-
-
-<!DOCTYPE rdf:RDF [
-    <!ENTITY dc2 "dc:" >
-    <!ENTITY dc "http://purl.org/dc/terms/" >
-    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
-    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
-    <!ENTITY description "http://purl.org/dc/terms/description#" >
-    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY gfbio "http://terminologies.gfbio.org/terms/" >
-]>
-
-
 <rdf:RDF xmlns="http://terminologies.gfbio.org/terms/KINGDOM"
      xml:base="http://terminologies.gfbio.org/terms/KINGDOM"
+     xmlns:dc="http://purl.org/dc/terms/"
      xmlns:dc2="dc:"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:description="&dc;description#"
+     xmlns:description="http://purl.org/dc/terms/description#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:gfbio="http://terminologies.gfbio.org/terms/"
-     xmlns:dc="http://purl.org/dc/terms/">
+     xmlns:gfbio="http://terminologies.gfbio.org/terms/">
     <owl:Ontology rdf:about="http://terminologies.gfbio.org/terms/KINGDOM">
         <rdfs:label>Kingdom Ontology</rdfs:label>
 	<owl:versionInfo>2.0</owl:versionInfo>
@@ -30,7 +16,7 @@
         <dc:contributor>Robert Huber</dc:contributor>
 	<rdfs:comment></rdfs:comment>
 	<dc:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
-        <owl:versionIRI rdf:resource="&gfbio;kingdom/releases/2.0/kingdom.owl"/>
+        <owl:versionIRI rdf:resource="http://terminologies.gfbio.org/terms/kingdom/releases/2.0/kingdom.owl"/>
     </owl:Ontology>
 
 
