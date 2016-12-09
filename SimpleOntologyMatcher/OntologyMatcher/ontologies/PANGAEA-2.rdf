@@ -1,0 +1,2171 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#" > 
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37971">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10-methyltetradecanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38082">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">all-cis-6,9,12-octadecatrienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38191">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">docosa-7,10,13,16-tetraenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37511">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">haplotype</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38070">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(9Z,12Z)-octadeca-9,12-dienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37765">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unsorted</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38094">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">octadecapentaenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37898">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">katal</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37874">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">enzyme activity</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37995">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hexadec-9-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37983">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hexadecanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37862">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adenosine monophosphate</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38419">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ladderane lipid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38528">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lutetium</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38407">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pentacycloanammoxic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38504">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">long-chain alkanol</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38516">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bacteriohopanepolyol</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38503">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C30 alkanol</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38600">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">attenuation</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37899">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">enzyme unit</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37778">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inorganic chemistry feature</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37960">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11-methyldodecanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38071">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">all-cis-9,12-octadecadienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38180">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">docosa-13,16-dienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38192">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(7Z,10Z,13Z,16Z)-docosa-7,10,13,16-tetraenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38095">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">octadeca-3,6,9,12,15-pentaenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38083">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">?-Linolenic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37512">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gene</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37996">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(9Z)-hexadec-9-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37984">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">palmitic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37863">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adenosine diphosphate</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37972">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12-methyltetradecanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38408">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C20-[3]-ladderane fatty acid methyl ester</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38517">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">normalized</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38529">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thulium</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38505">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">n-alkanol</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38601">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">optical thickness</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37779">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organic chemistry feature</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37872">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">catalytic activity</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37993">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(11E)-hexadec-11-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37981">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14-methylpentadecanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37860">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adenosine 5'-triphosphate</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38092">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(3Z,6Z,9Z,12Z)-octadeca-3,6,9,12-tetraenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37799">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lead, soluble</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37787">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">general IUPAC name</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37896">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">recommended enzyme name</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38308">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">assigned proportion</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38417">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cyclopropenyl fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38526">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">soil</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38405">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8-[5]-ladderane-octanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38538">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">abundance</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38404">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8-(pentacyclo[6.4.0.02,7.03,6.09,12]dodec-4-yl)octanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38513">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aminopentol (group)</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38525">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organic matter</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38622">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gene copy (transcript)</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38501">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C26 alkanol</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38080">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">octadeca-6,9,12-trienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37861">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adenylate energy charge</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38093">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">all-cis-3,6,9,12-octadecatetraenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37982">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isohexadecanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37510">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">internal transcribed spacer</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37970">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">myristic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37764">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">standard deviation</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38081">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(6Z,9Z,12Z)-octadeca-6,9,12-trienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37788">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oxalate</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37897">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">recommended chemical name</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37994">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trans-11-hexadecenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37873">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">catalytic activity concentration</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38539">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">methane oxidizing bacteria</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38309">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accumulation</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38418">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbocyclic fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38406">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C20-[5]-ladderane fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38515">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aminotriol (group)</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38527">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">standard error</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38502">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C28 alkanol</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38514">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aminotetrol (group)</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37789">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ethanedioate</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38190">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">all-cis-10,13,16,19-docosatetraenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37870">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbonic anhydrase</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37991">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hexadecenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37797">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cobalt, soluble</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38548">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nitrogen</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38318">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C17 alkanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38306">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">water</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38535">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">methane</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38305">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbon preference index</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38414">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cyclopropane fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38547">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">per individual</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38402">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C20-[5]-ladderane fatty acid methyl ester</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38511">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aminopentol</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38209">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lignoceric acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38523">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calcium carbonate</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38620">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">number density</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38090">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">octadeca-5,8,11,14-tetraenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37992">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hexadec-11-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37871">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbonate dehydratase</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37980">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10-methylpentadecanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37798">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cadmium, soluble</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37786">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">preferred IUPAC name</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37520">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genetic fragment</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37895">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">recommended name</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38319">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C18 alkanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38537">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">usage fraction</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38307">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">composition</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38416">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cyclopropene fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38549">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chloride</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38415">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cyclopropyl fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38524">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calcification</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38403">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">methyl 8-(pentacyclo[6.4.0.02,7.03,6.09,12]dodec-4-yl)octanoate</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38536">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">methane oxidation</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38500">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alkanol</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38621">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">statistical cluster</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38512">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(2S,3S,5R,10R,12S,14S,15R,16R)-2-amino-12,16-dimethylicosane-3,5,10,14,15-pentol</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38091">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">octadeca-3,6,9,12-tetraenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37795">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">copper, soluble</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37783">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unsorted, others</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38206">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22-methyltricosanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38328">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C27 alkanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38327">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C26 alkanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38207">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isotetracosanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38557">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gross primary production</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38219">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tetracos-13-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38315">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C14 alkanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38303">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">total organic carbon</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38533">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">saturation</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38412">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14-methylhexadecenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38545">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">production</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38400">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C18-[5]-ladderane fatty acid methyl ester</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38521">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">manganese</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37990">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isoheptadecenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37796">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nickel, soluble</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38329">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C28 alkanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38317">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C16 alkanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38316">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C15 alkanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38546">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">citrate (Si)-synthase</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38208">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tetracosanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38304">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molecular weight</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38522">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">titanium</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38413">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anteisoheptadecenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38401">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">methyl 6-(pentacyclo[6.4.0.02,7.03,6.09,12]dodec-4-yl)hexanoate</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38534">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oxidation</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38510">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nanometer</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37793">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bromide</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37781">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">general chemistry feature</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38204">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">21-methyltricosanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38216">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(15Z)-tetracos-15-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38228">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cis-17-hexacosenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38107">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cis-11-nonadecenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38108">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">icosanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38579">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Napierian attenuation coefficient</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38349">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C19 carboxylic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38229">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hexacos-15-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38337">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">long-chain alkanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38555">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">betaine</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38325">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C24 alkanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38313">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">n-alkanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38301">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ladderane fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38531">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">europium</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38410">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">methyleneoctadecanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38543">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isotopic fractionation</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37794">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vanadium, soluble</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37782">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unsorted, chemical terms</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38205">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anteisotetracosanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38217">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cis-15-tetracosenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38339">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">particulate organic matter</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38459">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calcite</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38338">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">particulate</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38218">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nervonic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38326">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C25 alkanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38109">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">arachidic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38314">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unbranched alkanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38544">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbon monoxide</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38556">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">energy budget (ecology)</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38302">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hydroxylated fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38411">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">methylenehexadecanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38520">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calcium</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38532">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">samarium</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38202">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">all-cis-4,7,10,13,16,19-docosahexaenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38214">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tetracosenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37791">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anion</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38226">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hexacos-17-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38105">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nonadec-11-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38238">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">triacontanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38008">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hexadeca-9,12-dienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38117">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cis-13-eicosenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38129">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cis-3-eicosenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38359">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C29 carboxylic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38009">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(9Z,12Z)-hexadeca-9,12-dienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38468">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electron transport system</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38577">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molar absorptivity</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38347">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C17 carboxylic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38335">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C34 alkanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38553">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">succinate</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38323">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C22 alkanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38311">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">terrestrial</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38420">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">octadec-12-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38541">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hydrogencarbonate</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37792">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cation</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38203">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tricosanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37780">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chemistry feature</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38215">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tetracos-15-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38106">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(11Z)-nonadec-11-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38227">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(17Z)-hexacos-17-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38239">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">melissic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38118">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">paullinic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38119">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">icos-11-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38348">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C18 carboxylic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38469">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isocitrate dehydrogenase</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38336">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">short-chain alkanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38324">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C23 alkanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38578">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">attenuation coefficient</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38542">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uptake by organism</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38312">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alkanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38554">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">butanedioate</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38300">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ladderane</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38530">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">terbium</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37498">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genetic site</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38200">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">docosa-4,7,10,13,16,19-hexaenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38212">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22-methyltetracosanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38103">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(9Z)-nonadec-9-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38224">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cerotic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38236">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12-hydroxyoctacosanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38006">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(10Z,13Z)-hexadeca-10,13-dienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38115">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">icos-13-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38127">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">icos-3-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38248">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">saturated fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38139">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(8Z,11Z,14Z)-icosa-8,11,14-trienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38018">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">all-cis-7,10,13-hexadecatrienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38599">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">napierian absorbance</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37908">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isoprenoid fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38369">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molecular mass</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38478">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">silicon</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38357">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C27 carboxylic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38466">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lattice constant b</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38575">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molar attenuation coefficient</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38345">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C15 carboxylic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38333">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C32 alkanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38587">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molar decadic attenuation coefficient</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38551">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbon utilization index</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38321">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C20 alkanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38563">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wet mass</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38201">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(4Z,7Z,10Z,13Z,16Z,19Z)-docosa-4,7,10,13,16,19-hexaenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38213">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anteisopentacosanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38225">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hexacosenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38104">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cis-9-nonadecenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37790">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ion</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38116">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(13Z)-icos-13-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38237">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nonacosanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38249">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">omega fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38019">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">roughanic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38128">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(3Z)-icos-3-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38007">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">all-cis-10,13-hexadecadienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37909">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isoprene</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38479">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbon dioxide</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38358">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C28 carboxylic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38346">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C16 carboxylic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38467">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lattice constant c</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38564">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dry mass</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38334">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C33 alkanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38322">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C21 alkanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38576">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molar extinction coefficient</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38540">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bicarbonate</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38310">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">volatile</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38552">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">acetate</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38210">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">23-methyltetracosanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38101">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nonadecenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38222">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pentacosanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38234">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">octacosanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38004">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hexadecadienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38113">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isohenicosanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38125">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cis-9-eicosenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38246">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monounsaturated fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38258">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">odd-chain n-fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38028">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16-methylheptadecanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38137">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">all-cis-11,14,17-eicosatrienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38016">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hexadeca-7,10,13-trienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38149">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">icosapentaenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37809">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fragment</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37918">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cis-11-octadecenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38379">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measurement per unit</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38367">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pentetic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38488">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chlorophyll c1</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38597">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">absorption (optical)</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38476">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">xanthophyll</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38355">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C25 carboxylic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38343">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unbranched carboxylic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38464">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lattice parameter c</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38585">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molar absorption coefficient</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38331">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C30 alkanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38440">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14-methylhexadecenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38561">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maximal</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37906">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iso-fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38211">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isopentacosanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38223">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hexacosanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38102">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nonadec-9-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38114">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">icosenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38235">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">montanic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38247">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polyunsaturated fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38017">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(7Z,10Z,13Z)-hexadeca-7,10,13-trienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38126">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gadoleic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38005">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hexadeca-10,13-dienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38138">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">icosa-8,11,14-trienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38259">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">even-chain n-fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38029">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isooctadecanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37919">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cis-vaccenic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38489">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chlorophyll c2</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37907">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">n-fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38368">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medium-chain fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38586">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molar Napierian attenuation coefficient</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38356">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C26 carboxylic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38477">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbon</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38465">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lattice constant a</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38598">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">decadic absorbance</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38344">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C14 carboxylic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38562">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">colored dissolved organic matter</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38332">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C31 alkanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38441">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anteisoheptadecenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38320">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C19 alkanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38550">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sulfate</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38220">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(13Z)-tetracos-13-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38232">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heptacosanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38002">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(7Z)-hexadec-7-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38111">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">methylicosanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38244">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fatty acid trophic marker</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38123">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">icos-9-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38026">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15-methylheptadecanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38135">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">icosa-11,14,17-trienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38256">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">branched fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38268">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C13 fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38014">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hexadeca-6,9-dienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38147">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">all-cis-5,8,11,14-eicosatetraenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38159">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(6Z,9Z,12Z,15Z,18Z)-henicosa-6,9,12,15,18-pentaenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38038">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">octadecanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38389">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">odd-chain n-alkanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38498">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">net flux</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38377">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">palmitolenic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38365">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aliphatic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38486">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chlorophyll a</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38595">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">absorbance</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38474">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">acidity Index (volcanology)</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38353">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C23 carboxylic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38341">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carboxylic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38462">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lattice parameter a</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38583">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">absorption coefficient</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37807">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sequence cluster</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37928">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isoheptadecanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37916">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">margaric acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37904">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38221">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cis-13-tetracosenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38100">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">methylnonadecanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38112">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19-methylicosanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38233">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heptacosenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38245">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unsaturated fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38015">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hexadecatrienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38124">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(9Z)-icos-9-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38257">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unbranched fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38003">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cis-7-hexadecenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38136">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(11Z,14Z,17Z)-icosa-11,14,17-trienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38039">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stearic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38148">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">arachidonic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38269">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C14 fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38027">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anteisooctadecanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37929">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2,6,10,14-tetramethylpentadecanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37808">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genetic sequence</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38378">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measurement per unit mass</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38499">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alcohol</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38487">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chlorophyll b</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38366">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diethylenetriaminepentaacetic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38354">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C24 carboxylic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38475">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">myxoxanthophyll</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38584">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">absorption coefficients</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38463">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lattice parameter b</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38596">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">optical density</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38342">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">n-carboxylic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38330">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C29 alkanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37917">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(11Z)-octadec-11-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37905">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anteiso-fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38000">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trans-9-hexadecenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38230">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(15Z)-hexacos-15-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38242">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lacceroic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38121">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cis-11-eicosenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38024">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(4Z,7Z,10Z,13Z)-hexadeca-4,7,10,13-tetraenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38133">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">all-cis-11,14-eicosadienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38254">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">per individuum</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38266">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">very long-chain fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38012">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(7Z,10Z)-hexadeca-7,10-dienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38145">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">icosa-5,8,11,14-tetraenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38157">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">henicosapentaenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38278">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C23 fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38048">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(11E)-octadec-11-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38036">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(9Z)-heptadec-9-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38169">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(15Z)-docos-15-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38399">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-(8-(tetracyclo[6.4.0.02,7.03,6]dodec-10-yl)octan-1-yl)-sn-glycerol</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38387">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low molecular weight</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38496">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">net photosynthesis rate</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38484">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pH</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37902">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">standard conditions</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38363">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C33 carboxylic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38351">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C21 carboxylic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38472">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reactive oxygen species</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38460">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lattice parameter</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38581">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spectral slope (optics)</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37805">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chemical enrichment</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37926">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isopentadecanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37914">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pentadecanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38231">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cis-15-hexacosenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38110">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7,8-dihydroxyicosatetraenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38013">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">all-cis-7,10-hexadecadienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38122">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gondoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38243">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biomarker</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38255">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">individuum</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38001">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hexadec-7-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38134">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">icosatrienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38037">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cis-9-heptadecenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38146">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(5Z,8Z,11Z,14Z)-icosa-5,8,11,14-tetraenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38267">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C12 fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38279">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C24 fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38025">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">all-cis-4,7,10,13-hexadecatetraenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38158">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">henicosa-6,9,12,15,18-pentaenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38049">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trans-11-octadecenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37709">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polymorphic site</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38388">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chemically derived</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38497">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">respiration rate</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38485">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chlorophyll</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38364">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C34 carboxylic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38473">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aphanizophyll</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38582">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linear attenuation coefficient</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38352">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C22 carboxylic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38461">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lattice constant</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38340">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dissolved organic matter</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37939">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">peptides and proteins</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37927">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15-methylhexadecanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37806">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gene cluster</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37915">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heptadecanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37903">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biochemical standard conditions</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/34449">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generic terms</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38240">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hentriacontanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38252">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">content</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38022">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hexadeca-6,9,12,15-tetraenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38131">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">icosa-11,14-dienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38264">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">short-chain fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38010">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">all-cis-9,12-hexadecadienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38143">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(8Z,11Z,14Z,17Z)-icosa-8,11,14,17-tetraenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38276">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C21 fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38046">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">octadecenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38155">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12-hydroxyhenicosanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38034">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cis-11-heptadecenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38167">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">docosenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38288">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C33 fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38179">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">docosadienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38058">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">petroselinic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38397">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C20-[3]-ladderane monoether</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37924">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oleic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38385">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bacterial</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37803">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inorganic anion</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37912">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">branched glycerol dialkyl glycerol tetraether</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38494">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oxygen</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38482">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">compensation point</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37900">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">specific  activity</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38361">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C31 carboxylic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38470">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lipid peroxidation</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37948">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">semisystematic IUPAC name</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38011">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hexadeca-7,10-dienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38120">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(11Z)-icos-11-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38241">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dotriacontanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38253">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">total</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38132">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(11Z,14Z)-icosa-11,14-dienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38144">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">all-cis-8,11,14,17-eicosatetraenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38265">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">long-chain fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38035">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heptadec-9-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38277">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C22 fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38023">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hexadeca-4,7,10,13-tetraenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38156">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14-hydroxyhenicosanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38289">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C34 fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38059">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(6E)-octadec-6-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38168">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">docos-15-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38047">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">octadec-13-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38398">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-(8-[3]-ladderane-octanyl)-sn-glycerol</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38386">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high molecular weight</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38495">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gross photosynthesis rate</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37913">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pee Dee Belemnite</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37901">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">substrate saturation</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38362">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C32 carboxylic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38483">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">change</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38471">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">catalase</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38580">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">decadic attenuation coefficient</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38350">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C20 carboxylic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37949">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">retained name</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37804">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">enrichment</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38250">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3,7,11,15-tetramethylhexadecanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38020">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hexadeca-6,9,12-trienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38141">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">icosatetraenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38262">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trophic marker</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38274">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C19 fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38044">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11-methyloctadecenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38153">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">timnodonic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38032">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heptadec-11-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38165">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20-methyldocosanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38286">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C31 fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38298">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">methanediyl</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38068">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">all-cis-11,14-octadecadienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38177">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cis-11-docosenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38056">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(6Z)-octadec-6-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38189">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(10Z,13Z,16Z,19Z)-docosa-10,13,16,19-tetraenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37946">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trivial name</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38395">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11,12-methylenehexadecanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37922">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(9Z)-octadec-9-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38383">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">decay rate</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37801">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chemical compound name</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38492">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maximum</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37910">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glycerol dialkyl glycerol tetraether</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38371">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tetradecenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38480">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mica</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37958">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dodecanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38130">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">icosadienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38251">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phytanic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38263">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sediment</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38033">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(11Z)-heptadec-11-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38142">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">icosa-8,11,14,17-tetraenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38021">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hexadecatetraenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38154">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">henicosanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38275">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C20 fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38287">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C32 fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38057">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cis-6-octadecenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38166">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anteisotridocosanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38045">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11-methyloctadec-12-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38178">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cetoleic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38299">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phospholipid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38069">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">octadeca-9,12-dienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38396">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10-(2-butylcyclopropyl)decanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37802">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inorganic cation</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37923">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cis-9-octadecenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38384">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flux</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38493">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chemical element</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37911">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isoprenoid glycerol dialkyl glycerol tetraether</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38372">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">octadeca-8,11,14-trienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38360">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C30 carboxylic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38481">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">peak area</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37959">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lauric acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37947">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chemical trivial name</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38260">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">odd-numbered n-fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38272">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C17 fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37810">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">site</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38042">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17-methyloctadecanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38151">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(5Z,8Z,11Z,14Z,17Z)-icosa-5,8,11,14,17-pentaenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37931">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(11Z)-hexadec-11-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38284">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C29 fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38030">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heptadecenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38163">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">21-methyldocosanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38066">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">octadeca-11,14-dienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38175">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">docos-11-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38296">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cyclic fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38054">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">elaidic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38187">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">docosatetraenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38199">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">docosahexaenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38078">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(8Z,11Z,14Z)-octadeca-8,11,14-trienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37738">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">area</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37968">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anteisotetradecanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37944">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbohydrate</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37932">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cis-11-hexadecenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38393">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(13Z)-octadec-13-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38381">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rate</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38490">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chlorophyll c3</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37714">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genetic cluster</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37859">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adenosine 5'-diphosphate</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37920">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">octadec-11-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38261">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">even-numbered n-fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38031">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heptadec-12-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38140">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">all-cis-8,11,14-eicosatrienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38152">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">all-cis-5,8,11,14,17-eicosapentaenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38273">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C18 fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38285">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C30 fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38055">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">octadec-6-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/34446">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feature ontology, PANGAEA</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38164">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isotridocosanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38176">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(11Z)-docos-11-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38297">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">methylene bridge</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38043">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isononadecanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38079">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">all-cis-8,11,14-octadecatrienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38188">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">docosa-10,13,16,19-tetraenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38067">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(11Z,14Z)-octadeca-11,14-dienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37945">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">systematic IUPAC name</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37933">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">esterase</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38394">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cis-13-octadecenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37800">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thorium, soluble</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37921">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vaccenic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38382">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accumulation rate</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38370">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">very long-chain alkanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38491">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chlorophyll d</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37969">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tetradecanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37715">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genetic area</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38040">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10-methyloctadecanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38270">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C15 fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38282">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C27 fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37711">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intron</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38161">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">docosanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38064">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(12Z,15Z)-octadeca-12,15-dienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38173">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cis-13-docosenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38294">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">average carbon chain length</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/34447">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feature</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37941">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nucleotide</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38052">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(9E)-octadec-9-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38185">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(13Z,16Z,19Z)-docosa-13,16,19-trienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38088">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stearidonic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38197">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(7Z,10Z,13Z,16Z,19Z)-docosa-7,10,13,16,19-pentaenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38076">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">all-cis-9,12,15-octadecatrienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38619">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">number concentration</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37869">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37978">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cis-9-tetradecenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37857">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adenylate</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37518">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">exon</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37966">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isotetradecanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37712">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gene copy (genome)</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38391">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">odd-numbered n-alkanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37736">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cluster</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37506">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mutation</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38271">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C16 fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38150">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">icosa-5,8,11,14,17-pentaenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38053">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trans-9-octadecenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38162">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behenic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/34448">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genetic feature</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37942">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">peptide</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38283">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C28 fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37930">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pristanic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38295">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">modal carbon chain length</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38041">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tuberculostearic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38174">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">erucic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38077">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">?-linolenic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38186">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">all-cis-13,16,19-docosatrienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38065">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">all-cis-12,15-octadecadienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38198">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">all-cis-7,10,13,16,19-docosapentaenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38089">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">moroctic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38608">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chlorophyll c</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37858">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adenosine 5'-monophosphate</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37519">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">contig</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37979">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tetradec-7-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37967">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11-methyltridecanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37507">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genetic locus</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37943">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">enzyme</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38392">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">even-numbered n-alkanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38380">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sum</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37713">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">allele</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37737">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sequence</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38280">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C25 fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38171">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">docos-13-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38292">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fatty acid methyl ester</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38062">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">octadecadienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38050">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trans-vaccenic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38183">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">docosatrienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37975">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tetradec-9-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38086">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(6Z,9Z,12Z,15Z)-octadeca-6,9,12,15-tetraenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38195">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">docosapentaenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38074">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">octadeca-9,12,15-trienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37963">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anteisotridecanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38098">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nonadecanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38508">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wavelength</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38617">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gene transcript</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37988">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anteisoheptadecanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37867">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glycogen</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37976">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(9Z)-tetradec-9-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37516">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gene name</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38051">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">octadec-9-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38160">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">all-cis-6,9,12,15,18-heneicosapentaenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38281">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C26 fatty acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37710">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TATA-box</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38293">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbon chain length</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38172">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(13Z)-docos-13-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38184">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">docosa-13,16,19-trienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37964">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tridecanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38075">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(9Z,12Z,15Z)-octadeca-9,12,15-trienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38063">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">octadeca-12,15-dienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38196">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">docosa-7,10,13,16,19-pentaenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37940">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organic acids and acid anions</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38099">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12-hydroxynonadecanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38087">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">all-cis-6,9,12,15-octadecatetraenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38618">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molar concentration</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38509">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measurement or determination at wavelength</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37529">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genetic region</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37989">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15-methylhexadecenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37868">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lipid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37977">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">myristoleic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37965">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12-methyltridecanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37517">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genome</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38390">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">even-chain n-alkanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37505">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plasmid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38290">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fatty acid ester</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38060">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trans-6-octadecenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38181">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(13Z,16Z)-docosa-13,16-dienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38084">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">octadecatetraenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38193">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">all-cis-7,10,13,16-docosatetraenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38072">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linoleic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37501">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">promoter</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37997">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cis-9-hexadecenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37864">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adenosine triphosphate</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38096">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(3Z,6Z,9Z,12Z,15Z)-octadeca-3,6,9,12,15-pentaenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37985">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10-methylhexadecanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37973">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anteisopentadecanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37961">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isotridecanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38409">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">methyl 8-(tetracyclo[6.4.0.02,7.03,6]dodec-10-yl)octanoate</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38506">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unbranched alkanol</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38518">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wet weight</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38602">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">optical depth</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37998">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">palmitoleic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38291">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fatty acid ethyl ester</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38170">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cis-15-docosenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37502">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">promoter element</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38073">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">octadecatrienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38182">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">all-cis-13,16-docosadienoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38061">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">petroselaidic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38194">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adrenic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37986">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11-methylhexadecanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37865">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ratio</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38097">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">all-cis-3,6,9,12,15-octadecapentaenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38085">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">octadeca-6,9,12,15-tetraenoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37974">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13-methyltetradecanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37962">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10-methyldodecanoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38519">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dry weight</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38616">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phylogenetic cluster</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/38507">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">colored</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37999">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(9E)-hexadec-9-enoic acid</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37866">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glucose</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.pangaea.de/ID_feature/37987">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14-methylhexadecanoic acid</rdfs:label>
+  </owl:Class>
+</rdf:RDF>
