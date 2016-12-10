@@ -23,17 +23,22 @@ def match_two_ontologies(results, onto, onto1):
         for i in onto_elements:
             try:
                 label = i.get_children_named("{http://www.w3.org/2000/01/rdf-schema#}label")
-                already_matched = False
                 if label != []:
                     for item in label:
                         for j in onto1_elements:
                             label1 = j.get_children_named("{http://www.w3.org/2000/01/rdf-schema#}label")
                             if label1 != []:
                                 for item1 in label1:
+                                    already_matched = False
                                     match_result = re.match("^" + item.get_text() + "$", item1.get_text(), re.IGNORECASE)
                                     if match_result and not already_matched:
                                         #util.write2File("matching.txt", "Nodes " + i.name + " (" + label.get_text() + ")" + " and " + j.name + " (" + label1.get_text() + ")" + " have the same label\n", "a")
                                         connections["matches"].append([i.name, item.get_text(), j.name, item1.get_text(), " have the same label\n"])
+                                        already_matched = True
+                                    #version 2: added
+                                    #if the labels don't match already, check if one word of the labels is inside the other
+                                    elif not already_matched and ((re.match(item.get_text(), item1.get_text(), re.IGNORECASE) and len(item.get_text()) > 3) or (re.match(item1.get_text(), item.get_text(), re.IGNORECASE) and len(item1.get_text()) > 3)):
+                                        connections["matches"].append([i.name, item.get_text(), j.name, item1.get_text(), " share part of the label\n"])
                                         already_matched = True
                     #comment = i.get_child("{http://www.w3.org/1999/02/22-rdf-syntax-ns#}comment")
                     #if comment != None:
