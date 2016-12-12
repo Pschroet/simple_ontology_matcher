@@ -1,0 +1,75 @@
+<head>
+    <title>{{ title }}</title>
+    <script src="https://cdn.rawgit.com/eligrey/FileSaver.js/e9d941381475b5df8b7d7691013401e171014e89/FileSaver.min.js"></script>
+</head>
+<body>
+	<h1>Matching Results</h1>
+	<div id="ontologies">Compared ontologies:
+		{% for ontology in ontologies %}
+		<div>{{ ontology.name }}</div>
+		{% endfor %}
+	</div>
+	<form id="matchingResults" action="select.html">
+	{% for result in results %}
+	    <h3>{{ result.text }}</h3>
+	    ({{ result.matches|length }} possible matches found)
+	    <ul>
+		{% for item in result.matches %}
+		    <li>Nodes <a href='{{ item.0 }}'>{{ item.0 }}</a> (<i>{{ item.1 }}</i>)</div> and <a href='{{ item.2 }}'>{{ item.2 }}</a> (<i>{{ item.3 }}</i>)</div> {{ item.4 }}
+		    <select name="{{ item.0 }}!!!{{ item.2 }}!!!options">
+		    {% for option in connection_options %}
+		    	<option>{{ option }}</option>
+		    {% endfor %}
+		    </select>
+		    </li>
+		{% endfor %}
+		</ul>
+	{% endfor %}
+	</form><br/>
+	<button type="button" onclick="saveResult()">Save Results</button><br/>
+	<form action="/matcher/">
+		<button type="submit">Back</button>
+	</form>
+	<script>
+	function saveResult(){
+		//get all matches...
+		matchingResults = document.getElementById("matchingResults").getElementsByTagName("li");
+		//... go through them
+		result = "<?xml version='1.0' encoding='utf-8'?>\n<rdf:RDF  xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment'\n xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'\n xmlns:rdfs='http://www.w3.org/2000/01/rdf-schema#'\n xmlns:xsd='http://www.w3.org/2001/XMLSchema#'>\n<Alignment>\n";
+		ontologies = document.getElementById("ontologies").getElementsByTagName("div");
+		for(var i = 0; i < ontologies.length; i++){
+			result = result + "\t<onto" + i + ">" + ontologies[i].innerHTML + "</onto" + i + ">\n";
+		}
+		for(var i = 0; i < ontologies.length; i++){
+			result = result + "\t<uri" + i + ">" + ontologies[i].innerHTML + "</uri" + i + ">\n";
+		}
+		for(var i = 0; i < matchingResults.length; i++){
+			//connectionOptions = matchingResults[i].getElementsByTagName("select")[0];
+			//chosenOption = connectionOptions.options[connectionOptions.selectedIndex].value;
+			//if(chosenOption != "None"){
+				//console.log(matchingResults[i].getElementsByTagName("a")[0].getAttribute("href"));
+				//console.log(matchingResults[i].getElementsByTagName("a")[1].getAttribute("href"));
+				//console.log(chosenOption);
+			//}
+			result = result + "\t<map>\n\t\t<Cell>\n\t\t\t<entity1 rdf:resource='" + matchingResults[i].getElementsByTagName("a")[0].getAttribute("href") + "'";
+			//if there is a label, add it to the result
+			if(matchingResults[i].getElementsByTagName("i")[0].innerHTML != ""){
+				result = result + ">\n\t\t\t\t<rdfs:label>" + matchingResults[i].getElementsByTagName("i")[0].innerHTML + "</rdfs:label>\n\t\t\t</entity1>\n"
+			}else{
+				result = result + "/>\n";
+			}
+			result = result + "\t\t\t<entity2 rdf:resource='" + matchingResults[i].getElementsByTagName("a")[1].getAttribute("href") + "'";
+			//if there is a label, add it to the result
+			if(matchingResults[i].getElementsByTagName("i")[1].innerHTML != ""){
+				result = result + ">\n\t\t\t\t<rdfs:label>" + matchingResults[i].getElementsByTagName("i")[1].innerHTML + "</rdfs:label>\n\t\t\t</entity2>\n";
+			}else{
+				result = result + "/>\n";
+			}
+			result = result + "\t\t</Cell>\n\t</map>\n";
+		}
+		result = result + "</Alignment>\n</rdf:RDF>";
+		var b = new Blob([result],{type:"text/plain;charset=utf-8"});
+		saveAs(b, "matches.rdf");
+	}
+	</script>
+</body>
