@@ -139,9 +139,10 @@ STATICFILES_DIRS = [
 #get local ontologies
 ONTOLOGIES = {}
 TERMINOLOGIES = {}
-print "Getting ontologies from disk"
+print "Getting ontologies from disk:"
 for item in util.get_files_in_directory(os.path.dirname(__file__) + "/ontologies", False):
     ONTOLOGIES[item.split(".")[0]] = [item, os.path.dirname(__file__) + "/ontologies/" + item]
+    print "\t" + item + "found"
 try:
     re = requests.get("http://terminologies.gfbio.org/api/terminologies/")
     jo = json.loads(re.text)
@@ -152,7 +153,7 @@ try:
         #print item["acronym"]
         onto = requests.head(item["uri"])
         TERMINOLOGIES[item["acronym"]] = [item["name"], "http://terminologies.gfbio.org/api/terminologies/" + item["acronym"]]
-        print item["acronym"] + " added: " + item["name"] + ", " + "http://terminologies.gfbio.org/api/terminologies/" + item["acronym"]
+        print "\t" + item["acronym"] + " added: " + item["name"] + ", " + "http://terminologies.gfbio.org/api/terminologies/" + item["acronym"]
     #get available ontologies from http://terminologies.gfbio.org/api/terminologies/
     print "Getting ontologies from http://terminologies.gfbio.org/api/terminologies/"
     for item in jo["results"]:
@@ -162,9 +163,9 @@ try:
         #print onto.headers
         if ("text/plain" in onto.headers['content-type'] or "text/xml" in onto.headers['content-type']) and 'Content-Length' in onto.headers and int(onto.headers['Content-Length']) < 10000000 and (TERMINOLOGIES[item["acronym"]] is None or TERMINOLOGIES[item["acronym"]] is ""):
             ONTOLOGIES[item["acronym"]] = [item["name"], item["uri"]]
-            print item["acronym"] + " added: " + item["name"] + ", " + item["uri"]
+            print "\t" + item["acronym"] + " added: " + item["name"] + ", " + item["uri"]
         else:
-            print item["acronym"] + " not added"
+            print "\t" + item["acronym"] + " not added"
 except requests.exceptions.RequestException:
     pass
 except requests.exceptions.ConnectionError:
@@ -173,3 +174,5 @@ except requests.exceptions.ConnectionError:
 #get the matchers
 print "Getting matchers from disk"
 MATCHERS = util.filter_files_from_list(util.get_files_in_directory(os.path.dirname(__file__) + "/matcher", False), "pyc")
+print "Found " + str(MATCHERS)
+print "finished\n--------------------------------------------------"
