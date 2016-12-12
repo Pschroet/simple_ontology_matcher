@@ -24,18 +24,20 @@ if __name__ == '__main__':
     #chain.match_ontologies([r.ontology, r1.ontology])
     ##############################
     #testing local HTML template parsing
-    r = reader.ontology_reader("owl_rdfxml_parser", "ontologies/pato.owl")
-    r1 = reader.ontology_reader("owl_rdfxml_parser", "ontologies/envo.owl")
+    r = reader.ontology_reader("owl_rdfxml_parser", "ontologies/ease-2.owl")
+    r1 = reader.ontology_reader("rdf_xml_parser", "ontologies/PANGAEA-2.rdf")
     #testing the terminology server
     #r = reader.ontology_reader("GFBio_terminology_server_parser", "http://terminologies.gfbio.org/api/terminologies/ENVO")
     #print r.ontology.tostring()
     #r1 = reader.ontology_reader("GFBio_terminology_server_parser", "http://terminologies.gfbio.org/api/terminologies/PATO")
     #print r1.ontology.tostring()
     chain = matching_tool_chain.tool_chain()
-    chain.add_config_from_file("./all_matchers-config.xml")
+    chain.add_config_from_file("./matcher_test-config.xml")
     result = chain.match_ontologies([r.ontology, r1.ontology])
     settings.configure(DEBUG=False)
-    context = {"title":"Matched Ontologies", "results":result}
+    #add the options to the result file to make it appear like the original
+    connection_options = ["None", "rdfs:subClassOf", "owl:equivalentClass", "owl:intersectionOf", "owl:differentFrom", "owl:disjointWith", "owl:inverseOf"]
+    context = {"title":"Matched Ontologies", "results":result, "connection_options":connection_options}
     template_raw = util.readFileContentAsString(os.path.dirname(__file__) + "/result_writer/matching_result.html")
     template_content = Template(template_raw, engine=Engine())
     util.write2File("matches.html", template_content.render(Context(context)), "w")
