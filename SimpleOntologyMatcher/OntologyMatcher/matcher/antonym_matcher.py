@@ -14,7 +14,7 @@ def match_two_ontologies(results, onto, onto1):
     dictionary = util.dictionary_wrapper()
     #ensure that there are actually ontologies to compare
     if onto is not None and onto1 is not None:
-        connections = {"matches":[], "text": "Antonyms"}
+        connections = {"matches":[], "text": "Matching by antonyms from one or more dictionaries"}
         #go through all other ontologies
         #go through all elements
         print "Searching for antonyms for elements of ontologies " + onto.name + " and " + onto1.name

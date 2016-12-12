@@ -14,7 +14,7 @@ def match_two_ontologies(results, onto, onto1):
     dist_calc = util.distance_calculator()
     #ensure that there are actually ontologies to compare
     if onto is not None and onto1 is not None:
-        connections = {"matches":[], "text": "Levenshtein Distances (1 < distance < 5)"}
+        connections = {"matches":[], "text": "Matching by Levenshtein distances (1 < distance < 5)"}
         #go through all other ontologies
         #go through all elements
         print "Calculating Levenshtein distance for elements of ontologies " + onto.name + " and " + onto1.name
