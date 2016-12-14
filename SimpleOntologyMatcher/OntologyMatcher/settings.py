@@ -58,6 +58,9 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+#since there are no own Middleware classes used, set the variable to an empty list
+MIDDLEWARE_CLASSES=[]
+
 ROOT_URLCONF = 'urls'
 
 TEMPLATES = [
@@ -142,7 +145,7 @@ TERMINOLOGIES = {}
 print "Getting ontologies from disk:"
 for item in util.get_files_in_directory(os.path.dirname(__file__) + "/ontologies", False):
     ONTOLOGIES[item.split(".")[0]] = [item, os.path.dirname(__file__) + "/ontologies/" + item]
-    print "\t" + item + "found"
+    print "\t" + item + " found"
 try:
     re = requests.get("http://terminologies.gfbio.org/api/terminologies/")
     jo = json.loads(re.text)
