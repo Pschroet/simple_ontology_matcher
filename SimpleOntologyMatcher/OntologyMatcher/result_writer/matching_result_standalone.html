@@ -44,13 +44,6 @@
 			result = result + "\t<uri" + i + ">" + ontologies[i].innerHTML + "</uri" + i + ">\n";
 		}
 		for(var i = 0; i < matchingResults.length; i++){
-			//connectionOptions = matchingResults[i].getElementsByTagName("select")[0];
-			//chosenOption = connectionOptions.options[connectionOptions.selectedIndex].value;
-			//if(chosenOption != "None"){
-				//console.log(matchingResults[i].getElementsByTagName("a")[0].getAttribute("href"));
-				//console.log(matchingResults[i].getElementsByTagName("a")[1].getAttribute("href"));
-				//console.log(chosenOption);
-			//}
 			result = result + "\t<map>\n\t\t<Cell>\n\t\t\t<entity1 rdf:resource='" + matchingResults[i].getElementsByTagName("a")[0].getAttribute("href") + "'";
 			//if there is a label, add it to the result
 			if(matchingResults[i].getElementsByTagName("i")[0].innerHTML != ""){
@@ -64,6 +57,12 @@
 				result = result + ">\n\t\t\t\t<rdfs:label>" + matchingResults[i].getElementsByTagName("i")[1].innerHTML + "</rdfs:label>\n\t\t\t</entity2>\n";
 			}else{
 				result = result + "/>\n";
+			}
+			//if there is a connection, save it, too
+			connectionOptions = matchingResults[i].getElementsByTagName("select")[0];
+			chosenOption = connectionOptions.options[connectionOptions.selectedIndex].value;
+			if(chosenOption != "None"){
+				result = result + "\t\t\t<connectionType>" + chosenOption + "</connectionType>\n";
 			}
 			result = result + "\t\t</Cell>\n\t</map>\n";
 		}
