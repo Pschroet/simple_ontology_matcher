@@ -158,17 +158,17 @@ try:
         TERMINOLOGIES[item["acronym"]] = [item["name"], "http://terminologies.gfbio.org/api/terminologies/" + item["acronym"]]
         print "\t" + item["acronym"] + " added: " + item["name"] + ", " + "http://terminologies.gfbio.org/api/terminologies/" + item["acronym"]
     #get available ontologies from http://terminologies.gfbio.org/api/terminologies/
-    print "Getting ontologies from http://terminologies.gfbio.org/api/terminologies/"
-    for item in jo["results"]:
-        #check if URL is working
-        #print item["acronym"]
-        onto = requests.head(item["uri"])
-        #print onto.headers
-        if ("text/plain" in onto.headers['content-type'] or "text/xml" in onto.headers['content-type']) and 'Content-Length' in onto.headers and int(onto.headers['Content-Length']) < 10000000 and (TERMINOLOGIES[item["acronym"]] is None or TERMINOLOGIES[item["acronym"]] is ""):
-            ONTOLOGIES[item["acronym"]] = [item["name"], item["uri"]]
-            print "\t" + item["acronym"] + " added: " + item["name"] + ", " + item["uri"]
-        else:
-            print "\t" + item["acronym"] + " not added"
+    #print "Getting ontologies from http://terminologies.gfbio.org/api/terminologies/"
+    #for item in jo["results"]:
+    #    #check if URL is working
+    #    #print item["acronym"]
+    #    onto = requests.head(item["uri"])
+    #    #print onto.headers
+    #    if ("text/plain" in onto.headers['content-type'] or "text/xml" in onto.headers['content-type']) and 'Content-Length' in onto.headers and int(onto.headers['Content-Length']) < 10000000 and (TERMINOLOGIES[item["acronym"]] is None or TERMINOLOGIES[item["acronym"]] is ""):
+    #        ONTOLOGIES[item["acronym"]] = [item["name"], item["uri"]]
+    #        print "\t" + item["acronym"] + " added: " + item["name"] + ", " + item["uri"]
+    #    else:
+    #        print "\t" + item["acronym"] + " not added"
 except requests.exceptions.RequestException:
     pass
 except requests.exceptions.ConnectionError:
