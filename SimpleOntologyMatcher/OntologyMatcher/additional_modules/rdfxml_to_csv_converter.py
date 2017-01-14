@@ -12,7 +12,7 @@ import xmlrdf_result_reader
 def convert(source, destination):
     matchings = xmlrdf_result_reader.parse_matchings_file(source)
     #create the file and write the header
-    util.write2File(destination, "elem1,label1,elem2,label2" + os.linesep, "w")
+    util.write2File(destination, "elem1,label1,elem2,label2\n", "w")
     for matching in matchings:
         elem1 = matching.elements[0]
         elem2 = matching.elements[1]
@@ -24,4 +24,4 @@ def convert(source, destination):
                 label1 = labels[0]
                 if len(labels) > 1:
                     label2 = labels[1]
-        util.write2File(destination, elem1 + "," + label1 + "," + elem2 + "," + label2 + os.linesep, "a")
+        util.write2File(destination, elem1 + "," + label1 + "," + elem2 + "," + label2 + "\n", "a")
