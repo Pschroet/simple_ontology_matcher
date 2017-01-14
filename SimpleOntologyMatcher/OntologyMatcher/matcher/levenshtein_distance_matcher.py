@@ -36,7 +36,7 @@ def match_two_ontologies(results, onto, onto1):
                                         #version 1
                                         # if 1 < distance and distance < 5 and (distance < len(item.get_text())/3) and not already_matched:
                                         #version 2
-                                        if not already_matched and 1 < distance and distance < 5 and (distance < len(item.get_text())/3) and not re.match(i.name, j.name, re.IGNORECASE):
+                                        if not already_matched and 1 < distance and distance < 5 and (distance < len(item.get_text())/3) and (distance < len(item1.get_text())/3) and not re.match(i.name, j.name, re.IGNORECASE):
                                             #extra conditions, kept for testing
                                             # and label.get_text()[0] == label1.get_text()[0]
                                             connections["matches"].append([i.name, item.get_text(), j.name, item1.get_text(), " have the Levenshtein distance: " + str(distance)])
