@@ -60,16 +60,18 @@ class matching(object):
         else:
             return None
     
-    #empties a copy of the elements of this object
-    # if there are no elements left, then True is returned
-    # if there is an element in the given elements, that is not in the one of this object, False is returned
-    # if there are elements left, False is returned
+    #tests if the passed list of elements (comp_elements) are the same as the ones in this matching
+    # this is done by subtracting a copy the given elements from a copy of the elements of this object
+    # - if there are no elements left, then True is returned
+    # - if the length of the two lists is different or there are elements left after the subtracting, False is returned
     def is_same(self, comp_elements):
         #print "Comparing " + str(self.elements) + " with " + str(comp_elements)
+        if len(self.elements) == len(comp_elements):
+            return False
         tmp = set(self.elements)
         tmp1 = set(comp_elements)
         diff =  tmp - tmp1
-        if len(tmp) == len(tmp1) and len(diff) == 0:
+        if len(diff) == 0:
             return True
         else:
             return False
