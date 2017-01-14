@@ -31,7 +31,7 @@ class tool_chain(object):
 
     def add_matchers(self, matchers = []):
         if matchers != []:
-            self.matching_tools = matchers
+            self.matching_tools += matchers
 
     #read an ontology
     def match_ontologies(self, ontologies = []):
