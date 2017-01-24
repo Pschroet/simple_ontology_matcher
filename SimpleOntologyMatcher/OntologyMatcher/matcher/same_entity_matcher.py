@@ -29,5 +29,5 @@ def match_two_ontologies(results, onto, onto1):
                     j_label = j.get_child("{http://www.w3.org/2000/01/rdf-schema#}label")
                     if j_label is None:
                         j_label = ""
-                    connections["matches"].append([i.name, i_label.get_text(), j.name, j_label.get_text(), " have the same URI\n"])
+                    connections["matches"].append([i.name, i_label, j.name, j_label, " have the same URI\n"])
         return results.append(connections)
