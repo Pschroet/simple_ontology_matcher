@@ -30,6 +30,9 @@ class matching(object):
         else:
             return False
     
+    def get_elements(self):
+        return self.elements
+    
     #add a property as a key value pair
     def add_property(self, key, value):
         self.properties.append([key, value])
