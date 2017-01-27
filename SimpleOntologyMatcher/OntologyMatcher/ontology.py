@@ -36,6 +36,14 @@ class ontology(object):
         for elem in elems:
             self.add_element(elem)
     
+    #return the element called 'name', if it is in the elements of this ontology
+    # if not, None is returned
+    def get_element_named(self, name):
+        for elem in self.elements:
+            if elem.get_name() == name:
+                return elem
+        return None
+    
     def get_elements(self):
         return self.elements
     
