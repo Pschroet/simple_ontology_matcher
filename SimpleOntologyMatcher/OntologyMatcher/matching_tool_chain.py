@@ -6,6 +6,7 @@ Created on 31.08.2016
 
 import defusedxml.ElementTree
 import matcher
+import os
 
 class tool_chain(object):
     '''
@@ -26,12 +27,18 @@ class tool_chain(object):
         tree = defusedxml.ElementTree.parse(self.config)
         root = tree.getroot()
         for item in root.getchildren():
-            if item.tag == "matcher":
+            if item.tag == "matcher" and os.path.isfile(os.path.dirname(__file__) + '/reader/' + item.text + ".py"):
                 self.matching_tools.append(item.text)
+            else:
+                print "[Error] Matcher " + matcher + " not found"
 
     def add_matchers(self, matchers = []):
         if matchers != []:
-            self.matching_tools += matchers
+            for matcher in matchers:
+                if os.path.isfile(os.path.dirname(__file__) + '/reader/' + matcher + ".py"):
+                    self.add_matcher(matcher)
+                else:
+                    print "[Error] Matcher " + matcher + " not found"
 
     #read an ontology
     def match_ontologies(self, ontologies = []):
