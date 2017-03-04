@@ -22,7 +22,7 @@ class ontology_matcher(object):
         '''
         if matcher != "" and matcher != None:
             try:
-                self.matcher_module = imp.load_source(matcher, os.path.dirname(__file__) + '/matcher/' + matcher)
+                self.matcher_module = imp.load_source(matcher, os.path.dirname(__file__) + '/matcher/' + matcher + ".py")
                 print "Loading " + str(self.matcher_module)
             except ImportError as err:
                 logging.error("Failed to load module " + matcher + ":")

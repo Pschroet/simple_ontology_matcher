@@ -19,7 +19,11 @@
 		    <li>Nodes <a href='{{ item.0 }}'>{{ item.0 }}</a> (<i>{{ item.1 }}</i>)</div> and <a href='{{ item.2 }}'>{{ item.2 }}</a> (<i>{{ item.3 }}</i>)</div> {{ item.4 }}
 		    <select name="{{ item.0 }}!!!{{ item.2 }}!!!options">
 		    {% for option in connection_options %}
-		    	<option>{{ option }}</option>
+			    {% if item|length > 4 and item.5 == option %}
+			    	<option selected="selected">{{ option }}</option>
+			    {% else %}
+			    	<option>{{ option }}</option>
+			    {% endif %}
 		    {% endfor %}
 		    </select>
 		    </li>

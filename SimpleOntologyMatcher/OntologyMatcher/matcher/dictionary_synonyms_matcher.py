@@ -35,13 +35,13 @@ def match_two_ontologies(results, onto, onto1):
                                     for item1 in label1:
                                         #if the labels are not the same, but are similar, the nodes might be, too
                                         if not already_matched and util.is_in_list(item1.get_text(), synonyms):
-                                            connections["matches"].append([i.name, item.get_text(), j.name, item1.get_text(), " are synonyms"])
+                                            connections["matches"].append([i.name, item.get_text(), j.name, item1.get_text(), " are synonyms", "owl:sameAs"])
                                             already_matched = True
                                             break
                                         #if the dictionary is not bidirectional, check the other direction
                                         tmp_synonyms = dictionary.synonym(item1.get_text().encode('utf8'))
                                         if tmp_synonyms is not None and not already_matched and util.is_in_list(item.get_text(), tmp_synonyms):
-                                            connections["matches"].append([i.name, item.get_text(), j.name, item1.get_text(), " are synonyms"])
+                                            connections["matches"].append([i.name, item.get_text(), j.name, item1.get_text(), " are synonyms", "owl:sameAs"])
                                             already_matched = True
                                             break
                         #if the element has no synonyms, check the other elements anyway
@@ -53,7 +53,7 @@ def match_two_ontologies(results, onto, onto1):
                                     for item1 in label1:
                                         tmp_synonyms = dictionary.synonym(item1.get_text().encode('utf8'))
                                         if tmp_synonyms is not None and not already_matched and util.is_in_list(item.get_text(), tmp_synonyms):
-                                            connections["matches"].append([i.name, "(" + item.get_text() + ")", j.name, "(" + item1.get_text() + ")", " are synonyms"])
+                                            connections["matches"].append([i.name, "(" + item.get_text() + ")", j.name, "(" + item1.get_text() + ")", " are synonyms", "owl:sameAs"])
                                             already_matched = True
                                             break
             except re.error:
