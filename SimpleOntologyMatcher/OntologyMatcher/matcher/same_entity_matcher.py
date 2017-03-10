@@ -14,7 +14,7 @@ def match_two_ontologies(results, onto, onto1):
     #ensure that there are actually ontologies to compare
     if onto is not None and onto1 is not None:
         #the current ontology, which is compared to the other ones
-        connections = {"matches":[], "text":"Have the same URI, i.e. are the same entity"}
+        connections = {"matches":[], "text":"Have the same URI, i.e. are the same entity (same_entity_matcher)"}
         #go through all other ontologies
         #go through all elements
         print "Comparing ontologies " + onto.name + " and " + onto1.name

@@ -10,7 +10,7 @@ Created on 15.09.2016
 def match_two_ontologies(results, onto, onto1):
     #ensure that there are actually ontologies to compare
     if onto is not None and onto1 is not None:
-        connections = {"matches":[], "text":"Counted Matches"}
+        connections = {"matches":[], "text":"Counted Matches (counting_matcher)"}
         counter = {}
         for item in results:
             for match in item["matches"]:

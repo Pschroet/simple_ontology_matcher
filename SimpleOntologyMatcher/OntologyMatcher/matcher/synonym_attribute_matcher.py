@@ -14,7 +14,7 @@ def match_two_ontologies(results, onto, onto1):
     dictionary = util.dictionary_wrapper()
     #ensure that there are actually ontologies to compare
     if onto is not None and onto1 is not None:
-        connections = {"matches":[], "text": "Matching by searching for synonyms from an attribute"}
+        connections = {"matches":[], "text": "Matching by searching for synonyms from an attribute (synonym_attribute_matcher)"}
         #go through all other ontologies
         #go through all elements
         print "Searching for synonyms for elements of ontologies " + onto.name + " and " + onto1.name
