@@ -30,7 +30,7 @@ class tool_chain(object):
             if item.tag == "matcher" and os.path.isfile(os.path.dirname(__file__) + '/matcher/' + item.text + ".py"):
                 self.matching_tools.append(item.text)
             else:
-                print "[Error] Matcher '" + os.path.dirname(__file__) + '/reader/' + item.text + ".py' not found"
+                print "[Error] Matcher '" + os.path.dirname(__file__) + '/matcher/' + item.text + ".py' not found"
 
     def add_matchers(self, matchers = []):
         if matchers != []:
@@ -38,7 +38,7 @@ class tool_chain(object):
                 if os.path.isfile(os.path.dirname(__file__) + '/matcher/' + matcher + ".py"):
                     self.matching_tools.append(matcher)
                 else:
-                    print "[Error] Matcher '" + os.path.dirname(__file__) + '/reader/' +  + matcher + ".py' not found"
+                    print "[Error] Matcher '" + os.path.dirname(__file__) + '/matcher/' +  + matcher + ".py' not found"
 
     #read an ontology
     def match_ontologies(self, ontologies = []):
