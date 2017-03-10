@@ -5,35 +5,37 @@
 </head>
 <body>
 	<table>
-			<h1>Ontologies</h1>
-			<ul id="ontologyList">
-				{% for item in ontologies %}
-		    	<button id="add-Onto-{{ item }}" onClick="addItem('Onto', '{{ item }}', '{{ item }}')">{{ item }}</button>
-		    	{% empty %}
-		    	<p>None found</p>
-				{% endfor %}
-			</ul>
-			<h1>Terminologies</h1>
-			<ul id="terminologyList">
-			{% for item in terminologies %}
-		    	<button id="add-Term-{{ item }}" onClick="addItem('Term', '{{ item }}', '{{ item }}')">{{ item }}</button>
-		    	{% empty %}
-		    	<p>None found</p>
+		<h1>Configuration</h1>
+		<h3>Choose two Ontologies</h3>
+		<ul id="ontologyList">
+			{% for item in ontologies %}
+	    	<button id="add-Onto-{{ item }}" onClick="addItem('Onto', '{{ item }}', '{{ item }}')">{{ item }}</button>
+	    	{% empty %}
+	    	<p>None found</p>
 			{% endfor %}
-			</ul>
-			<h1>Matchers</h1>
-			<ul id="matcherList">
-				{% for item in matchers %}
-		    	<button id="add-Matcher-{{ item }}" onClick="addItem('Matcher', '{{ item }}', '{{ item }}')">{{ item }}</button>
-		    	{% empty %}
-		    	<p>None found</p>
-			{% endfor %}
-			</ul><br/>
-		<h1>Using Matchers</h1>
+		</ul>
+		<h3>and/or Terminologies</h3>
+		<ul id="terminologyList">
+		{% for item in terminologies %}
+	    	<button id="add-Term-{{ item }}" onClick="addItem('Term', '{{ item }}', '{{ item }}')">{{ item }}</button>
+	    	{% empty %}
+	    	<p>None found</p>
+		{% endfor %}
+		</ul>
+		<h3>Choose at least one Matcher</h3>
+		<ul id="matcherList">
+			{% for item in matchers %}
+	    	<button id="add-Matcher-{{ item }}" onClick="addItem('Matcher', '{{ item }}', '{{ item }}')">{{ item }}</button>
+	    	{% empty %}
+	    	<p>None found</p>
+		{% endfor %}
+		</ul><br/>
+		<h1>Matching Process</h1>
+		<h3>Using Matchers</h3>
 		<div id="usedMatchers"></div><br/>
-		<h1>on Ontologies</h1>
+		<h3>on Ontologies</h3>
 		<div id="usedOntos"></div><br/>
-		<h1>on Terminologies</h1>
+		<h3>and/or Terminologies</h3>
 		<div id="usedTerms"></div><br/>
 		<form id="availableOntologies" action="/matcher/result_writer/matching_result.html?" method="post">
 			<input type="submit" value="Find Matches">
