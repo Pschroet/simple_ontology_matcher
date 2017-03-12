@@ -36,7 +36,7 @@ if __name__ == '__main__':
     #result = chain.match_ontologies([r.ontology, r1.ontology])
     #settings.configure(DEBUG=False)
     #add the options to the result file to make it appear like the original
-    #connection_options = ["None", "rdfs:subClassOf", "owl:equivalentClass", "owl:intersectionOf", "owl:differentFrom", "owl:disjointWith", "owl:inverseOf"]
+    #connection_options = ["None", "owl:sameAs", "rdfs:subClassOf", "partOf", "owl:equivalentClass", "owl:intersectionOf", "owl:differentFrom", "owl:disjointWith", "owl:inverseOf"]
     #context = {"title":"Matched Ontologies", "results":result, "connection_options":connection_options}
     #template_raw = util.readFileContentAsString(os.path.dirname(__file__) + "/result_writer/matching_result_standalone.html")
     #template_content = Template(template_raw, engine=Engine())
