@@ -31,7 +31,7 @@ def match_two_ontologies(results, onto, onto1):
                             if label1 != []:
                                 for item1 in label1:
                                     if len(item.get_text()) > 3 and len(item1.get_text()) > 3:
-                                        distance = dist_calc.calculate_distance(item.get_text(), item1.get_text())
+                                        distance = dist_calc.calculate_distance(item.get_text().replace("_", " "), item1.get_text().replace("_", " "))
                                         #if the labels are not the same, but are similar, the nodes might be, too
                                         #version 1
                                         # if 1 < distance and distance < 5 and (distance < len(item.get_text())/3) and not already_matched:
