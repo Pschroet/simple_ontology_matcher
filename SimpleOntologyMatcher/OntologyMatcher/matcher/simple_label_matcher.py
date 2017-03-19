@@ -10,7 +10,7 @@ import util
 #tries to match two ontologies just by comapring the labels of nodes
 #returns a list, which holds information about nodes that are assumed to be linked on some way
 # each item in the list has the following elements (in this order): IRI of the first element, it's label, the IRI of the second element, it's label, a string that states, why those elements have been chosen
-def match_two_ontologies(results, onto, onto1):
+def match_two_ontologies(results, onto, onto1, exact_match = True):
     #ensure that there are actually ontologies to compare
     if onto is not None and onto1 is not None:
         #the current ontology, which is compared to the other ones
@@ -35,9 +35,9 @@ def match_two_ontologies(results, onto, onto1):
                                         #util.write2File("matching.txt", "Nodes " + i.name + " (" + label.get_text() + ")" + " and " + j.name + " (" + label1.get_text() + ")" + " have the same label\n", "a")
                                         connections["matches"].append([i.name, item.get_text(), j.name, item1.get_text(), " have the same label\n", "owl:sameAs"])
                                         already_matched = True
-                                    #version 2: added
+                                    ##version 2: added
                                     #if the labels don't match already, check if one word of the labels is inside the other
-                                    elif not already_matched and ((re.match(item.get_text().replace("_", " "), item1.get_text().replace("_", " "), re.IGNORECASE) and len(item.get_text()) > 3) or (re.match(item1.get_text().replace("_", " "), item.get_text().replace("_", " "), re.IGNORECASE) and len(item1.get_text()) > 3)) and not re.match(i.name, j.name, re.IGNORECASE):
+                                    elif not exact_match and not already_matched and ((re.match(item.get_text().replace("_", " "), item1.get_text().replace("_", " "), re.IGNORECASE) and len(item.get_text()) > 3) or (re.match(item1.get_text().replace("_", " "), item.get_text().replace("_", " "), re.IGNORECASE) and len(item1.get_text()) > 3)) and not re.match(i.name, j.name, re.IGNORECASE):
                                         connections["matches"].append([i.name, item.get_text(), j.name, item1.get_text(), " share part of the label\n"])
                                         already_matched = True
                     #comment = i.get_child("{http://www.w3.org/1999/02/22-rdf-syntax-ns#}comment")
