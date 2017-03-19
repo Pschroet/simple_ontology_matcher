@@ -24,21 +24,25 @@ def index(request):
         if request.path == "/resources/scripts.js":
             return FileResponse(util.readFileContentAsString("resources/scripts.js"))
         elif request.path == "/matcher/result_writer/matching_result.html":
+            #get the passed ontologies
+            available_ontologies = util.get_ontologies()
             params_onto = []
-            params_term = []
             params_matcher = []
-            if request.GET.getlist('Onto') != []:
-                params_onto = request.GET.getlist('Onto')
-            if request.GET.getlist('Term') != []:
-                params_term = request.GET.getlist('Term')
+            #look for each kind of source, if there are ontologies passed from this type
+            for ontology in available_ontologies:
+                if request.GET.getlist(ontology) != []:
+                    passed_arguments = request.GET.getlist(ontology)
+                    #get the exact source information from the type of ontology
+                    for ontology_type in available_ontologies[ontology]["ontos"]:
+                        if ontology_type[0] in passed_arguments:
+                            params_onto.append(ontology_type[1])
+            #get the passed matchers
             if request.GET.getlist('Matcher') != []:
                 params_matcher = request.GET.getlist('Matcher')
             ontos = []
             matchers = []
-            available_ontologies = util.combine_dicts(util.get_ontologies(), util.get_terminologies())
-            if params_onto is not [] and (params_matcher is not [] or params_term is not []):
-                for param in params_onto + params_term:
-                    source = available_ontologies[param][1]
+            if params_onto is not [] and (params_matcher is not []):
+                for source in params_onto:
                     if bool(urlparse.urlparse(source).scheme) and "terminologies.gfbio.org" in source:
                         tmp = reader.ontology_reader("GFBio_terminology_server_parser", source).ontology
                         #print tmp.tostring()
@@ -75,9 +79,8 @@ def index(request):
         #show the start page, where the ontologies and matcher can be chosen
         elif request.path == "/matcher/":
             ontos = util.get_ontologies()
-            terms = util.get_terminologies()
             matchers = util.get_matchers()
-            context = RequestContext(request, {"title":"Ontology Matcher", "ontologies":ontos, "terminologies":terms, "matchers":matchers})
+            context = RequestContext(request, {"title":"Ontology Matcher", "ontologies":ontos, "matchers":matchers})
             template_raw = util.readFileContentAsString(os.path.dirname(__file__) + "/index.html")
             template_content = template.Template(template_raw)
         if context != {}:

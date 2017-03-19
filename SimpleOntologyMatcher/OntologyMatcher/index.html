@@ -8,19 +8,14 @@
 		<h1>Configuration</h1>
 		<h3>Choose two Ontologies</h3>
 		<ul id="ontologyList">
-			{% for item in ontologies %}
-	    	<button id="add-Onto-{{ item }}" onClick="addItem('Onto', '{{ item }}', '{{ item }}')">{{ item }}</button>
+    		{% for item, item_info in ontologies.items %}
+			<div>From {{ item_info.label }}:</div>
+    			{% for jtem in item_info.ontos %}
+    			<button id="add-{{ item }}-{{ jtem.0 }}" onClick="addItem('{{ item }}', '{{ jtem.0 }}', '{{ jtem.0 }}')">{{ jtem.0 }}</button>
+    			{% endfor %}
 	    	{% empty %}
 	    	<p>None found</p>
-			{% endfor %}
-		</ul>
-		<h3>and/or Terminologies</h3>
-		<ul id="terminologyList">
-		{% for item in terminologies %}
-	    	<button id="add-Term-{{ item }}" onClick="addItem('Term', '{{ item }}', '{{ item }}')">{{ item }}</button>
-	    	{% empty %}
-	    	<p>None found</p>
-		{% endfor %}
+    		{% endfor %}
 		</ul>
 		<h3>Choose at least one Matcher</h3>
 		<ul id="matcherList">
@@ -34,9 +29,7 @@
 		<h3>Using Matchers</h3>
 		<div id="usedMatchers"></div><br/>
 		<h3>on Ontologies</h3>
-		<div id="usedOntos"></div><br/>
-		<h3>and/or Terminologies</h3>
-		<div id="usedTerms"></div><br/>
+		<div id="usedontos"></div><br/>
 		<form id="availableOntologies" action="/matcher/result_writer/matching_result.html?" method="post">
 			<input type="submit" value="Find Matches">
 			{% csrf_token %}

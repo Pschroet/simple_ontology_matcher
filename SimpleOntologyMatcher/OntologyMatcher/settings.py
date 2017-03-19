@@ -143,19 +143,21 @@ STATICFILES_DIRS = [
 ONTOLOGIES = {}
 TERMINOLOGIES = {}
 print "Getting ontologies from disk:"
+ONTOLOGIES["onto"] = {"label":"server files", "ontos":[]}
 for item in util.get_files_in_directory(os.path.dirname(__file__) + "/ontologies", False):
-    ONTOLOGIES[item.split(".")[0]] = [item, os.path.dirname(__file__) + "/ontologies/" + item]
+    ONTOLOGIES["onto"]["ontos"].append([item.split(".")[0], os.path.dirname(__file__) + "/ontologies/" + item])
     print "\t" + item + " found"
 try:
     re = requests.get("http://terminologies.gfbio.org/api/terminologies/")
     jo = json.loads(re.text)
     #get available ontology information from http://terminologies.gfbio.org/api/terminologies/
     print "Getting terminologies from http://terminologies.gfbio.org/api/terminologies/"
+    ONTOLOGIES["term"] = {"label":"terminologies.gfbio.org", "ontos":[]}
     for item in jo["results"]:
         #check if URL is working
         #print item["acronym"]
         onto = requests.head(item["uri"])
-        TERMINOLOGIES[item["acronym"]] = [item["name"], "http://terminologies.gfbio.org/api/terminologies/" + item["acronym"]]
+        ONTOLOGIES["term"]["ontos"].append([item["acronym"], "http://terminologies.gfbio.org/api/terminologies/" + item["acronym"]])
         print "\t" + item["acronym"] + " added: " + item["name"] + ", " + "http://terminologies.gfbio.org/api/terminologies/" + item["acronym"]
     #get available ontologies from http://terminologies.gfbio.org/api/terminologies/
     #print "Getting ontologies from http://terminologies.gfbio.org/api/terminologies/"

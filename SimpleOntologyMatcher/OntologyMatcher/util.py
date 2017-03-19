@@ -106,9 +106,6 @@ def readFileContentAsString(fileToRead):
 def get_ontologies():
     return settings.ONTOLOGIES
 
-def get_terminologies():
-    return settings.TERMINOLOGIES
-
 def get_matchers():
     return settings.MATCHERS
 
