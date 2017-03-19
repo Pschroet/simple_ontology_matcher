@@ -6,16 +6,13 @@ A collection of different support functions
 @author: Philipp Schroeter
 '''
 
-import cgi
 import logging
 import imp
 import json
 import os
 import re
 import requests
-import sys
 from django.conf import settings
-from operator import itemgetter
 
 #returns the separator of the ontology element
 # finds separators of namespaces that separate with '#' or '/'
