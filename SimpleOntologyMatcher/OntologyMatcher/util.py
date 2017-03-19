@@ -128,6 +128,27 @@ def levenshtein(s1, s2):
     
     return previous_row[-1]
 
+#moves all elements from dict1 to dict
+# items are excluded, if there is already an element named like one in dict
+#returns the result as a new dictionary
+def combine_dicts(dict, dict1):
+    output = {}
+    for item in dict:
+        output[item] = dict[item]
+    for item in dict1:
+        if item not in dict:
+            output[item] = dict1[item]
+    return output
+
+#checks if the item is in the list
+# uses case-insensitive regular expressions
+# returns true, if the item was found, false, otherwise
+def is_in_list(item, compare_list):
+    for list_item in compare_list:
+        if re.match(item, list_item, re.IGNORECASE):
+            return True
+    return False
+
 class distance_calculator():
     levenshtein_found = False
     Levenshtein = ""
@@ -154,27 +175,6 @@ class distance_calculator():
             return self.Levenshtein.distance(string1, string2)
         else:
             return levenshtein(string1, string2)
-
-#moves all elements from dict1 to dict
-# items are excluded, if there is already an element named like one in dict
-#returns the result as a new dictionary
-def combine_dicts(dict, dict1):
-    output = {}
-    for item in dict:
-        output[item] = dict[item]
-    for item in dict1:
-        if item not in dict:
-            output[item] = dict1[item]
-    return output
-
-#checks if the item is in the list
-# uses case-insensitive regular expressions
-# returns true, if the item was found, false, otherwise
-def is_in_list(item, compare_list):
-    for list_item in compare_list:
-        if re.match(item, list_item, re.IGNORECASE):
-            return True
-    return False
 
 class dictionary_wrapper():
     PyDictionary_found = False
