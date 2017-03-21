@@ -69,10 +69,9 @@ def index(request):
                 if ontos is not [] and matchers is not []:
                     #compare the ontologies
                     chain = matching_tool_chain.tool_chain()
-                    #chain.add_config_from_file("./OntologyMatcher/all_matchers-config.xml")
-                    chain.add_matchers(matchers)
+                    chain.set_matchers(matchers)
                     result = chain.match_ontologies(ontos)
-                    connection_options = ["None", "owl:sameAs", "rdfs:subClassOf", "partOf", "owl:equivalentClass", "owl:intersectionOf", "owl:differentFrom", "owl:disjointWith", "owl:inverseOf"]
+                    connection_options = ["None", "owl:sameAs", "rdfs:subClassOf", "partOf", "consistsOf", "rdfs:subPropertyOf", "owl:equivalentClass", "owl:intersectionOf", "owl:differentFrom", "owl:disjointWith", "owl:inverseOf"]
                     context = RequestContext(request, {"title":"Matched Ontologies", "results":result, "connection_options":connection_options, "ontologies":ontos})
                     template_raw = util.readFileContentAsString(os.path.dirname(__file__) + "/result_writer/matching_result.html")
                     template_content = template.Template(template_raw)
