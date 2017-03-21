@@ -3,23 +3,23 @@
 </head>
 <body>
 	<h1>Matching Results</h1>
-    <h2>Same</h2>
-    ({{ same|length }} are the same)
+    <h2>Found by both</h2>
+    ({{ same|length }} are found by both)
     <ul>
 	{% for item in same %}
 	    <li><a href='{{ item.0 }}'>{{ item.0 }}</a> ({{ item.2 }}) and <a href='{{ item.1 }}'>{{ item.1 }}</a> ({{ item.3 }})</li>
 	{% endfor %}
 	</ul>
-    <h2>Different</h2>
+    <h2>Found only by one of them</h2>
 		<h3>{{ different_names.0 }}</h3>
-    	({{ different.0|length }} are different)
+    	({{ different.0|length }} are only found by this algorithm)
 	    <ul>
 		{% for item in different.0 %}
 		    <li><a href='{{ item.0 }}'>{{ item.0 }}</a> ({{ item.2 }}) and <a href='{{ item.1 }}'>{{ item.1 }}</a> ({{ item.3 }})</li>
 		{% endfor %}
 		</ul>
 		<h3>{{ different_names.1 }}</h3>
-    	({{ different.1|length }} are different)
+    	({{ different.1|length }} are only found by this algorithm)
 	    <ul>
 		{% for item in different.1 %}
 		    <li><a href='{{ item.0 }}'>{{ item.0 }}</a> ({{ item.2 }}) and <a href='{{ item.1 }}'>{{ item.1 }}</a> ({{ item.3 }})</li>
