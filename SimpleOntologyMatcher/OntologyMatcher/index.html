@@ -29,7 +29,10 @@
 		<h3>Using Matchers</h3>
 		<div id="usedMatchers"></div><br/>
 		<h3>on Ontologies</h3>
-		<div id="usedontos"></div><br/>
+		{% for item in ontologies %}
+			<div id="used{{ item }}s"></div>
+		{% endfor %}
+		<br/>
 		<form id="availableOntologies" action="/matcher/result_writer/matching_result.html?" method="post">
 			<input type="submit" value="Find Matches">
 			{% csrf_token %}
