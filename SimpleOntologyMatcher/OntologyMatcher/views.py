@@ -71,7 +71,7 @@ def index(request):
                     chain = matching_tool_chain.tool_chain()
                     chain.set_matchers(matchers)
                     result = chain.match_ontologies(ontos)
-                    connection_options = ["None", "owl:sameAs", "rdfs:subClassOf", "partOf", "consistsOf", "rdfs:subPropertyOf", "owl:equivalentClass", "owl:intersectionOf", "owl:differentFrom", "owl:disjointWith", "owl:inverseOf"]
+                    connection_options = ["None", "owl:sameAs", "rdfs:subClassOf", "dcterms:partOf", "dcterms:hasPart", "rdfs:subPropertyOf", "owl:equivalentClass", "owl:intersectionOf", "owl:differentFrom", "owl:disjointWith", "owl:inverseOf"]
                     context = RequestContext(request, {"title":"Matched Ontologies", "results":result, "connection_options":connection_options, "ontologies":ontos})
                     template_raw = util.readFileContentAsString(os.path.dirname(__file__) + "/result_writer/matching_result.html")
                     template_content = template.Template(template_raw)
