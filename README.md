@@ -21,7 +21,7 @@ They all retain their original license (included in the zip files or found on th
 
 __Running as a standalone software__
 
-'python SimpleOntologyMatcher/manage.py runserver'
+`python SimpleOntologyMatcher/manage.py runserver`
 
 This starts the Django server. When no port is given after *runserver* the app can be accessed at
 
