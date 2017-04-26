@@ -16,3 +16,17 @@ Part of the repository are the following zip archives:
 as well as the file [FileSaver.js](https://github.com/eligrey/FileSaver.js)
 
 They all retain their original license (included in the zip files or found on the website) and are not released as part of this software. They are just shipped for convenience.
+
+==================================================================
+
+__Running as a standalone software__
+
+'python SimpleOntologyMatcher/manage.py runserver'
+
+This starts the Django server. When no port is given after *runserver* the app can be accessed at
+
+> http://127.0.0.1:8000/matcher
+
+Another possibility is to use *main.py* to run matching algorithms. This file can be found in
+
+> SimpleOntologyMatcher/OntologyMatcher/
